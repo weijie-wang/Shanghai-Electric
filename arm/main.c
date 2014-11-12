@@ -12,7 +12,7 @@ int main (int argc, char ** argv)
         return -1;
     };
 
-    for(i = 0; i < 100; i++)
+    while(1)
     {
         unsigned char data[] = "12345678";
         ReCATSyslinkSend(data, 9);
@@ -20,7 +20,7 @@ int main (int argc, char ** argv)
 
         size_t len;
         char* buffer = ReCATSyslinkRecv(&len);
-        printf("[send] %s\n", buffer);
+        printf("[recv] %s\n", buffer);
         free(buffer);
 
     }

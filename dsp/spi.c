@@ -16,6 +16,7 @@
 #include <ti/ipc/MultiProc.h>
 #include <ti/ipc/Notify.h>
 #include <ti/sysbios/hal/Hwi.h>
+#include <ti/sysbios/knl/Task.h>
 
 #include "include/hw_types.h"
 #include "include/soc_C6748.h"
@@ -62,99 +63,45 @@
 #define SYS_INT_SPI1_INT 			43
 
 
-
-volatile unsigned int flag = 1;
-unsigned int tx_len;
-unsigned int rx_len;
-unsigned char tx_data[260];
-volatile unsigned char rx_data[260];
-unsigned char *p_tx;
-volatile unsigned char *p_rx;
-volatile unsigned char DataReceived[16];
-Hwi_Handle myHwi;
+#define SPI_TX_BUF_EMPTY            0x14
+#define SPI_RECV_FULL               0x12
 
 
 
-//static void SetUpInt(void)
-//{
-//    Hwi_Params hwiParams;
-//    Error_Block eb;
+void ReCATSPIClear()
+{
 
-//    Hwi_Params_init(&hwiParams);
-//    Error_init(&eb);
+}
 
-
-
-//    // set the event id 37 of the peripheral assigned to this interrupt
-//    hwiParams.eventId = SYS_INT_SPI0_INT;
-
-//    // don't allow any interrupt to nest
-//    hwiParams.maskSetting = Hwi_MaskingOption_ALL;
-
-//    //
-//    // Configure interrupt 4 to invoke "SPIIsr".
-//    // Automatically enables interrupt 4 by default
-//    // set params.enableInt = FALSE if you want to control
-//    // when the interrupt is enabled using Hwi_enableInterrupt()
-//    //
-
-//    myHwi = Hwi_create(4, SPIIsr, &hwiParams, &eb);
-
-//    if (Error_check(&eb)) {
-//        // handle the error
-//        System_abort  ("SPI Interrupt initialization is failed\n");
-
-//    }
-
-//    Hwi_enableInterrupt(4);
-//    Hwi_enable();
-
-
-//}
-//void SPIIsr(void)
-//{
-//    unsigned int intCode = 0;
-//    Hwi_clearInterrupt(SYS_INT_SPI0_INT);
-//    /*#ifdef _TMS320C6X
-//    IntEventClear(SYS_INT_SPI0_INT);
-//#else
-//    IntSystemStatusClear(56);
-//#endif*/
-
-//    intCode = SPIInterruptVectorGet(SOC_SPI_0_REGS);
-
-//    while (intCode)
-//    {
-//        if(intCode == SPI_TX_BUF_EMPTY)
-//        {
-//            tx_len--;
-//            SPITransmitData1(SOC_SPI_0_REGS, *p_tx);
-//            p_tx++;
-//            if (!tx_len)
-//            {
-//                SPIIntDisable(SOC_SPI_0_REGS, SPI_TRANSMIT_INT);
-//            }
-//        }
-
-//        if(intCode == SPI_RECV_FULL)
-//        {
-//            rx_len--;
-//            *p_rx = (char)SPIDataReceive(SOC_SPI_0_REGS);
-//            p_rx++;
-//            if (!rx_len)
-//            {
-//                flag = 0;
-//                SPIIntDisable(SOC_SPI_0_REGS, SPI_RECV_INT);
-//            }
-//        }
-
-//        intCode = SPIInterruptVectorGet(SOC_SPI_0_REGS);
-//    }
-//}
-
-void ReCATSPIClear();
-void ReCATSPISend(void *data, size_t len);
-void* ReCATSSPIRecv(size_t* len);
+void ReCATSPISend(void *data, size_t len)
+{
+    unsigned char *p_tx = data;
+    
+    while(len > 0)
+    {
+        len--;
+        while (HWREG( SPIFLG) & 0x00200 == 0);
+            //Task_sleep(1);
+        HWREG(SPIDAT0) = *p_tx; // write spi
+        p_tx++;
+    }
+}
+size_t ReCATSPIRecv(unsigned char *data, size_t len)
+{
+    size_t ret = len;
+    while(len > 0)
+    {
+        while (HWREG( SPIFLG) & 0x00200 == 0);
+            //Task_sleep(1);
+        HWREG(SPIDAT0) = 0x88; // write spi
+        
+        while (HWREG( SPIFLG) & 0x00100 == 0);
+        *data = (char)(HWREG(SPIBUF)&0x0000FFFFu);
+        len--;
+        data++;
+    }
+    return ret;
+}
 
 void ReCATSPIInit()
 {
@@ -166,7 +113,7 @@ void ReCATSPIInit()
 
     /***** SPI INITIALIZATION ******/
     /* Waking up the SPI1 instance. */
-    PSCModuleControl(SOC_PSC_0_REGS, HW_PSC_SPI1, PSC_POWERDOMAIN_ALWAYS_ON,
+    PSCModuleControl(SOC_PSC_1_REGS, HW_PSC_SPI1, PSC_POWERDOMAIN_ALWAYS_ON,
                      PSC_MDCTL_NEXT_ENABLE);
 
 
@@ -181,7 +128,7 @@ void ReCATSPIInit()
     HWREG(SPIGCR1) |=  0x00000003u;
 
     /** set spi clk */
-    unsigned int prescale = (150000000/20000000) - 1;  //SPI clock frequency = SPI module clock/(PRESCALE + 1)
+    unsigned int prescale = (150000000/2000) - 1;  //SPI clock frequency = SPI module clock/(PRESCALE + 1)
     HWREG(SPIFMT0) =  (0x0000FF00u & (prescale << 8));
 
     /** set CS and simo, somi */
@@ -193,32 +140,16 @@ void ReCATSPIInit()
     HWREG(SPIFMT0) &= ~0x00100000u;   /* Configures SPI to transmit MSB bit First during data transfer */
     HWREG(SPIFMT0) &= ~0x0000001Fu;
     HWREG(SPIFMT0) |= 8; /* Sets the Charcter length */
-    HWREG(SPIDAT1) |= 0x02000000; /* make it sense */
+    HWREG(SPIDAT1) |= 0x00000000; /* make it sense */
 
     /** setup interrupts. */
-    /* map interrupts to interrupt line INT1 */
-    // SPIIntLevelSet(SOC_SPI_0_REGS, SPI_RECV_INTLVL | SPI_TRANSMIT_INTLVL);
+    /* No Interrupt */
     HWREG(SPIINT0) =0x00000000;
     HWREG(SPILVL) =0x00000000;
-    //SetUpInt();
 
 
     /** enable spi */
     HWREG(SPIGCR1) |= 0x01000000;
-
-
-    //    HWREG(SPIDELAY) =0x00000000;
-
-
-    p_tx = &tx_data[0];
-    p_rx = &rx_data[0];
-
-
-    while(1)
-    {
-        HWREG(SPIDAT0) = SPIDAT0; // write spi
-        while (HWREG( SPIFLG) & 0x00200 == 0);
-    }
 
 
 }
