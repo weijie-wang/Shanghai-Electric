@@ -1,103 +1,103 @@
 Archive member included because of file (symbol)
 
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
                               bin/release/obj/syslink.ov5T (SharedRegion_getId)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
                               bin/release/obj/syslink.ov5T (Notify_sendEvent)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
                               bin/release/obj/syslink.ov5T (MessageQ_create)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
                               bin/release/obj/syslink.ov5T (Ipc_control)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (RingIO_getConfig)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (RingIOShm_getConfig)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (FrameQ_getConfig)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (FrameQBufMgr_getConfig)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o) (ClientNotifyMgr_sharedMemReq)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (HeapMemMP_getConfig)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (HeapBufMP_getConfig)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o) (GateMP_enter)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (SharedRegionDrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o) (NotifyDrvUsr_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o) (HeapBufMPDrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o) (MessageQDrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (IpcDrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (FrameQDrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o) (FrameQBufMgrDrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o) (ClientNotifyMgrDrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o) (RingIODrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o) (RingIOShmDrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o) (HeapMemMPDrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o) (GateMPDrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (GateMutex_create)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (RingIO_getConfig)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (RingIOShm_getConfig)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (FrameQ_getConfig)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (FrameQBufMgr_getConfig)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o) (ClientNotifyMgr_sharedMemReq)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (HeapMemMP_getConfig)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (HeapBufMP_getConfig)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o) (GateMP_enter)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (SharedRegionDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o) (NotifyDrvUsr_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o) (HeapBufMPDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o) (MessageQDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (IpcDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (FrameQDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o) (FrameQBufMgrDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o) (ClientNotifyMgrDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o) (RingIODrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o) (RingIOShmDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o) (HeapMemMPDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o) (GateMPDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (GateMutex_create)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
                               bin/release/obj/syslink.ov5T (Memory_alloc)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (List_construct)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (String_cmp)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (_GT_0trace)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (NameServer_setup)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (MultiProc_getConfig)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (Gate_enterSystem)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (List_construct)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (String_cmp)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o) (_GT_0trace)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (NameServer_setup)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (MultiProc_getConfig)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (Gate_enterSystem)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
                               bin/release/obj/syslink.ov5T (SysLink_setup)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
                               bin/release/obj/syslink.ov5T (Cache_inv)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o) (NameServerDrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o) (MultiProcDrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o) (TraceDrv_ioctl)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o) (CacheDrv_ioctl)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o) (MemoryOS_destroy)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o) (OsalDrv_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o) (OsalMutex_create)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o) (NameServerDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o) (MultiProcDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o) (TraceDrv_ioctl)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o) (CacheDrv_ioctl)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o) (MemoryOS_destroy)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o) (OsalDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o) (OsalMutex_create)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
                               bin/release/obj/syslink.ov5T (Osal_printf)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (ProcMgr_getConfig)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o) (ProcMgrDrvUsr_open)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (FrameQ_isSupportedInterface)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (ListMP_getConfig)
-/home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o) (ListMPDrv_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (ProcMgr_getConfig)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o) (ProcMgrDrvUsr_open)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (FrameQ_isSupportedInterface)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o) (ListMP_getConfig)
+/home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o) (ListMPDrv_open)
 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/./libc_nonshared.a(elf-init.oS)
                               /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o (__libc_csu_init)
 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_udivsi3.o)
-                              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (__aeabi_uidivmod)
+                              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o) (__aeabi_uidivmod)
 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_dvmd_lnx.o)
                               /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
 
@@ -107,10 +107,10 @@ Common symbol       size              file
 SysLinkSamples_runProcIds
                     0x14              syslinksamples.o_debug
 syslink             0x17c             bin/release/obj/syslink.ov5T
-MemoryOS_state      0x10              /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+MemoryOS_state      0x10              /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
 SysLinkSamples_availableProcIds
                     0x14              syslinksamples.o_debug
-NameServer_Object   0x4               /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+NameServer_Object   0x4               /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
 
 Discarded input sections
 
@@ -127,99 +127,99 @@ Discarded input sections
  .note.GNU-stack
                 0x00000000        0x0 bin/release/obj/pseudo.ov5T
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
  .note.GNU-stack
-                0x00000000        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+                0x00000000        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
  .note.GNU-stack
                 0x00000000        0x0 syslinksamples.o_debug
  .note.GNU-stack
@@ -248,7 +248,7 @@ LOAD /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtbegin.o
 LOAD bin/release/obj/main.ov5T
 LOAD bin/release/obj/syslink.ov5T
 LOAD bin/release/obj/pseudo.ov5T
-LOAD /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release
+LOAD /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release
 LOAD syslinksamples.o_debug
 LOAD slaveloader.o_debug
 LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/libpthread.so
@@ -457,7 +457,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x00009738                ReCATSeialConf
                 0x000099b0                ReCATDataRecv
                 0x000099b4                ReCATDataSend
- .text          0x000099b8     0x2d18 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+ .text          0x000099b8     0x2d18 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
                 0x000099b8                SharedRegion_getConfig
                 0x00009ad8                SharedRegion_destroy
                 0x00009d10                SharedRegion_setup
@@ -486,7 +486,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x0000c184                SharedRegion_getRegionInfo
                 0x0000c314                _SharedRegion_setRegions
                 0x0000c54c                _SharedRegion_clearRegions
- .text          0x0000c6d0     0x2164 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+ .text          0x0000c6d0     0x2164 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
                 0x0000c6d0                Notify_getConfig
                 0x0000c80c                Notify_setup
                 0x0000c974                Notify_destroy
@@ -504,7 +504,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x0000e1b4                Notify_restore
                 0x0000e33c                Notify_disableEvent
                 0x0000e5b8                Notify_enableEvent
- .text          0x0000e834     0x1e18 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+ .text          0x0000e834     0x1e18 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
                 0x0000e834                MessageQ_getConfig
                 0x0000e958                MessageQ_setup
                 0x0000ea78                MessageQ_destroy
@@ -528,14 +528,14 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x000103ec                MessageQ_sharedMemReq
                 0x000104bc                MessageQ_attach
                 0x00010594                MessageQ_detach
- .text          0x0001064c      0xec4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+ .text          0x0001064c      0xec4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
                 0x0001064c                Ipc_getConfig
                 0x000107ac                Ipc_setup
                 0x00010cc4                Ipc_destroy
                 0x00011220                Ipc_control
                 0x00011380                Ipc_readConfig
                 0x00011448                Ipc_writeConfig
- .text          0x00011510     0x21d0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+ .text          0x00011510     0x21d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
                 0x00011510                RingIO_getConfig
                 0x00011630                RingIO_setup
                 0x00011758                RingIO_destroy
@@ -566,12 +566,12 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x000134c0                RingIO_flush
                 0x00013578                RingIO_sendNotify
                 0x00013608                RingIO_sharedMemReq
- .text          0x000136e0      0x458 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+ .text          0x000136e0      0x458 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
                 0x000136e0                RingIOShm_getConfig
                 0x00013800                RingIOShm_setup
                 0x00013928                RingIOShm_destroy
                 0x00013a00                RingIOShm_Params_init
- .text          0x00013b38     0x4364 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+ .text          0x00013b38     0x4364 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
                 0x00013b38                FrameQ_getConfig
                 0x00013c64                FrameQ_setup
                 0x00013e60                FrameQ_destroy
@@ -599,7 +599,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x00017aa8                FrameQ_ShMem_Params_init
                 0x00017bf8                FrameQ_Params_init
                 0x00017d44                FrameQ_ShMem_sharedMemReq
- .text          0x00017e9c     0x44fc /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+ .text          0x00017e9c     0x44fc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
                 0x00017e9c                FrameQBufMgr_getConfig
                 0x00017fcc                FrameQBufMgr_setup
                 0x000181c8                FrameQBufMgr_destroy
@@ -634,7 +634,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x0001c0d0                FrameQBufMgr_isSupportedBufInterface
                 0x0001c0ec                FrameQBufMgr_ShMem_Params_init
                 0x0001c23c                FrameQBufMgr_Params_init
- .text          0x0001c398     0x3084 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+ .text          0x0001c398     0x3084 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
                 0x0001c398                ClientNotifyMgr_callBack
                 0x0001c7c4                ClientNotifyMgr_sharedMemModReq
                 0x0001c808                ClientNotifyMgr_sharedMemReq
@@ -654,7 +654,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x0001e900                ClientNotifyMgr_sendForceNotification
                 0x0001ebb0                ClientNotifyMgr_sendNotificationMulti
                 0x0001f100                ClientNotifyMgr_sendForceNotificationMulti
- .text          0x0001f41c     0x1be4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+ .text          0x0001f41c     0x1be4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
                 0x0001f41c                HeapMemMP_getKnlHandle
                 0x0001f568                HeapMemMP_getStats
                 0x0001f724                HeapMemMP_free
@@ -673,7 +673,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x00020a98                HeapMemMP_openByAddr
                 0x00020cd4                HeapMemMP_create
                 0x00020f0c                HeapMemMP_restore
- .text          0x00021000     0x1a7c /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+ .text          0x00021000     0x1a7c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
                 0x00021000                HeapBufMP_getKnlHandle
                 0x00021154                HeapBufMP_isBlocking
                 0x00021214                HeapBufMP_getStats
@@ -691,7 +691,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x000223d4                HeapBufMP_open
                 0x0002260c                HeapBufMP_openByAddr
                 0x00022850                HeapBufMP_create
- .text          0x00022a7c     0x198c /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+ .text          0x00022a7c     0x198c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
                 0x00022a7c                GateMP_enter
                 0x00022bd8                GateMP_leave
                 0x00022d44                GateMP_getConfig
@@ -713,63 +713,63 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x0002427c                GateMP_getLocalProtect
                 0x000242bc                GateMP_getRemoteProtect
                 0x000242fc                GateMP_getKnlHandle
- .text          0x00024408      0x398 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+ .text          0x00024408      0x398 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
                 0x00024408                SharedRegionDrv_open
                 0x00024528                SharedRegionDrv_close
                 0x000245f4                SharedRegionDrv_ioctl
- .text          0x000247a0      0x710 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+ .text          0x000247a0      0x710 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
                 0x000247a0                _NotifyDrvUsr_eventWorker
                 0x000248a8                NotifyDrvUsr_open
                 0x00024ba0                NotifyDrvUsr_close
                 0x00024dbc                NotifyDrvUsr_ioctl
- .text          0x00024eb0      0x2d8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+ .text          0x00024eb0      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
                 0x00024eb0                HeapBufMPDrv_open
                 0x00024fd4                HeapBufMPDrv_close
                 0x000250a0                HeapBufMPDrv_ioctl
- .text          0x00025188      0x2d0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+ .text          0x00025188      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
                 0x00025188                MessageQDrv_open
                 0x000252a4                MessageQDrv_close
                 0x00025370                MessageQDrv_ioctl
- .text          0x00025458      0x2d8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+ .text          0x00025458      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
                 0x00025458                IpcDrv_open
                 0x0002557c                IpcDrv_close
                 0x00025648                IpcDrv_ioctl
- .text          0x00025730      0x2d0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+ .text          0x00025730      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
                 0x00025730                FrameQDrv_open
                 0x0002584c                FrameQDrv_close
                 0x00025918                FrameQDrv_ioctl
- .text          0x00025a00      0x2d0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+ .text          0x00025a00      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
                 0x00025a00                FrameQBufMgrDrv_open
                 0x00025b1c                FrameQBufMgrDrv_close
                 0x00025be8                FrameQBufMgrDrv_ioctl
- .text          0x00025cd0      0x2d0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+ .text          0x00025cd0      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
                 0x00025cd0                ClientNotifyMgrDrv_open
                 0x00025dec                ClientNotifyMgrDrv_close
                 0x00025eb8                ClientNotifyMgrDrv_ioctl
- .text          0x00025fa0      0x2d0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+ .text          0x00025fa0      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
                 0x00025fa0                RingIODrv_open
                 0x000260bc                RingIODrv_close
                 0x00026188                RingIODrv_ioctl
- .text          0x00026270      0x2d0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+ .text          0x00026270      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
                 0x00026270                RingIOShmDrv_open
                 0x0002638c                RingIOShmDrv_close
                 0x00026458                RingIOShmDrv_ioctl
- .text          0x00026540      0x2d8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+ .text          0x00026540      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
                 0x00026540                HeapMemMPDrv_open
                 0x00026664                HeapMemMPDrv_close
                 0x00026730                HeapMemMPDrv_ioctl
- .text          0x00026818      0x2d8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+ .text          0x00026818      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
                 0x00026818                GateMPDrv_open
                 0x0002693c                GateMPDrv_close
                 0x00026a08                GateMPDrv_ioctl
- .text          0x00026af0      0x4c8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+ .text          0x00026af0      0x4c8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
                 0x00026af0                GateMutex_leave
                 0x00026b88                GateMutex_enter
                 0x00026c2c                GateMutex_Instance_init
                 0x00026cf4                GateMutex_Instance_finalize
                 0x00026d64                GateMutex_create
                 0x00026ea8                GateMutex_delete
- .text          0x00026fb8      0x8d8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+ .text          0x00026fb8      0x8d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
                 0x00026fb8                Memory_alloc
                 0x00027128                Memory_calloc
                 0x00027364                Memory_free
@@ -778,7 +778,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x00027658                Memory_getMaxDefaultTypeAlign
                 0x00027660                Memory_valloc
                 0x00027820                Memory_translate
- .text          0x00027890     0x1194 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
+ .text          0x00027890     0x1194 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
                 0x00027890                List_Params_init
                 0x00027934                List_create
                 0x000279f8                List_delete
@@ -796,7 +796,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x000286d4                List_dequeue
                 0x000287ac                List_enqueue
                 0x000288e8                List_enqueueHead
- .text          0x00028a24      0x390 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
+ .text          0x00028a24      0x390 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
                 0x00028a24                String_cat
                 0x00028a70                String_cmp
                 0x00028b34                String_ncmp
@@ -805,7 +805,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x00028c70                String_len
                 0x00028ca4                String_hexToStr
                 0x00028d30                String_hash
- .text          0x00028db4      0x368 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+ .text          0x00028db4      0x368 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
                 0x00028db4                _GT_0trace
                 0x00028e00                _GT_1trace
                 0x00028e50                _GT_2trace
@@ -815,7 +815,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x00028fec                _GT_6trace
                 0x00029068                _GT_setFailureReason
                 0x000290ac                _GT_setTrace
- .text          0x0002911c     0x2624 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+ .text          0x0002911c     0x2624 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
                 0x0002911c                NameServer_getConfig
                 0x0002926c                NameServer_setup
                 0x0002937c                NameServer_destroy
@@ -835,7 +835,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x0002b1a0                NameServer_match
                 0x0002b400                NameServer_getHandle
                 0x0002b5cc                NameServer_isRegistered
- .text          0x0002b740      0xa64 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+ .text          0x0002b740      0xa64 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
                 0x0002b740                MultiProc_getConfig
                 0x0002b890                MultiProc_setup
                 0x0002b9c8                MultiProc_destroy
@@ -845,31 +845,31 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x0002bef8                MultiProc_getNumProcessors
                 0x0002bf4c                MultiProc_self
                 0x0002bfa4                MultiProc_getSlot
- .text          0x0002c1a4      0x108 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+ .text          0x0002c1a4      0x108 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
                 0x0002c228                Gate_enterSystem
                 0x0002c26c                Gate_leaveSystem
- .text          0x0002c2ac       0x9c /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+ .text          0x0002c2ac       0x9c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
                 0x0002c2ac                SysLink_setup
                 0x0002c304                SysLink_destroy
- .text          0x0002c348      0x368 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+ .text          0x0002c348      0x368 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
                 0x0002c348                Cache_inv
                 0x0002c404                Cache_wb
                 0x0002c4c0                Cache_wbInv
                 0x0002c57c                Cache_wait
                 0x0002c608                Cache_setMode
- .text          0x0002c6b0      0x2d4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+ .text          0x0002c6b0      0x2d4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
                 0x0002c6b0                NameServerDrv_open
                 0x0002c7d0                NameServerDrv_close
                 0x0002c89c                NameServerDrv_ioctl
- .text          0x0002c984      0x2a4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+ .text          0x0002c984      0x2a4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
                 0x0002c984                MultiProcDrv_open
                 0x0002caa0                MultiProcDrv_close
                 0x0002cb6c                MultiProcDrv_ioctl
- .text          0x0002cc28       0xf0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+ .text          0x0002cc28       0xf0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
                 0x0002cc28                TraceDrv_ioctl
- .text          0x0002cd18       0xb8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+ .text          0x0002cd18       0xb8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
                 0x0002cd18                CacheDrv_ioctl
- .text          0x0002cdd0     0x1268 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+ .text          0x0002cdd0     0x1268 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
                 0x0002cdd0                MemoryOS_destroy
                 0x0002cf50                MemoryOS_setup
                 0x0002d0d8                MemoryOS_alloc
@@ -880,20 +880,20 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x0002db28                MemoryOS_copy
                 0x0002dc98                MemoryOS_set
                 0x0002de1c                MemoryOS_translate
- .text          0x0002e038      0x5a0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+ .text          0x0002e038      0x5a0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
                 0x0002e038                OsalDrv_open
                 0x0002e16c                OsalDrv_close
                 0x0002e248                OsalDrv_map
                 0x0002e460                OsalDrv_unmap
                 0x0002e4dc                OsalDrv_ioctl
- .text          0x0002e5d8      0x3e8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+ .text          0x0002e5d8      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
                 0x0002e5d8                OsalMutex_create
                 0x0002e6f8                OsalMutex_delete
                 0x0002e808                OsalMutex_enter
                 0x0002e8e0                OsalMutex_leave
- .text          0x0002e9c0       0x44 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+ .text          0x0002e9c0       0x44 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
                 0x0002e9c0                Osal_printf
- .text          0x0002ea04     0x4138 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+ .text          0x0002ea04     0x4138 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
                 0x0002f01c                ProcMgr_getConfig
                 0x0002f13c                ProcMgr_setup
                 0x0002f274                ProcMgr_Params_init
@@ -924,11 +924,11 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x000326e8                ProcMgr_getSectionInfo
                 0x0003287c                ProcMgr_getSectionData
                 0x00032a40                ProcMgr_getLoadedFileId
- .text          0x00032b3c      0x45c /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+ .text          0x00032b3c      0x45c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
                 0x00032b3c                ProcMgrDrvUsr_open
                 0x00032c64                ProcMgrDrvUsr_close
                 0x00032d38                ProcMgrDrvUsr_ioctl
- .text          0x00032f98      0x730 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+ .text          0x00032f98      0x730 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
                 0x00032f98                FrameQ_isSupportedInterface
                 0x00032fa4                FrameQ_getExtendedHeaderPtr
                 0x00032fe8                FrameQ_getNumFrameBuffers
@@ -938,7 +938,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x00033390                FrameQ_getFrameBufDataStartOffset
                 0x00033490                FrameQ_setFrameBufValidSize
                 0x000335ac                FrameQ_setFrameBufDataStartOffset
- .text          0x000336c8     0x2050 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+ .text          0x000336c8     0x2050 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
                 0x000336c8                ListMP_getConfig
                 0x000337e8                ListMP_setup
                 0x00033900                ListMP_destroy
@@ -960,7 +960,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                 0x000354b8                ListMP_prev
                 0x0003564c                _ListMP_create
                 0x00035710                ListMP_getGate
- .text          0x00035718      0x2d8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+ .text          0x00035718      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
                 0x00035718                ListMPDrv_open
                 0x0003583c                ListMPDrv_close
                 0x00035908                ListMPDrv_ioctl
@@ -1026,178 +1026,178 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
                                  0x5c (size before relaxing)
  *fill*         0x0003751f        0x1 00
  .rodata.str1.4
-                0x00037520     0x12bc /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+                0x00037520     0x12bc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
                                0x12e8 (size before relaxing)
  .rodata.str1.4
-                0x000387dc      0xbbc /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+                0x000387dc      0xbbc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
                                 0xc38 (size before relaxing)
  .rodata.str1.4
-                0x00039398      0xea0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+                0x00039398      0xea0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
                                 0xf54 (size before relaxing)
  .rodata.str1.4
-                0x0003a238      0x704 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+                0x0003a238      0x704 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
                                 0x794 (size before relaxing)
  .rodata.str1.4
-                0x0003a93c      0xffb /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+                0x0003a93c      0xffb /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
                                0x117c (size before relaxing)
  *fill*         0x0003b937        0x1 00
  .rodata.str1.4
-                0x0003b938      0x287 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+                0x0003b938      0x287 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
                                 0x348 (size before relaxing)
  *fill*         0x0003bbbf        0x1 00
  .rodata.str1.4
-                0x0003bbc0     0x197e /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+                0x0003bbc0     0x197e /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
                                0x1bf8 (size before relaxing)
  *fill*         0x0003d53e        0x2 00
  .rodata.str1.4
-                0x0003d540     0x1876 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+                0x0003d540     0x1876 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
                                0x1f64 (size before relaxing)
  *fill*         0x0003edb6        0x2 00
  .rodata.str1.4
-                0x0003edb8     0x11d3 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+                0x0003edb8     0x11d3 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
                                0x133c (size before relaxing)
  *fill*         0x0003ff8b        0x1 00
  .rodata.str1.4
-                0x0003ff8c      0xb43 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+                0x0003ff8c      0xb43 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
                                 0xd08 (size before relaxing)
  *fill*         0x00040acf        0x1 00
  .rodata.str1.4
-                0x00040ad0      0x925 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+                0x00040ad0      0x925 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
                                 0xca8 (size before relaxing)
  *fill*         0x000413f5        0x3 00
  .rodata.str1.4
-                0x000413f8      0x891 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+                0x000413f8      0x891 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
                                 0x9e0 (size before relaxing)
  *fill*         0x00041c89        0x3 00
  .rodata.str1.4
-                0x00041c8c      0x2b6 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+                0x00041c8c      0x2b6 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
                                 0x2fc (size before relaxing)
  *fill*         0x00041f42        0x2 00
  .rodata.str1.4
-                0x00041f44      0x36b /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+                0x00041f44      0x36b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
                                 0x3f4 (size before relaxing)
  *fill*         0x000422af        0x1 00
  .rodata.str1.4
-                0x000422b0      0x22b /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+                0x000422b0      0x22b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
                                 0x29c (size before relaxing)
  *fill*         0x000424db        0x1 00
  .rodata.str1.4
-                0x000424dc      0x21e /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+                0x000424dc      0x21e /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
                                 0x290 (size before relaxing)
  *fill*         0x000426fa        0x2 00
  .rodata.str1.4
-                0x000426fc      0x1d1 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+                0x000426fc      0x1d1 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
                                 0x244 (size before relaxing)
  *fill*         0x000428cd        0x3 00
  .rodata.str1.4
-                0x000428d0      0x1f8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+                0x000428d0      0x1f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
                                 0x268 (size before relaxing)
  .rodata.str1.4
-                0x00042ac8      0x25a /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+                0x00042ac8      0x25a /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
                                 0x2cc (size before relaxing)
  *fill*         0x00042d22        0x2 00
  .rodata.str1.4
-                0x00042d24      0x285 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+                0x00042d24      0x285 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
                                 0x2f8 (size before relaxing)
  *fill*         0x00042fa9        0x3 00
  .rodata.str1.4
-                0x00042fac      0x1f8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+                0x00042fac      0x1f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
                                 0x268 (size before relaxing)
  .rodata.str1.4
-                0x000431a4      0x1b7 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+                0x000431a4      0x1b7 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
                                 0x290 (size before relaxing)
  *fill*         0x0004335b        0x1 00
  .rodata.str1.4
-                0x0004335c      0x22b /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+                0x0004335c      0x22b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
                                 0x29c (size before relaxing)
  *fill*         0x00043587        0x1 00
  .rodata.str1.4
-                0x00043588      0x1f8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+                0x00043588      0x1f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
                                 0x268 (size before relaxing)
  .rodata.str1.4
-                0x00043780      0x209 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+                0x00043780      0x209 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
                                 0x228 (size before relaxing)
  *fill*         0x00043989        0x3 00
  .rodata.str1.4
-                0x0004398c      0x43d /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+                0x0004398c      0x43d /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
                                 0x4cc (size before relaxing)
  *fill*         0x00043dc9        0x3 00
  .rodata.str1.4
-                0x00043dcc      0x7ad /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
+                0x00043dcc      0x7ad /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
                                 0x84c (size before relaxing)
  *fill*         0x00044579        0x3 00
- .rodata        0x0004457c      0x400 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
+ .rodata        0x0004457c      0x400 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
  .rodata.str1.4
-                0x0004497c       0x11 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
+                0x0004497c       0x11 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
                                  0x14 (size before relaxing)
  *fill*         0x0004498d        0x3 00
  .rodata.str1.4
-                0x00044990       0x4f /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+                0x00044990       0x4f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
                                  0x50 (size before relaxing)
  *fill*         0x000449df        0x1 00
  .rodata.str1.4
-                0x000449e0      0xbc4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+                0x000449e0      0xbc4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
                                 0xdfc (size before relaxing)
  .rodata.str1.4
-                0x000455a4      0x580 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+                0x000455a4      0x580 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
                                 0x60c (size before relaxing)
  .rodata.str1.4
-                0x00045b24       0x4f /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+                0x00045b24       0x4f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
                                  0x80 (size before relaxing)
  *fill*         0x00045b73        0x1 00
  .rodata.str1.4
-                0x00045b74       0x65 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+                0x00045b74       0x65 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
                                  0x68 (size before relaxing)
  *fill*         0x00045bd9        0x3 00
  .rodata.str1.4
-                0x00045bdc      0x21b /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+                0x00045bdc      0x21b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
                                 0x248 (size before relaxing)
  *fill*         0x00045df7        0x1 00
  .rodata.str1.4
-                0x00045df8      0x250 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+                0x00045df8      0x250 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
                                 0x2c0 (size before relaxing)
  .rodata.str1.4
-                0x00046048      0x20f /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+                0x00046048      0x20f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
                                 0x250 (size before relaxing)
  *fill*         0x00046257        0x1 00
  .rodata.str1.4
-                0x00046258       0xb8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+                0x00046258       0xb8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
                                 0x100 (size before relaxing)
  .rodata.str1.4
-                0x00046310       0xb7 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+                0x00046310       0xb7 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
                                  0xd0 (size before relaxing)
  *fill*         0x000463c7        0x1 00
  .rodata.str1.4
-                0x000463c8      0x7e8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+                0x000463c8      0x7e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
                                 0x8d0 (size before relaxing)
  .rodata.str1.4
-                0x00046bb0      0x2db /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+                0x00046bb0      0x2db /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
                                 0x374 (size before relaxing)
  *fill*         0x00046e8b        0x1 00
  .rodata.str1.4
-                0x00046e8c      0x2e9 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+                0x00046e8c      0x2e9 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
                                 0x328 (size before relaxing)
  *fill*         0x00047175        0x3 00
  .rodata.str1.4
-                0x00047178        0x3 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+                0x00047178        0x3 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
                                   0x4 (size before relaxing)
  *fill*         0x0004717b        0x1 00
  .rodata.str1.4
-                0x0004717c     0x1de4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+                0x0004717c     0x1de4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
                                0x1f2c (size before relaxing)
  .rodata.str1.4
-                0x00048f60      0x2e8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+                0x00048f60      0x2e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
                                 0x358 (size before relaxing)
  .rodata.str1.4
-                0x00049248      0x5a6 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+                0x00049248      0x5a6 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
                                 0x5e8 (size before relaxing)
  *fill*         0x000497ee        0x2 00
  .rodata.str1.4
-                0x000497f0      0x9da /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+                0x000497f0      0x9da /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
                                 0xbe8 (size before relaxing)
  *fill*         0x0004a1ca        0x2 00
  .rodata.str1.4
-                0x0004a1cc      0x1f8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+                0x0004a1cc      0x1f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
                                 0x268 (size before relaxing)
  .rodata.str1.4
                 0x0004a3c4      0x180 syslinksamples.o_debug
@@ -1313,64 +1313,64 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  .data          0x00053200       0x98 bin/release/obj/pseudo.ov5T
                 0x00053200                baud_arr
                 0x0005324c                baud_name
- .data          0x00053298        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+ .data          0x00053298        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
                 0x00053298                SharedRegion_module
- .data          0x0005329c        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
- .data          0x0005329c        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+ .data          0x0005329c        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+ .data          0x0005329c        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
                 0x0005329c                MessageQ_module
- .data          0x000532a0        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
- .data          0x000532a0        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
- .data          0x000532a0        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
- .data          0x000532a0        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+ .data          0x000532a0        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+ .data          0x000532a0        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+ .data          0x000532a0        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+ .data          0x000532a0        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
                 0x000532a0                FrameQ_module
- .data          0x000532a4        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+ .data          0x000532a4        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
                 0x000532a4                FrameQBufMgr_module
- .data          0x000532a8        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+ .data          0x000532a8        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
                 0x000532a8                ClientNotifyMgr_module
- .data          0x000532ac        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
- .data          0x000532ac        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+ .data          0x000532ac        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+ .data          0x000532ac        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
                 0x000532ac                HeapBufMP_module
- .data          0x000532b0        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
- .data          0x000532b0        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
- .data          0x000532b0        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
- .data          0x000532b4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
- .data          0x000532b4        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+ .data          0x000532b0        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+ .data          0x000532b0        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+ .data          0x000532b0        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
+ .data          0x000532b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+ .data          0x000532b4        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
                 0x000532b4                NameServer_module
- .data          0x000532b8        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+ .data          0x000532b8        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
                 0x000532b8                MultiProc_module
- .data          0x000532bc        0xc /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+ .data          0x000532bc        0xc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
                 0x000532bc                Gate_systemObject
                 0x000532c4                Gate_systemHandle
- .data          0x000532c8        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
- .data          0x000532c8        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
- .data          0x000532c8        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
- .data          0x000532c8        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
- .data          0x000532c8        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
- .data          0x000532c8        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
- .data          0x000532c8        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
- .data          0x000532c8        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
- .data          0x000532cc        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
- .data          0x000532cc        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
- .data          0x000532cc        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
- .data          0x000532cc        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
- .data          0x000532d0        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
- .data          0x000532d0        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+ .data          0x000532c8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+ .data          0x000532c8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+ .data          0x000532c8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+ .data          0x000532c8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+ .data          0x000532c8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+ .data          0x000532c8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+ .data          0x000532c8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+ .data          0x000532c8        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+ .data          0x000532cc        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+ .data          0x000532cc        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+ .data          0x000532cc        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+ .data          0x000532cc        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+ .data          0x000532d0        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+ .data          0x000532d0        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
                 0x000532d0                ListMP_module
- .data          0x000532d4        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+ .data          0x000532d4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
  .data          0x000532d4        0x0 syslinksamples.o_debug
  .data          0x000532d4        0x0 slaveloader.o_debug
  .data          0x000532d4        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/./libc_nonshared.a(elf-init.oS)
@@ -1397,72 +1397,72 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  *fill*         0x000532d5        0x3 00
  .bss           0x000532d8        0x4 bin/release/obj/syslink.ov5T
  .bss           0x000532dc        0x0 bin/release/obj/pseudo.ov5T
- .bss           0x000532dc      0x120 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+ .bss           0x000532dc      0x120 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
                 0x000532dc                SharedRegion_state
- .bss           0x000533fc       0x14 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+ .bss           0x000533fc       0x14 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
                 0x000533fc                Notify_state
- .bss           0x00053410        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+ .bss           0x00053410        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
                 0x00053410                MessageQ_state
- .bss           0x00053414       0x34 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+ .bss           0x00053414       0x34 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
                 0x00053414                SysLinkCfg_sysMemMap
                 0x0005341c                SysLink_params
                 0x00053420                Ipc_state
- .bss           0x00053448        0xc /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+ .bss           0x00053448        0xc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
                 0x00053448                RingIO_state
- .bss           0x00053454        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+ .bss           0x00053454        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
                 0x00053454                RingIOShm_state
- .bss           0x0005345c       0x20 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+ .bss           0x0005345c       0x20 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
                 0x0005345c                FrameQ_module_obj
- .bss           0x0005347c       0x20 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+ .bss           0x0005347c       0x20 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
                 0x0005347c                FrameQBufMgr_module_obj
- .bss           0x0005349c    0x2d024 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+ .bss           0x0005349c    0x2d024 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
                 0x0005349c                ClientNotifyMgr_module_obj
- .bss           0x000804c0        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+ .bss           0x000804c0        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
                 0x000804c0                HeapMemMP_state
- .bss           0x000804c4        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+ .bss           0x000804c4        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
                 0x000804c4                HeapBufMP_state
- .bss           0x000804c8       0x1c /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
- .bss           0x000804e4        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
- .bss           0x000804ec        0xc /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
- .bss           0x000804f8        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
- .bss           0x00080500        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
- .bss           0x00080508        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
- .bss           0x00080510        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
- .bss           0x00080518        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
- .bss           0x00080520        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
- .bss           0x00080528        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
- .bss           0x00080530        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
- .bss           0x00080538        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
- .bss           0x00080540        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
- .bss           0x00080548        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
- .bss           0x0008054c        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
- .bss           0x0008054c        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
- .bss           0x0008054c        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
- .bss           0x0008054c        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+ .bss           0x000804c8       0x1c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+ .bss           0x000804e4        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+ .bss           0x000804ec        0xc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+ .bss           0x000804f8        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+ .bss           0x00080500        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+ .bss           0x00080508        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+ .bss           0x00080510        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+ .bss           0x00080518        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+ .bss           0x00080520        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+ .bss           0x00080528        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+ .bss           0x00080530        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+ .bss           0x00080538        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+ .bss           0x00080540        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+ .bss           0x00080548        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+ .bss           0x0008054c        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+ .bss           0x0008054c        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
+ .bss           0x0008054c        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
+ .bss           0x0008054c        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
                 0x0008054c                curTrace
- .bss           0x00080550        0xc /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+ .bss           0x00080550        0xc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
                 0x00080550                NameServer_state
- .bss           0x0008055c      0x298 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+ .bss           0x0008055c      0x298 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
                 0x0008055c                MultiProc_state
- .bss           0x000807f4       0x18 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+ .bss           0x000807f4       0x18 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
                 0x000807f4                staticMutex
- .bss           0x0008080c        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
- .bss           0x0008080c        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
- .bss           0x0008080c        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
- .bss           0x00080814        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
- .bss           0x0008081c        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
- .bss           0x0008081c        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
- .bss           0x0008081c       0x18 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
- .bss           0x00080834        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
- .bss           0x00080838        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
- .bss           0x00080838        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
- .bss           0x00080838       0x2c /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+ .bss           0x0008080c        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+ .bss           0x0008080c        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+ .bss           0x0008080c        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+ .bss           0x00080814        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+ .bss           0x0008081c        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+ .bss           0x0008081c        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+ .bss           0x0008081c       0x18 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+ .bss           0x00080834        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+ .bss           0x00080838        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+ .bss           0x00080838        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+ .bss           0x00080838       0x2c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
                 0x00080838                ProcMgr_state
- .bss           0x00080864        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
- .bss           0x00080868        0x0 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
- .bss           0x00080868        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+ .bss           0x00080864        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+ .bss           0x00080868        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+ .bss           0x00080868        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
                 0x00080868                ListMP_state
- .bss           0x0008086c        0x8 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+ .bss           0x0008086c        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
  .bss           0x00080874        0x4 syslinksamples.o_debug
                 0x00080874                SysLinkSamples_oldTraceMask
  .bss           0x00080878        0x0 slaveloader.o_debug
@@ -1474,9 +1474,9 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  *(COMMON)
  COMMON         0x00080878      0x17c bin/release/obj/syslink.ov5T
                 0x00080878                syslink
- COMMON         0x000809f4        0x4 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+ COMMON         0x000809f4        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
                 0x000809f4                NameServer_Object
- COMMON         0x000809f8       0x10 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+ COMMON         0x000809f8       0x10 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
                 0x000809f8                MemoryOS_state
  COMMON         0x00080a08       0x28 syslinksamples.o_debug
                 0x00080a08                SysLinkSamples_runProcIds
@@ -1524,99 +1524,99 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  .ARM.attributes
                 0x000000da       0x2a bin/release/obj/pseudo.ov5T
  .ARM.attributes
-                0x00000104       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+                0x00000104       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
  .ARM.attributes
-                0x00000136       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+                0x00000136       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
  .ARM.attributes
-                0x00000168       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+                0x00000168       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
  .ARM.attributes
-                0x0000019a       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+                0x0000019a       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
  .ARM.attributes
-                0x000001cc       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+                0x000001cc       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
  .ARM.attributes
-                0x000001fe       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+                0x000001fe       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
  .ARM.attributes
-                0x00000230       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+                0x00000230       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
  .ARM.attributes
-                0x00000262       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+                0x00000262       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
  .ARM.attributes
-                0x00000294       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+                0x00000294       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
  .ARM.attributes
-                0x000002c6       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+                0x000002c6       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
  .ARM.attributes
-                0x000002f8       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+                0x000002f8       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
  .ARM.attributes
-                0x0000032a       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+                0x0000032a       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
  .ARM.attributes
-                0x0000035c       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+                0x0000035c       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
  .ARM.attributes
-                0x0000038e       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+                0x0000038e       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
  .ARM.attributes
-                0x000003c0       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+                0x000003c0       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
  .ARM.attributes
-                0x000003f2       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+                0x000003f2       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
  .ARM.attributes
-                0x00000424       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+                0x00000424       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
  .ARM.attributes
-                0x00000456       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+                0x00000456       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
  .ARM.attributes
-                0x00000488       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+                0x00000488       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
  .ARM.attributes
-                0x000004ba       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+                0x000004ba       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
  .ARM.attributes
-                0x000004ec       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+                0x000004ec       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
  .ARM.attributes
-                0x0000051e       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+                0x0000051e       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
  .ARM.attributes
-                0x00000550       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+                0x00000550       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
  .ARM.attributes
-                0x00000582       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+                0x00000582       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
  .ARM.attributes
-                0x000005b4       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+                0x000005b4       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
  .ARM.attributes
-                0x000005e6       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+                0x000005e6       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
  .ARM.attributes
-                0x00000618       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
+                0x00000618       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
  .ARM.attributes
-                0x0000064a       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
+                0x0000064a       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
  .ARM.attributes
-                0x0000067c       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+                0x0000067c       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
  .ARM.attributes
-                0x000006ae       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+                0x000006ae       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
  .ARM.attributes
-                0x000006e0       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+                0x000006e0       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
  .ARM.attributes
-                0x00000712       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+                0x00000712       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
  .ARM.attributes
-                0x00000744       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+                0x00000744       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
  .ARM.attributes
-                0x00000776       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+                0x00000776       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
  .ARM.attributes
-                0x000007a8       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+                0x000007a8       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
  .ARM.attributes
-                0x000007da       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+                0x000007da       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
  .ARM.attributes
-                0x0000080c       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+                0x0000080c       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
  .ARM.attributes
-                0x0000083e       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+                0x0000083e       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
  .ARM.attributes
-                0x00000870       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+                0x00000870       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
  .ARM.attributes
-                0x000008a2       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+                0x000008a2       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
  .ARM.attributes
-                0x000008d4       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+                0x000008d4       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
  .ARM.attributes
-                0x00000906       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+                0x00000906       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
  .ARM.attributes
-                0x00000938       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+                0x00000938       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
  .ARM.attributes
-                0x0000096a       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+                0x0000096a       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
  .ARM.attributes
-                0x0000099c       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+                0x0000099c       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
  .ARM.attributes
-                0x000009ce       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+                0x000009ce       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
  .ARM.attributes
-                0x00000a00       0x32 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+                0x00000a00       0x32 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
  .ARM.attributes
                 0x00000a32       0x32 syslinksamples.o_debug
  .ARM.attributes
@@ -1641,53 +1641,53 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  .comment       0x00000000       0x28 bin/release/obj/main.ov5T
  .comment       0x00000000       0x28 bin/release/obj/syslink.ov5T
  .comment       0x00000000       0x28 bin/release/obj/pseudo.ov5T
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
- .comment       0x00000000       0x28 /home/liao/src/syslinkapp/../syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+ .comment       0x00000000       0x28 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
  .comment       0x00000000       0x50 syslinksamples.o_debug
  .comment       0x00000000       0x28 slaveloader.o_debug
  .comment       0x00000000       0x28 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/./libc_nonshared.a(elf-init.oS)

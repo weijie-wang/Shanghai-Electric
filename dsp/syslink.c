@@ -59,6 +59,8 @@ typedef struct _ReCATSyslink
 
     unsigned char buffer[4096];
     Semaphore_Handle ioLock;
+	Semaphore_Handle SpiRec;
+	Semaphore_Handle SpiSend;
 }ReCATSyslink;
 
 ReCATSyslink syslink;
