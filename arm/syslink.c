@@ -30,7 +30,7 @@
 #include <ti/syslink/samples/hlos/slaveLoader/SlaveLoader.h>
 #include <ti/syslink/samples/hlos/common/SysLinkSamples.h>
 
-#define DEBUG
+//#define DEBUG_SYSLINK
 #define APP_INFO_TAG        0xBABA0000
 
 #define PATTERNKEY               1u
@@ -88,7 +88,7 @@ void* ReCATSyslinkRecv(size_t* len)
     char *data = malloc(*len);
     memcpy(data, dest, *len);
 
-#ifdef DEBUG
+#ifdef DEBUG_SYSLINK
     printf("[INFO] recv %d data: %s!\n", *len, data);
 #endif
 
@@ -119,7 +119,7 @@ void ReCATSyslinkSend(void *data, size_t len)
         Osal_printf ("MessageQ_put had a failure/error\n");
         return;
     }
-#ifdef DEBUG
+#ifdef DEBUG_SYSLINK
     printf("send %d data success!\n", len);
 #endif
 }
@@ -133,7 +133,7 @@ static int ReCATSyslinkAlloc ()
         status = Ipc_readConfig(syslink.dspProcId, APP_INFO_TAG, &syslink.aInfo, sizeof(App_Info) );
     } while (status == Ipc_E_FAIL);
 
-#ifdef DEBUG
+#ifdef DEBUG_SYSLINK
     printf("[INFO] dspID = %d self = %d\n", syslink.dspProcId, syslink.selfProcId);
     printf("[INFO] rMsgqName = %s, lMsgqName = %s, heapName = %s\n",
            syslink.aInfo.rMsgqName, syslink.aInfo.lMsgqName, syslink.aInfo.heapName);
@@ -173,7 +173,7 @@ static int ReCATSyslinkAlloc ()
 
     MessageQ_registerHeap(syslink.heapHandle, syslink.aInfo.heapId);
 
-#ifdef DEBUG
+#ifdef DEBUG_SYSLINK
     printf("[INFO] HeapName = %s, ID = %d, size = %d\n",
            syslink.aInfo.heapName, syslink.aInfo.heapId, syslink.heapSize);
 #endif
@@ -186,7 +186,7 @@ static int ReCATSyslinkAlloc ()
         goto FreeHeap;
     }
     
-#ifdef DEBUG
+#ifdef DEBUG_SYSLINK
     printf("[INFO] arm's messageQ = %s\n", syslink.aInfo.lMsgqName);
 #endif
 
@@ -201,7 +201,7 @@ static int ReCATSyslinkAlloc ()
                     status, syslink.dspProcId);
         goto FreeMessage;
     }
-#ifdef DEBUG
+#ifdef DEBUG_SYSLINK
     printf("[INFO] dsp's messageQ = %s\n", syslink.aInfo.rMsgqName);
 #endif
 

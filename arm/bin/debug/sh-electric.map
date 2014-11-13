@@ -436,7 +436,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
 .iplt
  *(.iplt)
 
-.text           0x00008dfc    0x3d294
+.text           0x00008dfc    0x3d11c
  *(.text.unlikely .text.*_unlikely)
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x00008dfc       0x3c /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
@@ -445,551 +445,551 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  .text          0x00008e5c       0x50 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtbegin.o
  .text          0x00008eac      0x100 bin/debug/obj/main.ov5T
                 0x00008eac                main
- .text          0x00008fac      0xd28 bin/debug/obj/syslink.ov5T
+ .text          0x00008fac      0xbb0 bin/debug/obj/syslink.ov5T
                 0x00008fac                ReCATSyslinkRecv
-                0x00009138                ReCATSyslinkSend
-                0x00009830                ReCATSyslinkInit
-                0x00009ab8                ReCATSyslinkClear
-                0x00009c2c                ReCATSyslinkReadBuffer
-                0x00009c84                ReCATSyslinkSendEvent
- .text          0x00009cd4      0x6a0 bin/debug/obj/pseudo.ov5T
-                0x00009cd4                ReCATSerialInit
-                0x00009dc4                ReCATSeialConf
-                0x0000a2e0                ReCATDataRecv
-                0x0000a33c                ReCATDataSend
- .text          0x0000a374     0x3adc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegion.o)
-                0x0000a478                SharedRegion_getConfig
-                0x0000a5f8                SharedRegion_setup
-                0x0000aca4                SharedRegion_destroy
-                0x0000af20                SharedRegion_start
-                0x0000b044                SharedRegion_stop
-                0x0000b168                SharedRegion_attach
-                0x0000b2c8                SharedRegion_detach
-                0x0000b430                SharedRegion_setEntry
-                0x0000b6f4                SharedRegion_getId
-                0x0000b8bc                SharedRegion_getPtr
-                0x0000baa4                SharedRegion_getSRPtr
-                0x0000bdc4                SharedRegion_clearEntry
-                0x0000c0f0                SharedRegion_getHeap
-                0x0000c360                SharedRegion_getIdByName
-                0x0000c578                SharedRegion_getEntry
-                0x0000c79c                SharedRegion_getCacheLineSize
-                0x0000c9ac                SharedRegion_isCacheEnabled
-                0x0000cbc0                SharedRegion_translateEnabled
-                0x0000cc34                SharedRegion_getNumRegions
-                0x0000cca8                SharedRegion_entryInit
-                0x0000ce38                SharedRegion_invalidSRPtr
-                0x0000ce54                SharedRegion_reserveMemory
-                0x0000d1a4                SharedRegion_getNumOffsetBits
-                0x0000d2ec                SharedRegion_checkOverlap
-                0x0000d550                SharedRegion_clearReservedMemory
-                0x0000d65c                SharedRegion_getRegionInfo
-                0x0000d85c                _SharedRegion_setRegions
-                0x0000dc00                _SharedRegion_clearRegions
- .text          0x0000de50     0x2a68 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Notify.o)
-                0x0000de50                Notify_getConfig
-                0x0000dfec                Notify_setup
-                0x0000e1d8                Notify_destroy
-                0x0000e30c                Notify_attach
-                0x0000e498                Notify_detach
-                0x0000e5a4                Notify_sharedMemReq
-                0x0000e734                Notify_eventAvailable
-                0x0000e9d0                Notify_intLineRegistered
-                0x0000ebf8                Notify_registerEventSingle
-                0x0000efe4                Notify_registerEvent
-                0x0000f3d8                Notify_unregisterEventSingle
-                0x0000f744                Notify_unregisterEvent
-                0x0000faec                Notify_sendEvent
-                0x0000fe78                Notify_disable
-                0x00010070                Notify_restore
-                0x00010258                Notify_disableEvent
-                0x00010588                Notify_enableEvent
- .text          0x000108b8     0x26fc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQ.o)
-                0x00010928                MessageQ_getConfig
-                0x00010aac                MessageQ_setup
-                0x00010c3c                MessageQ_destroy
-                0x00010d38                MessageQ_Params_init
-                0x00010ec8                MessageQ_create
-                0x00011110                MessageQ_delete
-                0x000113a0                MessageQ_open
-                0x00011620                MessageQ_close
-                0x000117d8                MessageQ_put
-                0x00011a34                MessageQ_get
-                0x00011cf8                MessageQ_count
-                0x00011ee0                MessageQ_staticMsgInit
-                0x00012044                MessageQ_alloc
-                0x000121c4                MessageQ_free
-                0x000123ac                MessageQ_registerHeap
-                0x000125a4                MessageQ_unregisterHeap
-                0x000126e0                MessageQ_unblock
-                0x00012878                MessageQ_setReplyQueue
-                0x00012a04                MessageQ_getQueueId
-                0x00012b08                MessageQ_setMsgTrace
-                0x00012c70                MessageQ_sharedMemReq
-                0x00012d9c                MessageQ_attach
-                0x00012ec0                MessageQ_detach
- .text          0x00012fb4     0x1570 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Ipc.o)
-                0x00012fb4                Ipc_getConfig
-                0x000131e4                Ipc_setup
-                0x00013a24                Ipc_destroy
-                0x00014104                Ipc_control
-                0x000142ec                Ipc_readConfig
-                0x00014408                Ipc_writeConfig
- .text          0x00014524     0x2ef8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIO.o)
-                0x00014524                RingIO_getConfig
-                0x000146a4                RingIO_setup
-                0x0001483c                RingIO_destroy
-                0x00014968                RingIO_Params_init
-                0x00014ae8                RingIO_create
-                0x000150cc                RingIO_delete
-                0x0001533c                RingIO_open
-                0x00015724                RingIO_openByAddr
-                0x00015b24                RingIO_close
-                0x00015da4                RingIO_registerNotifier
-                0x0001602c                RingIO_unregisterNotifier
-                0x000161e8                RingIO_setNotifyType
-                0x00016324                RingIO_getValidSize
-                0x00016400                RingIO_getEmptySize
-                0x000164dc                RingIO_getValidAttrSize
-                0x000165b8                RingIO_getEmptyAttrSize
-                0x00016694                RingIO_getAcquiredOffset
-                0x00016770                RingIO_getAcquiredSize
-                0x0001684c                RingIO_getWaterMark
-                0x00016928                RingIO_setWaterMark
-                0x000169f8                RingIO_acquire
-                0x00016b78                RingIO_release
-                0x00016c48                RingIO_cancel
-                0x00016d04                RingIO_getAttribute
-                0x00016dd4                RingIO_getvAttribute
-                0x00016efc                RingIO_setAttribute
-                0x00016fdc                RingIO_setvAttribute
-                0x000170ec                RingIO_flush
-                0x0001720c                RingIO_sendNotify
-                0x000172f0                RingIO_sharedMemReq
- .text          0x0001741c      0x5c4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShm.o)
-                0x0001741c                RingIOShm_getConfig
-                0x0001759c                RingIOShm_setup
-                0x00017734                RingIOShm_destroy
-                0x00017860                RingIOShm_Params_init
- .text          0x000179e0     0x5adc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ.o)
-                0x00017ae4                FrameQ_getConfig
-                0x00017c7c                FrameQ_setup
-                0x00017f1c                FrameQ_destroy
-                0x0001812c                FrameQ_create
-                0x000183cc                FrameQ_delete
-                0x000187b8                FrameQ_open
-                0x000190dc                FrameQ_close
-                0x000194a4                FrameQ_alloc
-                0x0001973c                FrameQ_allocv
-                0x00019a3c                FrameQ_free
-                0x00019ca4                FrameQ_freev
-                0x00019fb8                FrameQ_put
-                0x0001a34c                FrameQ_putv
-                0x0001a7b0                FrameQ_get
-                0x0001ab0c                FrameQ_getv
-                0x0001afc4                FrameQ_registerNotifier
-                0x0001b448                FrameQ_unregisterNotifier
-                0x0001b79c                FrameQ_dup
-                0x0001ba60                FrameQ_sendNotify
-                0x0001bc7c                FrameQ_getNumFrames
-                0x0001bed8                FrameQ_getvNumFrames
-                0x0001c13c                FrameQ_getNumFreeFrames
-                0x0001c30c                FrameQ_getvNumFreeFrames
-                0x0001c598                FrameQ_control
-                0x0001c710                FrameQ_ShMem_Params_init
-                0x0001c8a8                FrameQ_Params_init
-                0x0001d310                FrameQ_ShMem_sharedMemReq
- .text          0x0001d4bc     0x5e3c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgr.o)
-                0x0001d5c0                FrameQBufMgr_getConfig
-                0x0001d760                FrameQBufMgr_setup
-                0x0001da00                FrameQBufMgr_destroy
-                0x0001dc30                FrameQBufMgr_create
-                0x0001debc                FrameQBufMgr_delete
-                0x0001e2ec                FrameQBufMgr_open
-                0x0001ebb8                FrameQBufMgr_close
-                0x0001ed88                FrameQBufMgr_alloc
-                0x0001f06c                FrameQBufMgr_allocv
-                0x0001f53c                FrameQBufMgr_free
-                0x0001f854                FrameQBufMgr_freev
-                0x0001fc7c                FrameQBufMgr_dup
-                0x0002001c                FrameQBufMgr_dupv
-                0x000203e4                FrameQBufMgr_registerNotifier
-                0x000206f8                FrameQBufMgr_unregisterNotifier
-                0x0002098c                FrameQBufMgr_add
-                0x00020ae8                FrameQBufMgr_remove
-                0x00020c7c                FrameQBufMgr_writeBackHeaderBuf
-                0x00020e9c                FrameQBufMgr_invalidateHeaderBuf
-                0x000210cc                FrameQBufMgr_writeBackFrameBuf
-                0x000213a0                FrameQBufMgr_invalidateFrameBuf
-                0x00021674                FrameQBufMgr_writeBack
-                0x00021998                FrameQBufMgr_invalidate
-                0x00021ca8                FrameQBufMgr_translateAddr
-                0x00021ff8                FrameQBufMgr_getId
-                0x000220a0                FrameQBufMgr_getHandle
-                0x000221e4                FrameQBufMgr_getKnlHandle
-                0x000222b4                FrameQBufMgr_getNumFreeFrames
-                0x00022488                FrameQBufMgr_getvNumFreeFrames
-                0x00022714                FrameQBufMgr_getBaseHeaderSize
-                0x0002277c                FrameQBufMgr_isSupportedInterface
-                0x000227c4                FrameQBufMgr_isSupportedBufInterface
-                0x00022828                FrameQBufMgr_ShMem_Params_init
-                0x000229c0                FrameQBufMgr_Params_init
- .text          0x000232f8     0x514c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgr.o)
-                0x000232f8                ClientNotifyMgr_sharedMemModReq
-                0x00023360                ClientNotifyMgr_sharedMemReq
-                0x000234d4                ClientNotifyMgr_callBack
-                0x00023c8c                ClientNotifyMgr_getConfig
-                0x00023e2c                ClientNotifyMgr_setup
-                0x000241c8                ClientNotifyMgr_destroy
-                0x00024374                ClientNotifyMgr_Params_init
-                0x00024514                ClientNotifyMgr_create
-                0x00024f08                ClientNotifyMgr_delete
-                0x000254a8                ClientNotifyMgr_open
-                0x00025630                ClientNotifyMgr_close
-                0x00025754                ClientNotifyMgr_registerClient
-                0x00025e84                ClientNotifyMgr_unregisterClient
-                0x0002642c                ClientNotifyMgr_enableNotification
-                0x00026700                ClientNotifyMgr_disableNotification
-                0x000269cc                ClientNotifyMgr_sendNotification
-                0x000271a0                ClientNotifyMgr_sendForceNotification
-                0x0002764c                ClientNotifyMgr_sendNotificationMulti
-                0x00027f38                ClientNotifyMgr_sendForceNotificationMulti
- .text          0x00028444     0x23f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMP.o)
-                0x00028444                HeapMemMP_getConfig
-                0x000285cc                HeapMemMP_setup
-                0x00028750                HeapMemMP_destroy
-                0x0002887c                HeapMemMP_Params_init
-                0x00028a08                HeapMemMP_create
-                0x00028d24                HeapMemMP_delete
-                0x00028fa8                HeapMemMP_openByAddr
-                0x0002926c                HeapMemMP_open
-                0x00029538                HeapMemMP_close
-                0x000297b4                HeapMemMP_alloc
-                0x000299bc                HeapMemMP_free
-                0x00029c18                HeapMemMP_getStats
-                0x00029e44                HeapMemMP_getExtendedStats
-                0x0002a058                HeapMemMP_sharedMemReq
-                0x0002a1dc                HeapMemMP_getKnlHandle
-                0x0002a364                HeapMemMP_getUsrHandle
-                0x0002a520                _HeapMemMP_create
-                0x0002a6fc                HeapMemMP_restore
- .text          0x0002a83c     0x2238 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMP.o)
-                0x0002a83c                HeapBufMP_getConfig
-                0x0002a9c4                HeapBufMP_setup
-                0x0002ab54                HeapBufMP_destroy
-                0x0002ac8c                HeapBufMP_Params_init
-                0x0002ae1c                HeapBufMP_create
-                0x0002b124                HeapBufMP_delete
-                0x0002b3a0                HeapBufMP_openByAddr
-                0x0002b66c                HeapBufMP_open
-                0x0002b93c                HeapBufMP_close
-                0x0002bbb8                HeapBufMP_alloc
-                0x0002bdc4                HeapBufMP_free
-                0x0002c024                HeapBufMP_getStats
-                0x0002c254                HeapBufMP_isBlocking
-                0x0002c34c                HeapBufMP_getExtendedStats
-                0x0002c578                HeapBufMP_sharedMemReq
-                0x0002c700                HeapBufMP_getKnlHandle
-                0x0002c890                _HeapBufMP_create
- .text          0x0002ca74     0x21bc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMP.o)
-                0x0002ca74                GateMP_getConfig
-                0x0002cc04                GateMP_setup
-                0x0002ce68                GateMP_destroy
-                0x0002d024                GateMP_Params_init
-                0x0002d1cc                GateMP_Instance_init
-                0x0002d384                GateMP_Instance_finalize
-                0x0002d3e0                _GateMP_create
-                0x0002d518                GateMP_create
-                0x0002d748                GateMP_delete
-                0x0002d9c4                GateMP_open
-                0x0002dcbc                GateMP_openByAddr
-                0x0002dfc8                GateMP_close
-                0x0002e2cc                GateMP_enter
-                0x0002e498                GateMP_leave
-                0x0002e670                GateMP_sharedMemReq
-                0x0002e78c                GateMP_getDefaultRemote
-                0x0002e88c                GateMP_getSharedAddr
-                0x0002e980                GateMP_setReserved
-                0x0002ea38                GateMP_getLocalProtect
-                0x0002ea8c                GateMP_getRemoteProtect
-                0x0002eae0                GateMP_getKnlHandle
- .text          0x0002ec30      0x4fc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegionDrv.o)
-                0x0002ec30                SharedRegionDrv_open
-                0x0002edc8                SharedRegionDrv_close
-                0x0002eee4                SharedRegionDrv_ioctl
- .text          0x0002f12c      0x78c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NotifyDrvUsr.o)
-                0x0002f12c                NotifyDrvUsr_open
-                0x0002f438                NotifyDrvUsr_close
-                0x0002f60c                NotifyDrvUsr_ioctl
-                0x0002f744                _NotifyDrvUsr_eventWorker
- .text          0x0002f8b8      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMPDrv.o)
-                0x0002f8b8                HeapBufMPDrv_open
-                0x0002fa50                HeapBufMPDrv_close
-                0x0002fb6c                HeapBufMPDrv_ioctl
- .text          0x0002fca0      0x3e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQDrv.o)
-                0x0002fca0                MessageQDrv_open
-                0x0002fe34                MessageQDrv_close
-                0x0002ff50                MessageQDrv_ioctl
- .text          0x00030084      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(IpcDrv.o)
-                0x00030084                IpcDrv_open
-                0x0003021c                IpcDrv_close
-                0x00030338                IpcDrv_ioctl
- .text          0x0003046c      0x3e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQDrv.o)
-                0x0003046c                FrameQDrv_open
-                0x00030600                FrameQDrv_close
-                0x0003071c                FrameQDrv_ioctl
- .text          0x00030850      0x3e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgrDrv.o)
-                0x00030850                FrameQBufMgrDrv_open
-                0x000309e4                FrameQBufMgrDrv_close
-                0x00030b00                FrameQBufMgrDrv_ioctl
- .text          0x00030c34      0x3e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgrDrv.o)
-                0x00030c34                ClientNotifyMgrDrv_open
-                0x00030dc8                ClientNotifyMgrDrv_close
-                0x00030ee4                ClientNotifyMgrDrv_ioctl
- .text          0x00031018      0x3e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIODrv.o)
-                0x00031018                RingIODrv_open
-                0x000311ac                RingIODrv_close
-                0x000312c8                RingIODrv_ioctl
- .text          0x000313fc      0x3e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShmDrv.o)
-                0x000313fc                RingIOShmDrv_open
-                0x00031590                RingIOShmDrv_close
-                0x000316ac                RingIOShmDrv_ioctl
- .text          0x000317e0      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMPDrv.o)
-                0x000317e0                HeapMemMPDrv_open
-                0x00031978                HeapMemMPDrv_close
-                0x00031a94                HeapMemMPDrv_ioctl
- .text          0x00031bc8      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMPDrv.o)
-                0x00031bc8                GateMPDrv_open
-                0x00031d60                GateMPDrv_close
-                0x00031e7c                GateMPDrv_ioctl
- .text          0x00031fb0      0x58c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMutex.o)
-                0x00031fb0                GateMutex_Instance_init
-                0x000320b8                GateMutex_Instance_finalize
-                0x00032150                GateMutex_enter
-                0x00032224                GateMutex_leave
-                0x000322e4                GateMutex_create
-                0x000323ec                GateMutex_delete
- .text          0x0003253c      0xa34 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Memory.o)
-                0x00032704                Memory_alloc
-                0x00032898                Memory_calloc
-                0x00032a1c                Memory_free
-                0x00032b14                Memory_getStats
-                0x00032be8                Memory_query
-                0x00032cd8                Memory_getMaxDefaultTypeAlign
-                0x00032cf4                Memory_valloc
-                0x00032edc                Memory_translate
- .text          0x00032f70     0x15f4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(List.o)
-                0x00032f70                List_Params_init
-                0x0003303c                List_create
-                0x00033160                List_delete
-                0x000332d4                List_construct
-                0x000333cc                List_destruct
-                0x000334c4                List_elemClear
-                0x000335b8                List_empty
-                0x000336dc                List_get
-                0x000337f8                List_put
-                0x0003396c                List_next
-                0x00033aac                List_prev
-                0x00033c54                List_insert
-                0x00033e2c                List_remove
-                0x00033fa4                List_putHead
-                0x00034108                List_dequeue
-                0x00034244                List_enqueue
-                0x000343d4                List_enqueueHead
- .text          0x00034564      0x5f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(String.o)
-                0x00034564                String_cat
-                0x0003461c                String_cmp
-                0x00034750                String_ncmp
-                0x00034858                String_cpy
-                0x000348d4                String_ncpy
-                0x000349b4                String_len
-                0x00034a28                String_hexToStr
-                0x00034abc                String_hash
- .text          0x00034b5c      0x560 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Trace.o)
-                0x00034b5c                _GT_0trace
-                0x00034be0                _GT_1trace
-                0x00034c70                _GT_2trace
-                0x00034d08                _GT_3trace
-                0x00034da8                _GT_4trace
-                0x00034e58                _GT_5trace
-                0x00034f18                _GT_6trace
-                0x00034fe8                _GT_setFailureReason
-                0x0003504c                _GT_setTrace
- .text          0x000350bc     0x2d80 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServer.o)
-                0x000350bc                NameServer_getConfig
-                0x00035270                NameServer_setup
-                0x000353e8                NameServer_destroy
-                0x000354e4                NameServer_Params_init
-                0x00035678                NameServer_create
-                0x0003591c                NameServer_delete
-                0x00035b60                NameServer_open
-                0x00035e14                NameServer_close
-                0x00036078                NameServer_add
-                0x000363b8                NameServer_addUInt32
-                0x00036598                NameServer_remove
-                0x000367dc                NameServer_removeEntry
-                0x00036a14                NameServer_get
-                0x00036e3c                NameServer_getLocal
-                0x000371fc                NameServer_getUInt32
-                0x000374c8                NameServer_getLocalUInt32
-                0x00037784                NameServer_match
-                0x00037a48                NameServer_getHandle
-                0x00037c74                NameServer_isRegistered
- .text          0x00037e3c      0xcf4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProc.o)
-                0x00037e3c                MultiProc_getConfig
-                0x00037ff0                MultiProc_setup
-                0x00038190                MultiProc_destroy
-                0x0003828c                MultiProc_setLocalId
-                0x00038498                MultiProc_getId
-                0x000386a8                MultiProc_getName
-                0x00038838                MultiProc_getNumProcessors
-                0x000388b4                MultiProc_self
-                0x00038930                MultiProc_getSlot
- .text          0x00038b30      0x10c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Gate.o)
-                0x00038b30                Gate_enterSystem
-                0x00038b94                Gate_leaveSystem
- .text          0x00038c3c       0xc8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SysLink.o)
-                0x00038c3c                SysLink_setup
-                0x00038cac                SysLink_destroy
- .text          0x00038d04      0x4c0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Cache.o)
-                0x00038d04                Cache_inv
-                0x00038e0c                Cache_wb
-                0x00038f14                Cache_wbInv
-                0x0003901c                Cache_wait
-                0x000390d4                Cache_setMode
- .text          0x000391c4      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServerDrv.o)
-                0x000391c4                NameServerDrv_open
-                0x0003935c                NameServerDrv_close
-                0x00039478                NameServerDrv_ioctl
- .text          0x000395ac      0x3b4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProcDrv.o)
-                0x000395ac                MultiProcDrv_open
-                0x00039740                MultiProcDrv_close
-                0x0003985c                MultiProcDrv_ioctl
- .text          0x00039960      0x160 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(TraceDrv.o)
-                0x00039960                TraceDrv_ioctl
- .text          0x00039ac0       0xf0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(CacheDrv.o)
-                0x00039ac0                CacheDrv_ioctl
- .text          0x00039bb0     0x15fc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MemoryOS.o)
-                0x00039e98                MemoryOS_setup
-                0x0003a044                MemoryOS_destroy
-                0x0003a1f8                MemoryOS_alloc
-                0x0003a30c                MemoryOS_calloc
-                0x0003a410                MemoryOS_free
-                0x0003a504                MemoryOS_map
-                0x0003a960                MemoryOS_unmap
-                0x0003ac9c                MemoryOS_copy
-                0x0003ae34                MemoryOS_set
-                0x0003afbc                MemoryOS_translate
- .text          0x0003b1ac      0x6e0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalDrv.o)
-                0x0003b1ac                OsalDrv_open
-                0x0003b34c                OsalDrv_close
-                0x0003b470                OsalDrv_map
-                0x0003b674                OsalDrv_unmap
-                0x0003b750                OsalDrv_ioctl
- .text          0x0003b88c      0x530 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalMutex.o)
-                0x0003b88c                OsalMutex_create
-                0x0003b9f4                OsalMutex_delete
-                0x0003bb60                OsalMutex_enter
-                0x0003bc90                OsalMutex_leave
- .text          0x0003bdbc       0x58 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalPrint.o)
-                0x0003bdbc                Osal_printf
- .text          0x0003be14     0x4f2c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgr.o)
-                0x0003be14                ProcMgr_getConfig
-                0x0003bf94                ProcMgr_setup
-                0x0003c144                ProcMgr_destroy
-                0x0003c31c                ProcMgr_Params_init
-                0x0003c49c                ProcMgr_create
-                0x0003c8d8                ProcMgr_delete
-                0x0003cb94                ProcMgr_open
-                0x0003d234                ProcMgr_close
-                0x0003d670                ProcMgr_getAttachParams
-                0x0003d7e8                ProcMgr_attach
-                0x0003dc5c                ProcMgr_detach
-                0x0003deb4                ProcMgr_load
-                0x0003e1c8                ProcMgr_unload
-                0x0003e340                ProcMgr_getStartParams
-                0x0003e4a0                ProcMgr_start
-                0x0003e618                ProcMgr_stop
-                0x0003e778                ProcMgr_getState
-                0x0003e8e4                ProcMgr_read
-                0x0003eb80                ProcMgr_write
-                0x0003ee1c                ProcMgr_control
-                0x0003efa8                ProcMgr_translateAddr
-                0x0003f41c                ProcMgr_getSymbolAddress
-                0x0003f6ac                ProcMgr_map
-                0x0003fbd0                ProcMgr_unmap
-                0x000402d8                ProcMgr_registerNotify
-                0x000404e4                ProcMgr_getMaxMemoryRegions
-                0x000405a4                ProcMgr_getProcInfo
-                0x00040794                ProcMgr_getSectionInfo
-                0x000409a4                ProcMgr_getSectionData
-                0x00040be0                ProcMgr_getLoadedFileId
- .text          0x00040d40      0x4f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgrDrvUsr.o)
-                0x00040d40                ProcMgrDrvUsr_open
-                0x00040ed8                ProcMgrDrvUsr_close
-                0x00040ff4                ProcMgrDrvUsr_ioctl
- .text          0x00041238      0xa30 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ_common.o)
-                0x00041238                FrameQ_isSupportedInterface
-                0x00041280                FrameQ_getExtendedHeaderPtr
-                0x00041300                FrameQ_getNumFrameBuffers
-                0x000413f0                FrameQ_getFrameBuffer
-                0x00041544                FrameQ_getFrameBufSize
-                0x00041694                FrameQ_getFrameBufValidSize
-                0x000417f0                FrameQ_getFrameBufDataStartOffset
-                0x00041948                FrameQ_setFrameBufValidSize
-                0x00041ad8                FrameQ_setFrameBufDataStartOffset
- .text          0x00041c68     0x292c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMP.o)
-                0x00041c68                ListMP_getConfig
-                0x00041de8                ListMP_setup
-                0x00041f70                ListMP_destroy
-                0x000420a0                ListMP_Params_init
-                0x00042230                ListMP_create
-                0x0004259c                ListMP_delete
-                0x00042808                ListMP_sharedMemReq
-                0x000429f4                ListMP_open
-                0x00042c88                ListMP_openByAddr
-                0x00042ec4                ListMP_close
-                0x0004312c                ListMP_empty
-                0x000432e8                ListMP_getHead
-                0x000434b4                ListMP_getTail
-                0x00043674                ListMP_putHead
-                0x000438c8                ListMP_putTail
-                0x00043b24                ListMP_insert
-                0x00043df4                ListMP_remove
-                0x00044050                ListMP_next
-                0x00044254                ListMP_prev
-                0x00044458                _ListMP_create
-                0x00044570                ListMP_getGate
- .text          0x00044594      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMPDrv.o)
-                0x00044594                ListMPDrv_open
-                0x0004472c                ListMPDrv_close
-                0x00044848                ListMPDrv_ioctl
- .text          0x0004497c      0x3f8 syslinksamples.o_debug
-                0x0004497c                SysLinkSamples_startup
-                0x000449b4                SysLinkSamples_shutdown
-                0x000449ec                SysLinkSamples_setHiddenProcId
-                0x00044a04                SysLinkSamples_isAvailableProcId
-                0x00044a18                SysLinkSamples_setToRunProcIds
-                0x00044b98                SysLinkSamples_toRunProcId
-                0x00044bac                SysLinkSamples_osStartup
-                0x00044d54                SysLinkSamples_osShutdown
- .text          0x00044d74     0x1190 slaveloader.o_debug
-                0x000451dc                SlaveLoader_startupArgs
-                0x000455a0                SlaveLoader_startup
-                0x00045904                SlaveLoader_shutdown
-                0x00045bc8                SlaveLoader_printStatus
- .text          0x00045f04       0x64 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/./libc_nonshared.a(elf-init.oS)
-                0x00045f04                __libc_csu_init
-                0x00045f64                __libc_csu_fini
- .text          0x00045f68      0x114 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_udivsi3.o)
-                0x00045f68                __udivsi3
-                0x00045f68                __aeabi_uidiv
-                0x0004605c                __aeabi_uidivmod
- .text          0x0004607c       0x14 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_dvmd_lnx.o)
-                0x0004607c                __aeabi_idiv0
-                0x0004607c                __aeabi_ldiv0
- .text          0x00046090        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtend.o
- .text          0x00046090        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
+                0x00009110                ReCATSyslinkSend
+                0x000096b8                ReCATSyslinkInit
+                0x00009940                ReCATSyslinkClear
+                0x00009ab4                ReCATSyslinkReadBuffer
+                0x00009b0c                ReCATSyslinkSendEvent
+ .text          0x00009b5c      0x6a0 bin/debug/obj/pseudo.ov5T
+                0x00009b5c                ReCATSerialInit
+                0x00009c4c                ReCATSeialConf
+                0x0000a168                ReCATDataRecv
+                0x0000a1c4                ReCATDataSend
+ .text          0x0000a1fc     0x3adc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegion.o)
+                0x0000a300                SharedRegion_getConfig
+                0x0000a480                SharedRegion_setup
+                0x0000ab2c                SharedRegion_destroy
+                0x0000ada8                SharedRegion_start
+                0x0000aecc                SharedRegion_stop
+                0x0000aff0                SharedRegion_attach
+                0x0000b150                SharedRegion_detach
+                0x0000b2b8                SharedRegion_setEntry
+                0x0000b57c                SharedRegion_getId
+                0x0000b744                SharedRegion_getPtr
+                0x0000b92c                SharedRegion_getSRPtr
+                0x0000bc4c                SharedRegion_clearEntry
+                0x0000bf78                SharedRegion_getHeap
+                0x0000c1e8                SharedRegion_getIdByName
+                0x0000c400                SharedRegion_getEntry
+                0x0000c624                SharedRegion_getCacheLineSize
+                0x0000c834                SharedRegion_isCacheEnabled
+                0x0000ca48                SharedRegion_translateEnabled
+                0x0000cabc                SharedRegion_getNumRegions
+                0x0000cb30                SharedRegion_entryInit
+                0x0000ccc0                SharedRegion_invalidSRPtr
+                0x0000ccdc                SharedRegion_reserveMemory
+                0x0000d02c                SharedRegion_getNumOffsetBits
+                0x0000d174                SharedRegion_checkOverlap
+                0x0000d3d8                SharedRegion_clearReservedMemory
+                0x0000d4e4                SharedRegion_getRegionInfo
+                0x0000d6e4                _SharedRegion_setRegions
+                0x0000da88                _SharedRegion_clearRegions
+ .text          0x0000dcd8     0x2a68 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Notify.o)
+                0x0000dcd8                Notify_getConfig
+                0x0000de74                Notify_setup
+                0x0000e060                Notify_destroy
+                0x0000e194                Notify_attach
+                0x0000e320                Notify_detach
+                0x0000e42c                Notify_sharedMemReq
+                0x0000e5bc                Notify_eventAvailable
+                0x0000e858                Notify_intLineRegistered
+                0x0000ea80                Notify_registerEventSingle
+                0x0000ee6c                Notify_registerEvent
+                0x0000f260                Notify_unregisterEventSingle
+                0x0000f5cc                Notify_unregisterEvent
+                0x0000f974                Notify_sendEvent
+                0x0000fd00                Notify_disable
+                0x0000fef8                Notify_restore
+                0x000100e0                Notify_disableEvent
+                0x00010410                Notify_enableEvent
+ .text          0x00010740     0x26fc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQ.o)
+                0x000107b0                MessageQ_getConfig
+                0x00010934                MessageQ_setup
+                0x00010ac4                MessageQ_destroy
+                0x00010bc0                MessageQ_Params_init
+                0x00010d50                MessageQ_create
+                0x00010f98                MessageQ_delete
+                0x00011228                MessageQ_open
+                0x000114a8                MessageQ_close
+                0x00011660                MessageQ_put
+                0x000118bc                MessageQ_get
+                0x00011b80                MessageQ_count
+                0x00011d68                MessageQ_staticMsgInit
+                0x00011ecc                MessageQ_alloc
+                0x0001204c                MessageQ_free
+                0x00012234                MessageQ_registerHeap
+                0x0001242c                MessageQ_unregisterHeap
+                0x00012568                MessageQ_unblock
+                0x00012700                MessageQ_setReplyQueue
+                0x0001288c                MessageQ_getQueueId
+                0x00012990                MessageQ_setMsgTrace
+                0x00012af8                MessageQ_sharedMemReq
+                0x00012c24                MessageQ_attach
+                0x00012d48                MessageQ_detach
+ .text          0x00012e3c     0x1570 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Ipc.o)
+                0x00012e3c                Ipc_getConfig
+                0x0001306c                Ipc_setup
+                0x000138ac                Ipc_destroy
+                0x00013f8c                Ipc_control
+                0x00014174                Ipc_readConfig
+                0x00014290                Ipc_writeConfig
+ .text          0x000143ac     0x2ef8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIO.o)
+                0x000143ac                RingIO_getConfig
+                0x0001452c                RingIO_setup
+                0x000146c4                RingIO_destroy
+                0x000147f0                RingIO_Params_init
+                0x00014970                RingIO_create
+                0x00014f54                RingIO_delete
+                0x000151c4                RingIO_open
+                0x000155ac                RingIO_openByAddr
+                0x000159ac                RingIO_close
+                0x00015c2c                RingIO_registerNotifier
+                0x00015eb4                RingIO_unregisterNotifier
+                0x00016070                RingIO_setNotifyType
+                0x000161ac                RingIO_getValidSize
+                0x00016288                RingIO_getEmptySize
+                0x00016364                RingIO_getValidAttrSize
+                0x00016440                RingIO_getEmptyAttrSize
+                0x0001651c                RingIO_getAcquiredOffset
+                0x000165f8                RingIO_getAcquiredSize
+                0x000166d4                RingIO_getWaterMark
+                0x000167b0                RingIO_setWaterMark
+                0x00016880                RingIO_acquire
+                0x00016a00                RingIO_release
+                0x00016ad0                RingIO_cancel
+                0x00016b8c                RingIO_getAttribute
+                0x00016c5c                RingIO_getvAttribute
+                0x00016d84                RingIO_setAttribute
+                0x00016e64                RingIO_setvAttribute
+                0x00016f74                RingIO_flush
+                0x00017094                RingIO_sendNotify
+                0x00017178                RingIO_sharedMemReq
+ .text          0x000172a4      0x5c4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShm.o)
+                0x000172a4                RingIOShm_getConfig
+                0x00017424                RingIOShm_setup
+                0x000175bc                RingIOShm_destroy
+                0x000176e8                RingIOShm_Params_init
+ .text          0x00017868     0x5adc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ.o)
+                0x0001796c                FrameQ_getConfig
+                0x00017b04                FrameQ_setup
+                0x00017da4                FrameQ_destroy
+                0x00017fb4                FrameQ_create
+                0x00018254                FrameQ_delete
+                0x00018640                FrameQ_open
+                0x00018f64                FrameQ_close
+                0x0001932c                FrameQ_alloc
+                0x000195c4                FrameQ_allocv
+                0x000198c4                FrameQ_free
+                0x00019b2c                FrameQ_freev
+                0x00019e40                FrameQ_put
+                0x0001a1d4                FrameQ_putv
+                0x0001a638                FrameQ_get
+                0x0001a994                FrameQ_getv
+                0x0001ae4c                FrameQ_registerNotifier
+                0x0001b2d0                FrameQ_unregisterNotifier
+                0x0001b624                FrameQ_dup
+                0x0001b8e8                FrameQ_sendNotify
+                0x0001bb04                FrameQ_getNumFrames
+                0x0001bd60                FrameQ_getvNumFrames
+                0x0001bfc4                FrameQ_getNumFreeFrames
+                0x0001c194                FrameQ_getvNumFreeFrames
+                0x0001c420                FrameQ_control
+                0x0001c598                FrameQ_ShMem_Params_init
+                0x0001c730                FrameQ_Params_init
+                0x0001d198                FrameQ_ShMem_sharedMemReq
+ .text          0x0001d344     0x5e3c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgr.o)
+                0x0001d448                FrameQBufMgr_getConfig
+                0x0001d5e8                FrameQBufMgr_setup
+                0x0001d888                FrameQBufMgr_destroy
+                0x0001dab8                FrameQBufMgr_create
+                0x0001dd44                FrameQBufMgr_delete
+                0x0001e174                FrameQBufMgr_open
+                0x0001ea40                FrameQBufMgr_close
+                0x0001ec10                FrameQBufMgr_alloc
+                0x0001eef4                FrameQBufMgr_allocv
+                0x0001f3c4                FrameQBufMgr_free
+                0x0001f6dc                FrameQBufMgr_freev
+                0x0001fb04                FrameQBufMgr_dup
+                0x0001fea4                FrameQBufMgr_dupv
+                0x0002026c                FrameQBufMgr_registerNotifier
+                0x00020580                FrameQBufMgr_unregisterNotifier
+                0x00020814                FrameQBufMgr_add
+                0x00020970                FrameQBufMgr_remove
+                0x00020b04                FrameQBufMgr_writeBackHeaderBuf
+                0x00020d24                FrameQBufMgr_invalidateHeaderBuf
+                0x00020f54                FrameQBufMgr_writeBackFrameBuf
+                0x00021228                FrameQBufMgr_invalidateFrameBuf
+                0x000214fc                FrameQBufMgr_writeBack
+                0x00021820                FrameQBufMgr_invalidate
+                0x00021b30                FrameQBufMgr_translateAddr
+                0x00021e80                FrameQBufMgr_getId
+                0x00021f28                FrameQBufMgr_getHandle
+                0x0002206c                FrameQBufMgr_getKnlHandle
+                0x0002213c                FrameQBufMgr_getNumFreeFrames
+                0x00022310                FrameQBufMgr_getvNumFreeFrames
+                0x0002259c                FrameQBufMgr_getBaseHeaderSize
+                0x00022604                FrameQBufMgr_isSupportedInterface
+                0x0002264c                FrameQBufMgr_isSupportedBufInterface
+                0x000226b0                FrameQBufMgr_ShMem_Params_init
+                0x00022848                FrameQBufMgr_Params_init
+ .text          0x00023180     0x514c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgr.o)
+                0x00023180                ClientNotifyMgr_sharedMemModReq
+                0x000231e8                ClientNotifyMgr_sharedMemReq
+                0x0002335c                ClientNotifyMgr_callBack
+                0x00023b14                ClientNotifyMgr_getConfig
+                0x00023cb4                ClientNotifyMgr_setup
+                0x00024050                ClientNotifyMgr_destroy
+                0x000241fc                ClientNotifyMgr_Params_init
+                0x0002439c                ClientNotifyMgr_create
+                0x00024d90                ClientNotifyMgr_delete
+                0x00025330                ClientNotifyMgr_open
+                0x000254b8                ClientNotifyMgr_close
+                0x000255dc                ClientNotifyMgr_registerClient
+                0x00025d0c                ClientNotifyMgr_unregisterClient
+                0x000262b4                ClientNotifyMgr_enableNotification
+                0x00026588                ClientNotifyMgr_disableNotification
+                0x00026854                ClientNotifyMgr_sendNotification
+                0x00027028                ClientNotifyMgr_sendForceNotification
+                0x000274d4                ClientNotifyMgr_sendNotificationMulti
+                0x00027dc0                ClientNotifyMgr_sendForceNotificationMulti
+ .text          0x000282cc     0x23f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMP.o)
+                0x000282cc                HeapMemMP_getConfig
+                0x00028454                HeapMemMP_setup
+                0x000285d8                HeapMemMP_destroy
+                0x00028704                HeapMemMP_Params_init
+                0x00028890                HeapMemMP_create
+                0x00028bac                HeapMemMP_delete
+                0x00028e30                HeapMemMP_openByAddr
+                0x000290f4                HeapMemMP_open
+                0x000293c0                HeapMemMP_close
+                0x0002963c                HeapMemMP_alloc
+                0x00029844                HeapMemMP_free
+                0x00029aa0                HeapMemMP_getStats
+                0x00029ccc                HeapMemMP_getExtendedStats
+                0x00029ee0                HeapMemMP_sharedMemReq
+                0x0002a064                HeapMemMP_getKnlHandle
+                0x0002a1ec                HeapMemMP_getUsrHandle
+                0x0002a3a8                _HeapMemMP_create
+                0x0002a584                HeapMemMP_restore
+ .text          0x0002a6c4     0x2238 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMP.o)
+                0x0002a6c4                HeapBufMP_getConfig
+                0x0002a84c                HeapBufMP_setup
+                0x0002a9dc                HeapBufMP_destroy
+                0x0002ab14                HeapBufMP_Params_init
+                0x0002aca4                HeapBufMP_create
+                0x0002afac                HeapBufMP_delete
+                0x0002b228                HeapBufMP_openByAddr
+                0x0002b4f4                HeapBufMP_open
+                0x0002b7c4                HeapBufMP_close
+                0x0002ba40                HeapBufMP_alloc
+                0x0002bc4c                HeapBufMP_free
+                0x0002beac                HeapBufMP_getStats
+                0x0002c0dc                HeapBufMP_isBlocking
+                0x0002c1d4                HeapBufMP_getExtendedStats
+                0x0002c400                HeapBufMP_sharedMemReq
+                0x0002c588                HeapBufMP_getKnlHandle
+                0x0002c718                _HeapBufMP_create
+ .text          0x0002c8fc     0x21bc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMP.o)
+                0x0002c8fc                GateMP_getConfig
+                0x0002ca8c                GateMP_setup
+                0x0002ccf0                GateMP_destroy
+                0x0002ceac                GateMP_Params_init
+                0x0002d054                GateMP_Instance_init
+                0x0002d20c                GateMP_Instance_finalize
+                0x0002d268                _GateMP_create
+                0x0002d3a0                GateMP_create
+                0x0002d5d0                GateMP_delete
+                0x0002d84c                GateMP_open
+                0x0002db44                GateMP_openByAddr
+                0x0002de50                GateMP_close
+                0x0002e154                GateMP_enter
+                0x0002e320                GateMP_leave
+                0x0002e4f8                GateMP_sharedMemReq
+                0x0002e614                GateMP_getDefaultRemote
+                0x0002e714                GateMP_getSharedAddr
+                0x0002e808                GateMP_setReserved
+                0x0002e8c0                GateMP_getLocalProtect
+                0x0002e914                GateMP_getRemoteProtect
+                0x0002e968                GateMP_getKnlHandle
+ .text          0x0002eab8      0x4fc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegionDrv.o)
+                0x0002eab8                SharedRegionDrv_open
+                0x0002ec50                SharedRegionDrv_close
+                0x0002ed6c                SharedRegionDrv_ioctl
+ .text          0x0002efb4      0x78c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NotifyDrvUsr.o)
+                0x0002efb4                NotifyDrvUsr_open
+                0x0002f2c0                NotifyDrvUsr_close
+                0x0002f494                NotifyDrvUsr_ioctl
+                0x0002f5cc                _NotifyDrvUsr_eventWorker
+ .text          0x0002f740      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMPDrv.o)
+                0x0002f740                HeapBufMPDrv_open
+                0x0002f8d8                HeapBufMPDrv_close
+                0x0002f9f4                HeapBufMPDrv_ioctl
+ .text          0x0002fb28      0x3e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQDrv.o)
+                0x0002fb28                MessageQDrv_open
+                0x0002fcbc                MessageQDrv_close
+                0x0002fdd8                MessageQDrv_ioctl
+ .text          0x0002ff0c      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(IpcDrv.o)
+                0x0002ff0c                IpcDrv_open
+                0x000300a4                IpcDrv_close
+                0x000301c0                IpcDrv_ioctl
+ .text          0x000302f4      0x3e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQDrv.o)
+                0x000302f4                FrameQDrv_open
+                0x00030488                FrameQDrv_close
+                0x000305a4                FrameQDrv_ioctl
+ .text          0x000306d8      0x3e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgrDrv.o)
+                0x000306d8                FrameQBufMgrDrv_open
+                0x0003086c                FrameQBufMgrDrv_close
+                0x00030988                FrameQBufMgrDrv_ioctl
+ .text          0x00030abc      0x3e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgrDrv.o)
+                0x00030abc                ClientNotifyMgrDrv_open
+                0x00030c50                ClientNotifyMgrDrv_close
+                0x00030d6c                ClientNotifyMgrDrv_ioctl
+ .text          0x00030ea0      0x3e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIODrv.o)
+                0x00030ea0                RingIODrv_open
+                0x00031034                RingIODrv_close
+                0x00031150                RingIODrv_ioctl
+ .text          0x00031284      0x3e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShmDrv.o)
+                0x00031284                RingIOShmDrv_open
+                0x00031418                RingIOShmDrv_close
+                0x00031534                RingIOShmDrv_ioctl
+ .text          0x00031668      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMPDrv.o)
+                0x00031668                HeapMemMPDrv_open
+                0x00031800                HeapMemMPDrv_close
+                0x0003191c                HeapMemMPDrv_ioctl
+ .text          0x00031a50      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMPDrv.o)
+                0x00031a50                GateMPDrv_open
+                0x00031be8                GateMPDrv_close
+                0x00031d04                GateMPDrv_ioctl
+ .text          0x00031e38      0x58c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMutex.o)
+                0x00031e38                GateMutex_Instance_init
+                0x00031f40                GateMutex_Instance_finalize
+                0x00031fd8                GateMutex_enter
+                0x000320ac                GateMutex_leave
+                0x0003216c                GateMutex_create
+                0x00032274                GateMutex_delete
+ .text          0x000323c4      0xa34 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Memory.o)
+                0x0003258c                Memory_alloc
+                0x00032720                Memory_calloc
+                0x000328a4                Memory_free
+                0x0003299c                Memory_getStats
+                0x00032a70                Memory_query
+                0x00032b60                Memory_getMaxDefaultTypeAlign
+                0x00032b7c                Memory_valloc
+                0x00032d64                Memory_translate
+ .text          0x00032df8     0x15f4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(List.o)
+                0x00032df8                List_Params_init
+                0x00032ec4                List_create
+                0x00032fe8                List_delete
+                0x0003315c                List_construct
+                0x00033254                List_destruct
+                0x0003334c                List_elemClear
+                0x00033440                List_empty
+                0x00033564                List_get
+                0x00033680                List_put
+                0x000337f4                List_next
+                0x00033934                List_prev
+                0x00033adc                List_insert
+                0x00033cb4                List_remove
+                0x00033e2c                List_putHead
+                0x00033f90                List_dequeue
+                0x000340cc                List_enqueue
+                0x0003425c                List_enqueueHead
+ .text          0x000343ec      0x5f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(String.o)
+                0x000343ec                String_cat
+                0x000344a4                String_cmp
+                0x000345d8                String_ncmp
+                0x000346e0                String_cpy
+                0x0003475c                String_ncpy
+                0x0003483c                String_len
+                0x000348b0                String_hexToStr
+                0x00034944                String_hash
+ .text          0x000349e4      0x560 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Trace.o)
+                0x000349e4                _GT_0trace
+                0x00034a68                _GT_1trace
+                0x00034af8                _GT_2trace
+                0x00034b90                _GT_3trace
+                0x00034c30                _GT_4trace
+                0x00034ce0                _GT_5trace
+                0x00034da0                _GT_6trace
+                0x00034e70                _GT_setFailureReason
+                0x00034ed4                _GT_setTrace
+ .text          0x00034f44     0x2d80 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServer.o)
+                0x00034f44                NameServer_getConfig
+                0x000350f8                NameServer_setup
+                0x00035270                NameServer_destroy
+                0x0003536c                NameServer_Params_init
+                0x00035500                NameServer_create
+                0x000357a4                NameServer_delete
+                0x000359e8                NameServer_open
+                0x00035c9c                NameServer_close
+                0x00035f00                NameServer_add
+                0x00036240                NameServer_addUInt32
+                0x00036420                NameServer_remove
+                0x00036664                NameServer_removeEntry
+                0x0003689c                NameServer_get
+                0x00036cc4                NameServer_getLocal
+                0x00037084                NameServer_getUInt32
+                0x00037350                NameServer_getLocalUInt32
+                0x0003760c                NameServer_match
+                0x000378d0                NameServer_getHandle
+                0x00037afc                NameServer_isRegistered
+ .text          0x00037cc4      0xcf4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProc.o)
+                0x00037cc4                MultiProc_getConfig
+                0x00037e78                MultiProc_setup
+                0x00038018                MultiProc_destroy
+                0x00038114                MultiProc_setLocalId
+                0x00038320                MultiProc_getId
+                0x00038530                MultiProc_getName
+                0x000386c0                MultiProc_getNumProcessors
+                0x0003873c                MultiProc_self
+                0x000387b8                MultiProc_getSlot
+ .text          0x000389b8      0x10c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Gate.o)
+                0x000389b8                Gate_enterSystem
+                0x00038a1c                Gate_leaveSystem
+ .text          0x00038ac4       0xc8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SysLink.o)
+                0x00038ac4                SysLink_setup
+                0x00038b34                SysLink_destroy
+ .text          0x00038b8c      0x4c0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Cache.o)
+                0x00038b8c                Cache_inv
+                0x00038c94                Cache_wb
+                0x00038d9c                Cache_wbInv
+                0x00038ea4                Cache_wait
+                0x00038f5c                Cache_setMode
+ .text          0x0003904c      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServerDrv.o)
+                0x0003904c                NameServerDrv_open
+                0x000391e4                NameServerDrv_close
+                0x00039300                NameServerDrv_ioctl
+ .text          0x00039434      0x3b4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProcDrv.o)
+                0x00039434                MultiProcDrv_open
+                0x000395c8                MultiProcDrv_close
+                0x000396e4                MultiProcDrv_ioctl
+ .text          0x000397e8      0x160 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(TraceDrv.o)
+                0x000397e8                TraceDrv_ioctl
+ .text          0x00039948       0xf0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(CacheDrv.o)
+                0x00039948                CacheDrv_ioctl
+ .text          0x00039a38     0x15fc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MemoryOS.o)
+                0x00039d20                MemoryOS_setup
+                0x00039ecc                MemoryOS_destroy
+                0x0003a080                MemoryOS_alloc
+                0x0003a194                MemoryOS_calloc
+                0x0003a298                MemoryOS_free
+                0x0003a38c                MemoryOS_map
+                0x0003a7e8                MemoryOS_unmap
+                0x0003ab24                MemoryOS_copy
+                0x0003acbc                MemoryOS_set
+                0x0003ae44                MemoryOS_translate
+ .text          0x0003b034      0x6e0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalDrv.o)
+                0x0003b034                OsalDrv_open
+                0x0003b1d4                OsalDrv_close
+                0x0003b2f8                OsalDrv_map
+                0x0003b4fc                OsalDrv_unmap
+                0x0003b5d8                OsalDrv_ioctl
+ .text          0x0003b714      0x530 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalMutex.o)
+                0x0003b714                OsalMutex_create
+                0x0003b87c                OsalMutex_delete
+                0x0003b9e8                OsalMutex_enter
+                0x0003bb18                OsalMutex_leave
+ .text          0x0003bc44       0x58 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalPrint.o)
+                0x0003bc44                Osal_printf
+ .text          0x0003bc9c     0x4f2c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgr.o)
+                0x0003bc9c                ProcMgr_getConfig
+                0x0003be1c                ProcMgr_setup
+                0x0003bfcc                ProcMgr_destroy
+                0x0003c1a4                ProcMgr_Params_init
+                0x0003c324                ProcMgr_create
+                0x0003c760                ProcMgr_delete
+                0x0003ca1c                ProcMgr_open
+                0x0003d0bc                ProcMgr_close
+                0x0003d4f8                ProcMgr_getAttachParams
+                0x0003d670                ProcMgr_attach
+                0x0003dae4                ProcMgr_detach
+                0x0003dd3c                ProcMgr_load
+                0x0003e050                ProcMgr_unload
+                0x0003e1c8                ProcMgr_getStartParams
+                0x0003e328                ProcMgr_start
+                0x0003e4a0                ProcMgr_stop
+                0x0003e600                ProcMgr_getState
+                0x0003e76c                ProcMgr_read
+                0x0003ea08                ProcMgr_write
+                0x0003eca4                ProcMgr_control
+                0x0003ee30                ProcMgr_translateAddr
+                0x0003f2a4                ProcMgr_getSymbolAddress
+                0x0003f534                ProcMgr_map
+                0x0003fa58                ProcMgr_unmap
+                0x00040160                ProcMgr_registerNotify
+                0x0004036c                ProcMgr_getMaxMemoryRegions
+                0x0004042c                ProcMgr_getProcInfo
+                0x0004061c                ProcMgr_getSectionInfo
+                0x0004082c                ProcMgr_getSectionData
+                0x00040a68                ProcMgr_getLoadedFileId
+ .text          0x00040bc8      0x4f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgrDrvUsr.o)
+                0x00040bc8                ProcMgrDrvUsr_open
+                0x00040d60                ProcMgrDrvUsr_close
+                0x00040e7c                ProcMgrDrvUsr_ioctl
+ .text          0x000410c0      0xa30 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ_common.o)
+                0x000410c0                FrameQ_isSupportedInterface
+                0x00041108                FrameQ_getExtendedHeaderPtr
+                0x00041188                FrameQ_getNumFrameBuffers
+                0x00041278                FrameQ_getFrameBuffer
+                0x000413cc                FrameQ_getFrameBufSize
+                0x0004151c                FrameQ_getFrameBufValidSize
+                0x00041678                FrameQ_getFrameBufDataStartOffset
+                0x000417d0                FrameQ_setFrameBufValidSize
+                0x00041960                FrameQ_setFrameBufDataStartOffset
+ .text          0x00041af0     0x292c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMP.o)
+                0x00041af0                ListMP_getConfig
+                0x00041c70                ListMP_setup
+                0x00041df8                ListMP_destroy
+                0x00041f28                ListMP_Params_init
+                0x000420b8                ListMP_create
+                0x00042424                ListMP_delete
+                0x00042690                ListMP_sharedMemReq
+                0x0004287c                ListMP_open
+                0x00042b10                ListMP_openByAddr
+                0x00042d4c                ListMP_close
+                0x00042fb4                ListMP_empty
+                0x00043170                ListMP_getHead
+                0x0004333c                ListMP_getTail
+                0x000434fc                ListMP_putHead
+                0x00043750                ListMP_putTail
+                0x000439ac                ListMP_insert
+                0x00043c7c                ListMP_remove
+                0x00043ed8                ListMP_next
+                0x000440dc                ListMP_prev
+                0x000442e0                _ListMP_create
+                0x000443f8                ListMP_getGate
+ .text          0x0004441c      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMPDrv.o)
+                0x0004441c                ListMPDrv_open
+                0x000445b4                ListMPDrv_close
+                0x000446d0                ListMPDrv_ioctl
+ .text          0x00044804      0x3f8 syslinksamples.o_debug
+                0x00044804                SysLinkSamples_startup
+                0x0004483c                SysLinkSamples_shutdown
+                0x00044874                SysLinkSamples_setHiddenProcId
+                0x0004488c                SysLinkSamples_isAvailableProcId
+                0x000448a0                SysLinkSamples_setToRunProcIds
+                0x00044a20                SysLinkSamples_toRunProcId
+                0x00044a34                SysLinkSamples_osStartup
+                0x00044bdc                SysLinkSamples_osShutdown
+ .text          0x00044bfc     0x1190 slaveloader.o_debug
+                0x00045064                SlaveLoader_startupArgs
+                0x00045428                SlaveLoader_startup
+                0x0004578c                SlaveLoader_shutdown
+                0x00045a50                SlaveLoader_printStatus
+ .text          0x00045d8c       0x64 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/./libc_nonshared.a(elf-init.oS)
+                0x00045d8c                __libc_csu_init
+                0x00045dec                __libc_csu_fini
+ .text          0x00045df0      0x114 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_udivsi3.o)
+                0x00045df0                __udivsi3
+                0x00045df0                __aeabi_uidiv
+                0x00045ee4                __aeabi_uidivmod
+ .text          0x00045f04       0x14 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_dvmd_lnx.o)
+                0x00045f04                __aeabi_idiv0
+                0x00045f04                __aeabi_ldiv0
+ .text          0x00045f18        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtend.o
+ .text          0x00045f18        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  *(.gnu.warning)
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
@@ -1000,86 +1000,86 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  *(.v4_bx)
  .v4_bx         0x00000000        0x0 linker stubs
 
-.fini           0x00046090        0x8
+.fini           0x00045f18        0x8
  *(.fini)
- .fini          0x00046090        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
-                0x00046090                _fini
- .fini          0x00046094        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
-                0x00046098                PROVIDE (__etext, .)
-                0x00046098                PROVIDE (_etext, .)
-                0x00046098                PROVIDE (etext, .)
+ .fini          0x00045f18        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
+                0x00045f18                _fini
+ .fini          0x00045f1c        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
+                0x00045f20                PROVIDE (__etext, .)
+                0x00045f20                PROVIDE (_etext, .)
+                0x00045f20                PROVIDE (etext, .)
 
-.rodata         0x00046098    0x16240
+.rodata         0x00045f20    0x16108
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata.cst4   0x00046098        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
-                0x00046098                _IO_stdin_used
- .rodata        0x0004609c       0x3c bin/debug/obj/main.ov5T
- .rodata        0x000460d8      0x380 bin/debug/obj/syslink.ov5T
- .rodata        0x00046458       0x6c bin/debug/obj/pseudo.ov5T
- .rodata        0x000464c4     0x12e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegion.o)
- .rodata        0x000477ac      0xc38 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Notify.o)
- .rodata        0x000483e4      0xf54 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQ.o)
- .rodata        0x00049338      0x794 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Ipc.o)
- .rodata        0x00049acc     0x117c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIO.o)
- .rodata        0x0004ac48      0x348 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShm.o)
- .rodata        0x0004af90     0x1c64 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ.o)
- .rodata        0x0004cbf4     0x1fc4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgr.o)
- .rodata        0x0004ebb8     0x13a8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgr.o)
- .rodata        0x0004ff60      0xd08 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMP.o)
- .rodata        0x00050c68      0xca8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMP.o)
- .rodata        0x00051910      0x9e0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMP.o)
- .rodata        0x000522f0      0x2fc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegionDrv.o)
- .rodata        0x000525ec      0x418 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NotifyDrvUsr.o)
- .rodata        0x00052a04      0x29c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMPDrv.o)
- .rodata        0x00052ca0      0x290 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQDrv.o)
- .rodata        0x00052f30      0x244 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(IpcDrv.o)
- .rodata        0x00053174      0x268 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQDrv.o)
- .rodata        0x000533dc      0x2cc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgrDrv.o)
- .rodata        0x000536a8      0x2f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgrDrv.o)
- .rodata        0x000539a0      0x268 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIODrv.o)
- .rodata        0x00053c08      0x290 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShmDrv.o)
- .rodata        0x00053e98      0x29c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMPDrv.o)
- .rodata        0x00054134      0x268 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMPDrv.o)
- .rodata        0x0005439c      0x228 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMutex.o)
- .rodata        0x000545c4      0x4cc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Memory.o)
- .rodata        0x00054a90      0x84c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(List.o)
- .rodata        0x000552dc      0x414 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(String.o)
- .rodata        0x000556f0       0x50 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Trace.o)
- .rodata        0x00055740      0xdfc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServer.o)
- .rodata        0x0005653c      0x60c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProc.o)
- .rodata        0x00056b48       0x80 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Gate.o)
- .rodata        0x00056bc8       0x68 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SysLink.o)
- .rodata        0x00056c30      0x248 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Cache.o)
- .rodata        0x00056e78      0x2c0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServerDrv.o)
- .rodata        0x00057138      0x250 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProcDrv.o)
- .rodata        0x00057388      0x100 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(TraceDrv.o)
- .rodata        0x00057488       0xd0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(CacheDrv.o)
- .rodata        0x00057558      0x8d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MemoryOS.o)
- .rodata        0x00057e28      0x374 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalDrv.o)
- .rodata        0x0005819c      0x328 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalMutex.o)
- .rodata        0x000584c4        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalPrint.o)
- .rodata        0x000584c8     0x1f48 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgr.o)
- .rodata        0x0005a410      0x358 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgrDrvUsr.o)
- .rodata        0x0005a768      0x5e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ_common.o)
- .rodata        0x0005ad50      0xbe8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMP.o)
- .rodata        0x0005b938      0x268 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMPDrv.o)
+ .rodata.cst4   0x00045f20        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
+                0x00045f20                _IO_stdin_used
+ .rodata        0x00045f24       0x3c bin/debug/obj/main.ov5T
+ .rodata        0x00045f60      0x248 bin/debug/obj/syslink.ov5T
+ .rodata        0x000461a8       0x6c bin/debug/obj/pseudo.ov5T
+ .rodata        0x00046214     0x12e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegion.o)
+ .rodata        0x000474fc      0xc38 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Notify.o)
+ .rodata        0x00048134      0xf54 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQ.o)
+ .rodata        0x00049088      0x794 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Ipc.o)
+ .rodata        0x0004981c     0x117c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIO.o)
+ .rodata        0x0004a998      0x348 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShm.o)
+ .rodata        0x0004ace0     0x1c64 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ.o)
+ .rodata        0x0004c944     0x1fc4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgr.o)
+ .rodata        0x0004e908     0x13a8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgr.o)
+ .rodata        0x0004fcb0      0xd08 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMP.o)
+ .rodata        0x000509b8      0xca8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMP.o)
+ .rodata        0x00051660      0x9e0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMP.o)
+ .rodata        0x00052040      0x2fc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegionDrv.o)
+ .rodata        0x0005233c      0x418 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NotifyDrvUsr.o)
+ .rodata        0x00052754      0x29c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMPDrv.o)
+ .rodata        0x000529f0      0x290 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQDrv.o)
+ .rodata        0x00052c80      0x244 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(IpcDrv.o)
+ .rodata        0x00052ec4      0x268 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQDrv.o)
+ .rodata        0x0005312c      0x2cc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgrDrv.o)
+ .rodata        0x000533f8      0x2f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgrDrv.o)
+ .rodata        0x000536f0      0x268 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIODrv.o)
+ .rodata        0x00053958      0x290 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShmDrv.o)
+ .rodata        0x00053be8      0x29c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMPDrv.o)
+ .rodata        0x00053e84      0x268 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMPDrv.o)
+ .rodata        0x000540ec      0x228 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMutex.o)
+ .rodata        0x00054314      0x4cc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Memory.o)
+ .rodata        0x000547e0      0x84c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(List.o)
+ .rodata        0x0005502c      0x414 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(String.o)
+ .rodata        0x00055440       0x50 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Trace.o)
+ .rodata        0x00055490      0xdfc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServer.o)
+ .rodata        0x0005628c      0x60c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProc.o)
+ .rodata        0x00056898       0x80 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Gate.o)
+ .rodata        0x00056918       0x68 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SysLink.o)
+ .rodata        0x00056980      0x248 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Cache.o)
+ .rodata        0x00056bc8      0x2c0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServerDrv.o)
+ .rodata        0x00056e88      0x250 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProcDrv.o)
+ .rodata        0x000570d8      0x100 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(TraceDrv.o)
+ .rodata        0x000571d8       0xd0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(CacheDrv.o)
+ .rodata        0x000572a8      0x8d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MemoryOS.o)
+ .rodata        0x00057b78      0x374 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalDrv.o)
+ .rodata        0x00057eec      0x328 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalMutex.o)
+ .rodata        0x00058214        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalPrint.o)
+ .rodata        0x00058218     0x1f48 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgr.o)
+ .rodata        0x0005a160      0x358 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgrDrvUsr.o)
+ .rodata        0x0005a4b8      0x5e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ_common.o)
+ .rodata        0x0005aaa0      0xbe8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMP.o)
+ .rodata        0x0005b688      0x268 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMPDrv.o)
  .rodata.str1.4
-                0x0005bba0      0x180 syslinksamples.o_debug
+                0x0005b8f0      0x180 syslinksamples.o_debug
  .rodata.str1.4
-                0x0005bd20      0x5b8 slaveloader.o_debug
+                0x0005ba70      0x5b8 slaveloader.o_debug
 
 .rodata1
  *(.rodata1)
 
-.ARM.extab      0x0005c2d8        0x0
+.ARM.extab      0x0005c028        0x0
  *(.ARM.extab* .gnu.linkonce.armextab.*)
- .ARM.extab     0x0005c2d8        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
-                0x0005c2d8                __exidx_start = .
+ .ARM.extab     0x0005c028        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
+                0x0005c028                __exidx_start = .
 
-.ARM.exidx      0x0005c2d8        0x8
+.ARM.exidx      0x0005c028        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x0005c2d8        0x8 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
-                0x0005c2e0                __exidx_end = .
+ .ARM.exidx     0x0005c028        0x8 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
+                0x0005c030                __exidx_end = .
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
@@ -1089,8 +1089,8 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
 
 .gcc_except_table
  *(.gcc_except_table .gcc_except_table.*)
-                0x0005c2e0                . = (ALIGN (0x8000) - ((0x8000 - .) & 0x7fff))
-                0x000642e0                . = (0x8000 DATA_SEGMENT_ALIGN 0x1000)
+                0x0005c030                . = (ALIGN (0x8000) - ((0x8000 - .) & 0x7fff))
+                0x00064030                . = (0x8000 DATA_SEGMENT_ALIGN 0x1000)
 
 .eh_frame
  *(.eh_frame)
@@ -1105,24 +1105,24 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  *(.tbss .tbss.* .gnu.linkonce.tb.*)
  *(.tcommon)
 
-.preinit_array  0x000642e0        0x0
-                0x000642e0                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x00064030        0x0
+                0x00064030                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x000642e0                PROVIDE (__preinit_array_end, .)
+                0x00064030                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x000642e0        0x4
-                0x000642e0                PROVIDE (__init_array_start, .)
+.init_array     0x00064030        0x4
+                0x00064030                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x000642e0        0x4 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtbegin.o
-                0x000642e4                PROVIDE (__init_array_end, .)
+ .init_array    0x00064030        0x4 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtbegin.o
+                0x00064034                PROVIDE (__init_array_end, .)
 
-.fini_array     0x000642e4        0x4
-                0x000642e4                PROVIDE (__fini_array_start, .)
+.fini_array     0x00064034        0x4
+                0x00064034                PROVIDE (__fini_array_start, .)
  *(.fini_array)
- .fini_array    0x000642e4        0x4 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtbegin.o
+ .fini_array    0x00064034        0x4 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtbegin.o
  *(SORT(.fini_array.*))
-                0x000642e8                PROVIDE (__fini_array_end, .)
+                0x00064038                PROVIDE (__fini_array_end, .)
 
 .ctors
  *crtbegin.o(.ctors)
@@ -1138,221 +1138,221 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  *(SORT(.dtors.*))
  *(.dtors)
 
-.jcr            0x000642e8        0x4
+.jcr            0x00064038        0x4
  *(.jcr)
- .jcr           0x000642e8        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtbegin.o
- .jcr           0x000642e8        0x4 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtend.o
+ .jcr           0x00064038        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtbegin.o
+ .jcr           0x00064038        0x4 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtend.o
 
 .data.rel.ro
  *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
  *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
 
-.dynamic        0x000642ec       0xf8
+.dynamic        0x0006403c       0xf8
  *(.dynamic)
- .dynamic       0x000642ec       0xf8 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
-                0x000642ec                _DYNAMIC
-                0x000643e4                . = (. DATA_SEGMENT_RELRO_END 0x0)
+ .dynamic       0x0006403c       0xf8 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
+                0x0006403c                _DYNAMIC
+                0x00064134                . = (. DATA_SEGMENT_RELRO_END 0x0)
 
-.got            0x000643e4       0xf4
+.got            0x00064134       0xf4
  *(.got.plt)
- .got.plt       0x000643e4       0xe0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
-                0x000643e4                _GLOBAL_OFFSET_TABLE_
+ .got.plt       0x00064134       0xe0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
+                0x00064134                _GLOBAL_OFFSET_TABLE_
  *(.igot.plt)
  *(.got)
- .got           0x000644c4       0x14 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
+ .got           0x00064214       0x14 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
  *(.igot)
 
-.data           0x000644d8       0xe0
-                0x000644d8                PROVIDE (__data_start, .)
+.data           0x00064228       0xe0
+                0x00064228                PROVIDE (__data_start, .)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x000644d8        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
-                0x000644d8                data_start
-                0x000644d8                __data_start
- .data          0x000644dc        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
- .data          0x000644dc        0x4 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtbegin.o
-                0x000644dc                __dso_handle
- .data          0x000644e0        0x0 bin/debug/obj/main.ov5T
- .data          0x000644e0        0x0 bin/debug/obj/syslink.ov5T
- .data          0x000644e0       0x98 bin/debug/obj/pseudo.ov5T
-                0x000644e0                baud_arr
-                0x0006452c                baud_name
- .data          0x00064578        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegion.o)
-                0x00064578                SharedRegion_module
- .data          0x0006457c        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Notify.o)
- .data          0x0006457c        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQ.o)
-                0x0006457c                MessageQ_module
- .data          0x00064580        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Ipc.o)
- .data          0x00064580        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIO.o)
- .data          0x00064580        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShm.o)
- .data          0x00064580        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ.o)
-                0x00064580                FrameQ_module
- .data          0x00064584        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgr.o)
-                0x00064584                FrameQBufMgr_module
- .data          0x00064588        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgr.o)
-                0x00064588                ClientNotifyMgr_module
- .data          0x0006458c        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMP.o)
- .data          0x0006458c        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMP.o)
-                0x0006458c                HeapBufMP_module
- .data          0x00064590        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMP.o)
- .data          0x00064594        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegionDrv.o)
- .data          0x00064594        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NotifyDrvUsr.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMPDrv.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQDrv.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(IpcDrv.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQDrv.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgrDrv.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgrDrv.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIODrv.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShmDrv.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMPDrv.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMPDrv.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMutex.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Memory.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(List.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(String.o)
- .data          0x00064598        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Trace.o)
- .data          0x00064598        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServer.o)
-                0x00064598                NameServer_module
- .data          0x0006459c        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProc.o)
-                0x0006459c                MultiProc_module
- .data          0x000645a0        0xc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Gate.o)
-                0x000645a0                Gate_systemObject
-                0x000645a8                Gate_systemHandle
- .data          0x000645ac        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SysLink.o)
- .data          0x000645ac        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Cache.o)
- .data          0x000645ac        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServerDrv.o)
- .data          0x000645ac        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProcDrv.o)
- .data          0x000645ac        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(TraceDrv.o)
- .data          0x000645ac        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(CacheDrv.o)
- .data          0x000645ac        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MemoryOS.o)
- .data          0x000645ac        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalDrv.o)
- .data          0x000645b0        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalMutex.o)
- .data          0x000645b0        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalPrint.o)
- .data          0x000645b0        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgr.o)
- .data          0x000645b0        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgrDrvUsr.o)
- .data          0x000645b4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ_common.o)
- .data          0x000645b4        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMP.o)
-                0x000645b4                ListMP_module
- .data          0x000645b8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMPDrv.o)
- .data          0x000645b8        0x0 syslinksamples.o_debug
- .data          0x000645b8        0x0 slaveloader.o_debug
- .data          0x000645b8        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/./libc_nonshared.a(elf-init.oS)
- .data          0x000645b8        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_udivsi3.o)
- .data          0x000645b8        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_dvmd_lnx.o)
- .data          0x000645b8        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtend.o
- .data          0x000645b8        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
+ .data          0x00064228        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
+                0x00064228                data_start
+                0x00064228                __data_start
+ .data          0x0006422c        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
+ .data          0x0006422c        0x4 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtbegin.o
+                0x0006422c                __dso_handle
+ .data          0x00064230        0x0 bin/debug/obj/main.ov5T
+ .data          0x00064230        0x0 bin/debug/obj/syslink.ov5T
+ .data          0x00064230       0x98 bin/debug/obj/pseudo.ov5T
+                0x00064230                baud_arr
+                0x0006427c                baud_name
+ .data          0x000642c8        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegion.o)
+                0x000642c8                SharedRegion_module
+ .data          0x000642cc        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Notify.o)
+ .data          0x000642cc        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQ.o)
+                0x000642cc                MessageQ_module
+ .data          0x000642d0        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Ipc.o)
+ .data          0x000642d0        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIO.o)
+ .data          0x000642d0        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShm.o)
+ .data          0x000642d0        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ.o)
+                0x000642d0                FrameQ_module
+ .data          0x000642d4        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgr.o)
+                0x000642d4                FrameQBufMgr_module
+ .data          0x000642d8        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgr.o)
+                0x000642d8                ClientNotifyMgr_module
+ .data          0x000642dc        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMP.o)
+ .data          0x000642dc        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMP.o)
+                0x000642dc                HeapBufMP_module
+ .data          0x000642e0        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMP.o)
+ .data          0x000642e4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegionDrv.o)
+ .data          0x000642e4        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NotifyDrvUsr.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMPDrv.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQDrv.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(IpcDrv.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQDrv.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgrDrv.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgrDrv.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIODrv.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShmDrv.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMPDrv.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMPDrv.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMutex.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Memory.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(List.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(String.o)
+ .data          0x000642e8        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Trace.o)
+ .data          0x000642e8        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServer.o)
+                0x000642e8                NameServer_module
+ .data          0x000642ec        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProc.o)
+                0x000642ec                MultiProc_module
+ .data          0x000642f0        0xc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Gate.o)
+                0x000642f0                Gate_systemObject
+                0x000642f8                Gate_systemHandle
+ .data          0x000642fc        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SysLink.o)
+ .data          0x000642fc        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Cache.o)
+ .data          0x000642fc        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServerDrv.o)
+ .data          0x000642fc        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProcDrv.o)
+ .data          0x000642fc        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(TraceDrv.o)
+ .data          0x000642fc        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(CacheDrv.o)
+ .data          0x000642fc        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MemoryOS.o)
+ .data          0x000642fc        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalDrv.o)
+ .data          0x00064300        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalMutex.o)
+ .data          0x00064300        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalPrint.o)
+ .data          0x00064300        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgr.o)
+ .data          0x00064300        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgrDrvUsr.o)
+ .data          0x00064304        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ_common.o)
+ .data          0x00064304        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMP.o)
+                0x00064304                ListMP_module
+ .data          0x00064308        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMPDrv.o)
+ .data          0x00064308        0x0 syslinksamples.o_debug
+ .data          0x00064308        0x0 slaveloader.o_debug
+ .data          0x00064308        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/./libc_nonshared.a(elf-init.oS)
+ .data          0x00064308        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_udivsi3.o)
+ .data          0x00064308        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_dvmd_lnx.o)
+ .data          0x00064308        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtend.o
+ .data          0x00064308        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
 
 .data1
  *(.data1)
-                0x000645b8                _edata = .
-                0x000645b8                PROVIDE (edata, .)
-                0x000645b8                __bss_start = .
-                0x000645b8                __bss_start__ = .
+                0x00064308                _edata = .
+                0x00064308                PROVIDE (edata, .)
+                0x00064308                __bss_start = .
+                0x00064308                __bss_start__ = .
 
-.bss            0x000645b8    0x2d974
+.bss            0x00064308    0x2d974
  *(.dynbss)
  .dynbss        0x00000000        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x000645b8        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
- .bss           0x000645b8        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
- .bss           0x000645b8        0x1 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtbegin.o
- .bss           0x000645b9        0x0 bin/debug/obj/main.ov5T
- *fill*         0x000645b9        0x3 00
- .bss           0x000645bc        0x4 bin/debug/obj/syslink.ov5T
- .bss           0x000645c0      0x200 bin/debug/obj/pseudo.ov5T
- .bss           0x000647c0      0x138 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegion.o)
-                0x000647c0                SharedRegion_state
- .bss           0x000648f8       0x14 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Notify.o)
-                0x000648f8                Notify_state
- .bss           0x0006490c        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQ.o)
-                0x0006490c                MessageQ_state
- .bss           0x00064910       0x34 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Ipc.o)
-                0x00064910                Ipc_state
-                0x00064938                SysLinkCfg_sysMemMap
-                0x00064940                SysLink_params
- .bss           0x00064944        0xc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIO.o)
-                0x00064944                RingIO_state
- .bss           0x00064950        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShm.o)
-                0x00064950                RingIOShm_state
- .bss           0x00064958       0x20 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ.o)
-                0x00064958                FrameQ_module_obj
- .bss           0x00064978       0x20 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgr.o)
-                0x00064978                FrameQBufMgr_module_obj
- .bss           0x00064998    0x2d024 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgr.o)
-                0x00064998                ClientNotifyMgr_module_obj
- .bss           0x000919bc        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMP.o)
-                0x000919bc                HeapMemMP_state
- .bss           0x000919c0        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMP.o)
-                0x000919c0                HeapBufMP_state
- .bss           0x000919c4       0x1c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMP.o)
- .bss           0x000919e0        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegionDrv.o)
- .bss           0x000919e8        0xc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NotifyDrvUsr.o)
- .bss           0x000919f4        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMPDrv.o)
- .bss           0x000919fc        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQDrv.o)
- .bss           0x00091a04        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(IpcDrv.o)
- .bss           0x00091a0c        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQDrv.o)
- .bss           0x00091a14        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgrDrv.o)
- .bss           0x00091a1c        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgrDrv.o)
- .bss           0x00091a24        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIODrv.o)
- .bss           0x00091a2c        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShmDrv.o)
- .bss           0x00091a34        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMPDrv.o)
- .bss           0x00091a3c        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMPDrv.o)
- .bss           0x00091a44        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMutex.o)
- .bss           0x00091a48        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Memory.o)
- .bss           0x00091a48        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(List.o)
- .bss           0x00091a48        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(String.o)
- .bss           0x00091a48        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Trace.o)
-                0x00091a48                curTrace
- .bss           0x00091a4c        0xc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServer.o)
-                0x00091a4c                NameServer_state
- .bss           0x00091a58      0x298 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProc.o)
-                0x00091a58                MultiProc_state
- .bss           0x00091cf0       0x18 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Gate.o)
-                0x00091cf0                staticMutex
- .bss           0x00091d08        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SysLink.o)
- .bss           0x00091d08        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Cache.o)
- .bss           0x00091d08        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServerDrv.o)
- .bss           0x00091d10        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProcDrv.o)
- .bss           0x00091d18        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(TraceDrv.o)
- .bss           0x00091d18        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(CacheDrv.o)
- .bss           0x00091d18       0x18 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MemoryOS.o)
- .bss           0x00091d30        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalDrv.o)
- .bss           0x00091d34        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalMutex.o)
- .bss           0x00091d34        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalPrint.o)
- .bss           0x00091d34       0x2c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgr.o)
-                0x00091d34                ProcMgr_state
- .bss           0x00091d60        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgrDrvUsr.o)
- .bss           0x00091d64        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ_common.o)
- .bss           0x00091d64        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMP.o)
-                0x00091d64                ListMP_state
- .bss           0x00091d68        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMPDrv.o)
- .bss           0x00091d70        0x4 syslinksamples.o_debug
-                0x00091d70                SysLinkSamples_oldTraceMask
- .bss           0x00091d74        0x0 slaveloader.o_debug
- .bss           0x00091d74        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/./libc_nonshared.a(elf-init.oS)
- .bss           0x00091d74        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_udivsi3.o)
- .bss           0x00091d74        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_dvmd_lnx.o)
- .bss           0x00091d74        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtend.o
- .bss           0x00091d74        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
+ .bss           0x00064308        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
+ .bss           0x00064308        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
+ .bss           0x00064308        0x1 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtbegin.o
+ .bss           0x00064309        0x0 bin/debug/obj/main.ov5T
+ *fill*         0x00064309        0x3 00
+ .bss           0x0006430c        0x4 bin/debug/obj/syslink.ov5T
+ .bss           0x00064310      0x200 bin/debug/obj/pseudo.ov5T
+ .bss           0x00064510      0x138 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegion.o)
+                0x00064510                SharedRegion_state
+ .bss           0x00064648       0x14 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Notify.o)
+                0x00064648                Notify_state
+ .bss           0x0006465c        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQ.o)
+                0x0006465c                MessageQ_state
+ .bss           0x00064660       0x34 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Ipc.o)
+                0x00064660                Ipc_state
+                0x00064688                SysLinkCfg_sysMemMap
+                0x00064690                SysLink_params
+ .bss           0x00064694        0xc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIO.o)
+                0x00064694                RingIO_state
+ .bss           0x000646a0        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShm.o)
+                0x000646a0                RingIOShm_state
+ .bss           0x000646a8       0x20 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ.o)
+                0x000646a8                FrameQ_module_obj
+ .bss           0x000646c8       0x20 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgr.o)
+                0x000646c8                FrameQBufMgr_module_obj
+ .bss           0x000646e8    0x2d024 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgr.o)
+                0x000646e8                ClientNotifyMgr_module_obj
+ .bss           0x0009170c        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMP.o)
+                0x0009170c                HeapMemMP_state
+ .bss           0x00091710        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMP.o)
+                0x00091710                HeapBufMP_state
+ .bss           0x00091714       0x1c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMP.o)
+ .bss           0x00091730        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegionDrv.o)
+ .bss           0x00091738        0xc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NotifyDrvUsr.o)
+ .bss           0x00091744        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMPDrv.o)
+ .bss           0x0009174c        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQDrv.o)
+ .bss           0x00091754        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(IpcDrv.o)
+ .bss           0x0009175c        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQDrv.o)
+ .bss           0x00091764        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgrDrv.o)
+ .bss           0x0009176c        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgrDrv.o)
+ .bss           0x00091774        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIODrv.o)
+ .bss           0x0009177c        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShmDrv.o)
+ .bss           0x00091784        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMPDrv.o)
+ .bss           0x0009178c        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMPDrv.o)
+ .bss           0x00091794        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMutex.o)
+ .bss           0x00091798        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Memory.o)
+ .bss           0x00091798        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(List.o)
+ .bss           0x00091798        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(String.o)
+ .bss           0x00091798        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Trace.o)
+                0x00091798                curTrace
+ .bss           0x0009179c        0xc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServer.o)
+                0x0009179c                NameServer_state
+ .bss           0x000917a8      0x298 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProc.o)
+                0x000917a8                MultiProc_state
+ .bss           0x00091a40       0x18 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Gate.o)
+                0x00091a40                staticMutex
+ .bss           0x00091a58        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SysLink.o)
+ .bss           0x00091a58        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Cache.o)
+ .bss           0x00091a58        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServerDrv.o)
+ .bss           0x00091a60        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProcDrv.o)
+ .bss           0x00091a68        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(TraceDrv.o)
+ .bss           0x00091a68        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(CacheDrv.o)
+ .bss           0x00091a68       0x18 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MemoryOS.o)
+ .bss           0x00091a80        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalDrv.o)
+ .bss           0x00091a84        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalMutex.o)
+ .bss           0x00091a84        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalPrint.o)
+ .bss           0x00091a84       0x2c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgr.o)
+                0x00091a84                ProcMgr_state
+ .bss           0x00091ab0        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgrDrvUsr.o)
+ .bss           0x00091ab4        0x0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ_common.o)
+ .bss           0x00091ab4        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMP.o)
+                0x00091ab4                ListMP_state
+ .bss           0x00091ab8        0x8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMPDrv.o)
+ .bss           0x00091ac0        0x4 syslinksamples.o_debug
+                0x00091ac0                SysLinkSamples_oldTraceMask
+ .bss           0x00091ac4        0x0 slaveloader.o_debug
+ .bss           0x00091ac4        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/./libc_nonshared.a(elf-init.oS)
+ .bss           0x00091ac4        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_udivsi3.o)
+ .bss           0x00091ac4        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_dvmd_lnx.o)
+ .bss           0x00091ac4        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtend.o
+ .bss           0x00091ac4        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  *(COMMON)
- COMMON         0x00091d74      0x17c bin/debug/obj/syslink.ov5T
-                0x00091d74                syslink
- COMMON         0x00091ef0        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServer.o)
-                0x00091ef0                NameServer_Object
- COMMON         0x00091ef4       0x10 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MemoryOS.o)
-                0x00091ef4                MemoryOS_state
- COMMON         0x00091f04       0x28 syslinksamples.o_debug
-                0x00091f04                SysLinkSamples_runProcIds
-                0x00091f18                SysLinkSamples_availableProcIds
-                0x00091f2c                . = ALIGN ((. != 0x0)?0x4:0x1)
-                0x00091f2c                _bss_end__ = .
-                0x00091f2c                __bss_end__ = .
-                0x00091f2c                . = ALIGN (0x4)
-                0x00091f2c                . = ALIGN (0x4)
-                0x00091f2c                __end__ = .
-                0x00091f2c                _end = .
-                0x00091f2c                PROVIDE (end, .)
-                0x00091f2c                . = DATA_SEGMENT_END (.)
+ COMMON         0x00091ac4      0x17c bin/debug/obj/syslink.ov5T
+                0x00091ac4                syslink
+ COMMON         0x00091c40        0x4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServer.o)
+                0x00091c40                NameServer_Object
+ COMMON         0x00091c44       0x10 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MemoryOS.o)
+                0x00091c44                MemoryOS_state
+ COMMON         0x00091c54       0x28 syslinksamples.o_debug
+                0x00091c54                SysLinkSamples_runProcIds
+                0x00091c68                SysLinkSamples_availableProcIds
+                0x00091c7c                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00091c7c                _bss_end__ = .
+                0x00091c7c                __bss_end__ = .
+                0x00091c7c                . = ALIGN (0x4)
+                0x00091c7c                . = ALIGN (0x4)
+                0x00091c7c                __end__ = .
+                0x00091c7c                _end = .
+                0x00091c7c                PROVIDE (end, .)
+                0x00091c7c                . = DATA_SEGMENT_END (.)
 
 .stab
  *(.stab)
@@ -1912,64 +1912,64 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  .debug_abbrev  0x0000545f       0x14 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_udivsi3.o)
  .debug_abbrev  0x00005473       0x14 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_dvmd_lnx.o)
 
-.debug_line     0x00000000     0xbac5
+.debug_line     0x00000000     0xbab9
  *(.debug_line)
  .debug_line    0x00000000      0x2b5 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
  .debug_line    0x000002b5      0x155 bin/debug/obj/main.ov5T
- .debug_line    0x0000040a      0x2c4 bin/debug/obj/syslink.ov5T
- .debug_line    0x000006ce      0x148 bin/debug/obj/pseudo.ov5T
- .debug_line    0x00000816      0x834 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegion.o)
- .debug_line    0x0000104a      0x59d /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Notify.o)
- .debug_line    0x000015e7      0x558 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQ.o)
- .debug_line    0x00001b3f      0x43d /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Ipc.o)
- .debug_line    0x00001f7c      0x685 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIO.o)
- .debug_line    0x00002601      0x1d4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShm.o)
- .debug_line    0x000027d5      0xb6b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ.o)
- .debug_line    0x00003340      0xccb /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgr.o)
- .debug_line    0x0000400b      0x95a /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgr.o)
- .debug_line    0x00004965      0x52f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMP.o)
- .debug_line    0x00004e94      0x4f6 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMP.o)
- .debug_line    0x0000538a      0x485 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMP.o)
- .debug_line    0x0000580f      0x235 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegionDrv.o)
- .debug_line    0x00005a44      0x2cf /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NotifyDrvUsr.o)
- .debug_line    0x00005d13      0x20a /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMPDrv.o)
- .debug_line    0x00005f1d      0x1f7 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQDrv.o)
- .debug_line    0x00006114      0x18a /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(IpcDrv.o)
- .debug_line    0x0000629e      0x1f4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQDrv.o)
- .debug_line    0x00006492      0x206 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgrDrv.o)
- .debug_line    0x00006698      0x211 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgrDrv.o)
- .debug_line    0x000068a9      0x1e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIODrv.o)
- .debug_line    0x00006a8d      0x1b4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShmDrv.o)
- .debug_line    0x00006c41      0x20a /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMPDrv.o)
- .debug_line    0x00006e4b      0x1e2 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMPDrv.o)
- .debug_line    0x0000702d      0x215 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMutex.o)
- .debug_line    0x00007242      0x22d /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Memory.o)
- .debug_line    0x0000746f      0x356 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(List.o)
- .debug_line    0x000077c5      0x17d /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(String.o)
- .debug_line    0x00007942      0x1b8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Trace.o)
- .debug_line    0x00007afa      0x5ec /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServer.o)
- .debug_line    0x000080e6      0x26e /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProc.o)
- .debug_line    0x00008354      0x15a /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Gate.o)
- .debug_line    0x000084ae      0x286 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SysLink.o)
- .debug_line    0x00008734      0x196 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Cache.o)
- .debug_line    0x000088ca      0x1e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServerDrv.o)
- .debug_line    0x00008aae      0x1a2 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProcDrv.o)
- .debug_line    0x00008c50      0x14d /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(TraceDrv.o)
- .debug_line    0x00008d9d      0x14f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(CacheDrv.o)
- .debug_line    0x00008eec      0x44f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MemoryOS.o)
- .debug_line    0x0000933b      0x282 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalDrv.o)
- .debug_line    0x000095bd      0x221 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalMutex.o)
- .debug_line    0x000097de      0x12e /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalPrint.o)
- .debug_line    0x0000990c      0x9d3 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgr.o)
- .debug_line    0x0000a2df      0x1c4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgrDrvUsr.o)
- .debug_line    0x0000a4a3      0x24c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ_common.o)
- .debug_line    0x0000a6ef      0x567 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMP.o)
- .debug_line    0x0000ac56      0x1ee /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMPDrv.o)
- .debug_line    0x0000ae44      0x460 syslinksamples.o_debug
- .debug_line    0x0000b2a4      0x489 slaveloader.o_debug
- .debug_line    0x0000b72d      0x1ba /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/./libc_nonshared.a(elf-init.oS)
- .debug_line    0x0000b8e7      0x102 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_udivsi3.o)
- .debug_line    0x0000b9e9       0xdc /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_dvmd_lnx.o)
+ .debug_line    0x0000040a      0x2b8 bin/debug/obj/syslink.ov5T
+ .debug_line    0x000006c2      0x148 bin/debug/obj/pseudo.ov5T
+ .debug_line    0x0000080a      0x834 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegion.o)
+ .debug_line    0x0000103e      0x59d /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Notify.o)
+ .debug_line    0x000015db      0x558 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQ.o)
+ .debug_line    0x00001b33      0x43d /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Ipc.o)
+ .debug_line    0x00001f70      0x685 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIO.o)
+ .debug_line    0x000025f5      0x1d4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShm.o)
+ .debug_line    0x000027c9      0xb6b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ.o)
+ .debug_line    0x00003334      0xccb /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgr.o)
+ .debug_line    0x00003fff      0x95a /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgr.o)
+ .debug_line    0x00004959      0x52f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMP.o)
+ .debug_line    0x00004e88      0x4f6 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMP.o)
+ .debug_line    0x0000537e      0x485 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMP.o)
+ .debug_line    0x00005803      0x235 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SharedRegionDrv.o)
+ .debug_line    0x00005a38      0x2cf /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NotifyDrvUsr.o)
+ .debug_line    0x00005d07      0x20a /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapBufMPDrv.o)
+ .debug_line    0x00005f11      0x1f7 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MessageQDrv.o)
+ .debug_line    0x00006108      0x18a /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(IpcDrv.o)
+ .debug_line    0x00006292      0x1f4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQDrv.o)
+ .debug_line    0x00006486      0x206 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQBufMgrDrv.o)
+ .debug_line    0x0000668c      0x211 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ClientNotifyMgrDrv.o)
+ .debug_line    0x0000689d      0x1e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIODrv.o)
+ .debug_line    0x00006a81      0x1b4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(RingIOShmDrv.o)
+ .debug_line    0x00006c35      0x20a /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(HeapMemMPDrv.o)
+ .debug_line    0x00006e3f      0x1e2 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMPDrv.o)
+ .debug_line    0x00007021      0x215 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(GateMutex.o)
+ .debug_line    0x00007236      0x22d /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Memory.o)
+ .debug_line    0x00007463      0x356 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(List.o)
+ .debug_line    0x000077b9      0x17d /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(String.o)
+ .debug_line    0x00007936      0x1b8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Trace.o)
+ .debug_line    0x00007aee      0x5ec /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServer.o)
+ .debug_line    0x000080da      0x26e /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProc.o)
+ .debug_line    0x00008348      0x15a /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Gate.o)
+ .debug_line    0x000084a2      0x286 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(SysLink.o)
+ .debug_line    0x00008728      0x196 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(Cache.o)
+ .debug_line    0x000088be      0x1e4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(NameServerDrv.o)
+ .debug_line    0x00008aa2      0x1a2 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MultiProcDrv.o)
+ .debug_line    0x00008c44      0x14d /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(TraceDrv.o)
+ .debug_line    0x00008d91      0x14f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(CacheDrv.o)
+ .debug_line    0x00008ee0      0x44f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(MemoryOS.o)
+ .debug_line    0x0000932f      0x282 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalDrv.o)
+ .debug_line    0x000095b1      0x221 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalMutex.o)
+ .debug_line    0x000097d2      0x12e /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(OsalPrint.o)
+ .debug_line    0x00009900      0x9d3 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgr.o)
+ .debug_line    0x0000a2d3      0x1c4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ProcMgrDrvUsr.o)
+ .debug_line    0x0000a497      0x24c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(FrameQ_common.o)
+ .debug_line    0x0000a6e3      0x567 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMP.o)
+ .debug_line    0x0000ac4a      0x1ee /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_debug(ListMPDrv.o)
+ .debug_line    0x0000ae38      0x460 syslinksamples.o_debug
+ .debug_line    0x0000b298      0x489 slaveloader.o_debug
+ .debug_line    0x0000b721      0x1ba /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/./libc_nonshared.a(elf-init.oS)
+ .debug_line    0x0000b8db      0x102 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_udivsi3.o)
+ .debug_line    0x0000b9dd       0xdc /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_dvmd_lnx.o)
 
 .debug_frame    0x00000000     0x3c04
  *(.debug_frame)
