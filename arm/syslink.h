@@ -3,6 +3,7 @@
 
 void* ReCATSyslinkRecv(size_t* len);
 void ReCATSyslinkSend(void *data, size_t len);
+
 int ReCATSyslinkInit();
 void ReCATSyslinkClear();
 

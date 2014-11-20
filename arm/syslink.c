@@ -35,6 +35,7 @@
 
 #define PATTERNKEY               1u
 #define APP_SHAREDREGION_ENTRY_ID   0u
+#define buffer_len             300
 typedef struct App_Info {
     Char   rMsgqName [80];
     Char   lMsgqName [80];
@@ -123,6 +124,7 @@ void ReCATSyslinkSend(void *data, size_t len)
     printf("send %d data success!\n", len);
 #endif
 }
+
 
 static int ReCATSyslinkAlloc ()
 {

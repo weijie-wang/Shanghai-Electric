@@ -23,11 +23,17 @@
 #include "include/hw_psc_C6748.h"
 
 #define PINMUX0 0x01C14120
+#define PINMUX4 0x01C14130
 #define PINMUX5 0x01C14134
 #define PINMUX18 0x01C14168
 #define GPIO_BASE 0x01E26000
+#define GPIO1DIR (0x10 + GPIO_BASE)
+#define GPIO1OUT (0x14 + GPIO_BASE)
+#define GPIO2DIR (0x38 + GPIO_BASE)
+#define GPIO2OUT (0x3C + GPIO_BASE)
 #define GPIO8DIR (0xB0 + GPIO_BASE)
 #define GPIO8OUT (0xB4 + GPIO_BASE)
+
 
 /******* SPI Register ********/
 #define SPI_BASE 0x01F0E000
@@ -105,11 +111,7 @@ size_t ReCATSPIRecv(unsigned char *data, size_t len)
 
 void ReCATSPIInit()
 {
-    /***** GPIO Setting for CS ******/
-    HWREG(PINMUX18) &= ~(0xf<<20);
-    HWREG(PINMUX18) |= (0x8<<20);
-    HWREG(GPIO8DIR) = 0;//0 for output
-    HWREG(GPIO8OUT) = 0x0000u;
+    
 
     /***** SPI INITIALIZATION ******/
     /* Waking up the SPI1 instance. */

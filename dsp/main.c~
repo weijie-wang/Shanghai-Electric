@@ -20,101 +20,127 @@
 #include <ti/sysbios/hal/Cache.h>
 #include <xdc/cfg/global.h>
 
-/***********SYSLINK*********/
-void ReCATSyslinkClear();
-void ReCATSyslinkSend(void *data, size_t len);
-void* ReCATSyslinkRecv(size_t* len);
-int ReCATSyslinkInit(UInt16 armID);
-int ReCATPrintBuffer(char *fmt, ...);
+#include "include/spi.h"
+#include "include/syslink.h"
 
-/***********SPI*************/
-void ReCATSPIClear();
-void ReCATSPISend(void *data, size_t len);
-size_t ReCATSPIRecv(unsigned char *data, size_t len);
-int ReCATSPIInit();
 
-/***********SPI buffer******/
-unsigned char SPI_rx_data[4096];
-unsigned char SPI_tx_data[4096];
+#define flag_len                6
+#define data_len              247
+
+
+size_t len;
+char *buffer;
+
 
 Void ReCATSPITask(UArg arg0, UArg arg1)
 {   
-    unsigned char SPI_tx_flag[2] = {0x01 , 0x};
+    unsigned char SPI_rx_data[flag_len + 3 + data_len];
     ReCATSPIInit();
     while(1)
     { 
-	  Semaphore_pend(syslink.SpiSend, BIOS_WAIT_FOREVER) ;
-      ReCATSPISend(&SPI_tx_data[0], 1);
-      ReCATSPIRecv(SPI_rx_data, 256);
-      Task_sleep (10);
+      int i = 0;
+      ReCATSPISend(buffer, len);
+      
+        while( i < flag_len )
+        {         
+          ReCATSPIRecv(SPI_rx_data, 1);
+          i = SPI_rx_data[i] == 0xAA ? i+1 : 0 ;
+          Task_sleep (1);
+        }
+      ReCATSPIRecv(&SPI_rx_data[flag_len], len - flag_len);
+      buffer = &SPI_rx_data[0];
+      Semaphore_post(syslink.SysLock);
+      Semaphore_pend(syslink.SpiLock, BIOS_WAIT_FOREVER) ;
+      
     }
 }
-void ReCATDEFTask(UArg arg0, UArg arg1)
-{
 
-
-	while(1)
-	{
-	
-	
-	
-	
-	  Task_sleep (10);
-	}
-}
 Void ReCATMainTask(UArg arg0, UArg arg1)
 {
+    /** set the lock for SPI*/
+    Semaphore_Params        semParams_spi;
+    Error_Block             eb_spi;
+    Error_init (&eb_spi) ;
+    Semaphore_Params_init (&semParams_spi) ;
+    semParams_spi.mode = Semaphore_Mode_BINARY;
+    syslink.SpiLock = Semaphore_create (1, &semParams_spi, &eb_spi);
 
-	/** set the lock for wait the SPI DATA RECIEVE*/
-    Semaphore_Params        semParams_rec;
-    Error_Block             eb_rec;
-    Error_init (&eb_rec) ;
-    Semaphore_Params_init (&semParams_rec) ;
-    semParams_rec.mode = Semaphore_Mode_BINARY;
-    syslink.SpiRec = Semaphore_create (1, &semParams_rec, &eb_rec);
+    /** set the lock for SPI*/
+    Semaphore_Params        semParams_sys;
+    Error_Block             eb_sys;
+    Error_init (&eb_sys) ;
+    Semaphore_Params_init (&semParams_sys) ;
+    semParams_sys.mode = Semaphore_Mode_BINARY;
+    syslink.SysLock = Semaphore_create (2, &semParams_sys, &eb_sys);
     
-	/** set the lock for wait the SPI DATA SEND*/
-    Semaphore_Params        semParams_send;
-    Error_Block             eb_send;
-    Error_init (&eb_send) ;
-    Semaphore_Params_init (&semParams_send) ;
-    semParams_send.mode = Semaphore_Mode_BINARY;
-    syslink.SpiSend = Semaphore_create (2, &semParams_send, &eb_send);
-	
-	/** Start defender **/
-	Task_Params taskParams_DEF;
-    Task_Params_init(&taskParams_DEF);
-    taskParams_DEF.priority = 5;
-    Task_Handle tsk_def = Task_create (ReCATDEFTask, &taskParams_DEF, NULL);
-	
-	
     /** start SPI **/
     Task_Params taskParams;
     Task_Params_init(&taskParams);
     taskParams.priority = 4;
     Task_Handle tsk_spi = Task_create (ReCATSPITask, &taskParams, NULL);
-	
-
-	
 
     int status = ReCATSyslinkInit(arg0);
 
     ReCATPrintBuffer("syslink recving!");
     while(1)
     {
-        size_t len;
-
-        char *buffer = ReCATSyslinkRecv(&len);
-	
-		memcpy(SPI_tx_data , buffer ,len);
+        buffer = ReCATSyslinkRecv(&len);
         ReCATPrintBuffer("syslink recv ok!");
-		Semaphore_post(syslink.SpiSend);
-		Semaphore_pend(syslink.SpiRec, BIOS_WAIT_FOREVER) ;
-
-        int i;
-        //for(i = 0; i < len - 1; i++)
-            buffer[1] = (SPI_rx_data[0] & 0x0f) + '0';
-            buffer[0] = (SPI_rx_data[0] >> 4) + '0';
+        UInt32 dev_num;
+        dev_num = *( buffer + flag_len + 1) & 0x0F;
+        switch ( dev_num )
+        {
+            case   0 :
+                      /***** GPIO Setting for CS0 ******/
+                      HWREG(PINMUX5) &= ~(0xf);
+                      HWREG(PINMUX5) |= (0x8);
+                      HWREG(GPIO2DIR) = 0;//0 for output
+                      HWREG(GPIO2OUT) &= ~(0x00008000u);
+    
+                      Semaphore_post(syslink.SpiLock);
+                      Semaphore_pend(syslink.SysLock, BIOS_WAIT_FOREVER) ;
+                      
+                      /***** GPIO Clear for CS0 ******/
+                      HWREG(PINMUX5) &= ~(0xf);
+                      HWREG(PINMUX5) |= (0x8);
+                      HWREG(GPIO2DIR) = 0;//0 for output
+                      HWREG(GPIO2OUT) |= 0x00008000u;
+                      break;
+                      
+            case   1 :
+                      /***** GPIO Setting for CS1 ******/
+                      HWREG(PINMUX4) &= ~(0xf<<12);
+                      HWREG(PINMUX4) |= (0x8<<12);
+                      HWREG(GPIO1DIR) = 0;//0 for output
+                      HWREG(GPIO1OUT) &= ~(0x00100000u);
+                      
+                      Semaphore_post(syslink.SpiLock);
+                      Semaphore_pend(syslink.SysLock, BIOS_WAIT_FOREVER) ;
+                      
+                      /***** GPIO Clear for CS1 ******/
+                      HWREG(PINMUX4) &= ~(0xf<<12);
+                      HWREG(PINMUX4) |= (0x8<<12);
+                      HWREG(GPIO1DIR) = 0;//0 for output
+                      HWREG(GPIO1OUT) |= 0x00100000u;
+                      break;
+            
+            default  : 
+                      /***** GPIO Setting for CS2 ******/
+                      HWREG(PINMUX4) &= ~(0xf<<8);
+                      HWREG(PINMUX4) |= (0x8<<8);
+                      HWREG(GPIO1DIR) = 0;//0 for output
+                      HWREG(GPIO1OUT) &= ~(0x00200000u);
+                      
+                      Semaphore_post(syslink.SpiLock);
+                      Semaphore_pend(syslink.SysLock, BIOS_WAIT_FOREVER) ;
+                      
+                      /***** GPIO Clear for CS2 ******/
+                      HWREG(PINMUX4) &= ~(0xf<<8);
+                      HWREG(PINMUX4) |= (0x8<<8);
+                      HWREG(GPIO1DIR) = 0;//0 for output
+                      HWREG(GPIO1OUT) |= 0x00200000u;
+                      break;
+        }
         ReCATSyslinkSend(buffer, len);
         free(buffer);
     }
