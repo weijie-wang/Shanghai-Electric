@@ -27,7 +27,7 @@ size_t ReCATSPIRecv(unsigned char *data, size_t len)
     {
         while (HWREG( SPIFLG) & 0x00200 == 0);
             //Task_sleep(1);
-        HWREG(SPIDAT0) = 0x88; // write spi
+        HWREG(SPIDAT0) = 0xAA; // write spi
         
         while (HWREG( SPIFLG) & 0x00100 == 0);
         *data = (char)(HWREG(SPIBUF)&0x0000FFFFu);
@@ -58,7 +58,7 @@ void ReCATSPIInit()
     HWREG(SPIGCR1) |=  0x00000003u;
 
     /** set spi clk */
-    unsigned int prescale = (150000000/2000) - 1;  //SPI clock frequency = SPI module clock/(PRESCALE + 1)
+    unsigned int prescale = (150000000/1000000) - 1;  //SPI clock frequency = SPI module clock/(PRESCALE + 1)
     HWREG(SPIFMT0) =  (0x0000FF00u & (prescale << 8));
 
     /** set CS and simo, somi */

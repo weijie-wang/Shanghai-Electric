@@ -27,7 +27,7 @@
 #define flag_len                6
 #define data_len              247
 
-
+extern ReCATSyslink syslink;
 size_t len;
 char *buffer;
 
@@ -43,7 +43,7 @@ Void ReCATSPITask(UArg arg0, UArg arg1)
       
         while( i < flag_len )
         {         
-          ReCATSPIRecv(SPI_rx_data, 1);
+          ReCATSPIRecv(&SPI_rx_data[i], 1);
           i = SPI_rx_data[i] == 0xAA ? i+1 : 0 ;
           Task_sleep (1);
         }

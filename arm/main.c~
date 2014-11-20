@@ -14,8 +14,14 @@ int main (int argc, char ** argv)
 
     while(1)
     {
-        unsigned char data[] = "12345678";
-        ReCATSyslinkSend(data, 9);
+        unsigned char data[256];
+        for(i = 0; i < 6; i++)
+            data[i] = '1';
+        
+        for(i = 6; i < 256; i++)
+            data[i] = i;
+            
+        ReCATSyslinkSend(data, 256);
         printf("[send] %s\n", data);
 
         size_t len;
