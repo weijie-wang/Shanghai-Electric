@@ -1,5 +1,6 @@
 #include "include/spi.h"
 
+Hwi_Handle myHwi;
 
 
 void ReCATSPIClear()
@@ -74,8 +75,15 @@ void ReCATSPIInit()
 
     /** setup interrupts. */
     /* No Interrupt */
-    HWREG(SPIINT0) =0x00000000;
-    HWREG(SPILVL) =0x00000000;
+    HWREG(SPIINT0) =0x00000300;
+    HWREG(SPILVL) =0x00000300;
+	Hwi_Params hwiParams;
+	Error_Block eb;
+	Hwi_params_init( &hwiParams );
+	Error_init( &eb );
+	hwiParams.eventId = 43;
+	hwiParams.maskSetting = Hwi_MaskingOption_SELF;
+	myHwi = Hwi_create(4, myIsr, &hwiParams, &eb);
 
 
     /** enable spi */
@@ -83,3 +91,4 @@ void ReCATSPIInit()
 
 
 }
+

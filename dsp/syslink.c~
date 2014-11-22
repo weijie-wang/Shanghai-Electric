@@ -1,0 +1,238 @@
+#include "include/syslink.h"
+
+
+
+#ifdef NOTIFY
+/** if callback the lock is post */
+Void APPNotify_callbackFxn (UInt16 procId,UInt16 lineId, UInt32 eventNo,
+                            UArg arg, UInt32 payload)
+{
+    Semaphore_post((Semaphore_Object*)arg);
+}
+#endif
+
+int ReCATPrintBuffer(char *fmt, ...)
+{
+    va_list args;
+    unsigned int n;
+
+    va_start(args, fmt);
+    n = vsprintf(syslink.aInfo.buffer,fmt,args);//System_sprintf
+    va_end(args);
+
+    Ipc_writeConfig (syslink.rProcId, APP_INFO_TAG, (Ptr) &syslink.aInfo, sizeof (App_Info));
+    return n;
+}
+int ReCATSyslinkInit(UInt16 armID)
+{
+    Int              status  = 0;
+    UInt32           msgId = 0;
+
+    syslink.rProcId = (UInt16) armID;
+    syslink.lProcId  = MultiProc_self ();
+
+    /* Connect to remote processor */
+    do {
+        status = Ipc_attach (syslink.rProcId);
+    } while (status < 0);
+
+    /** send the application info to the ARM */
+    memset  (syslink.aInfo.lMsgqName, 0, 80);
+    System_sprintf (syslink.aInfo.lMsgqName, "%s%d%d", MSGQ_NAME, syslink.lProcId, syslink.rProcId);
+    
+    memset  (syslink.aInfo.rMsgqName, 0, 80);
+    System_sprintf (syslink.aInfo.rMsgqName, "%s%d%d", MSGQ_NAME, syslink.rProcId, syslink.lProcId);
+
+    memset  (syslink.aInfo.heapName, 0, 80);
+    System_sprintf (syslink.aInfo.heapName, "%s%d%d", HEAP_NAME, syslink.rProcId, syslink.lProcId);
+
+    memset (syslink.aInfo.buffer, 0, 80);
+    syslink.aInfo.heapMsgSize = HEAP_MSGSIZE;
+    syslink.aInfo.heapNumMsg  = HEAP_NUMMSGS;
+    syslink.aInfo.heapAlign   = HEAP_ALIGN;
+    syslink.aInfo.heapId      = HEAPID;
+
+    status = Ipc_writeConfig (syslink.rProcId, APP_INFO_TAG, (Ptr) &syslink.aInfo, sizeof (App_Info));
+
+    if (status == Ipc_E_FAIL) {
+        System_printf ("Failed to write Ipc config entry exiting ....%s: %d :\n",
+                       __FILE__, __LINE__) ;
+        return -1;
+    }
+
+    /** set the lock for wait the msg from ARM*/
+    Semaphore_Params        semParams;
+    Error_Block             eb;
+    Error_init (&eb) ;
+    Semaphore_Params_init (&semParams) ;
+    semParams.mode = Semaphore_Mode_BINARY;
+    syslink.ioLock = Semaphore_create (0, &semParams, &eb);
+    Semaphore_post(syslink.ioLock);
+
+#ifdef NOTIFY
+    Error_init (&eb) ;
+    syslink.semHandle = Semaphore_create (0, &semParams, &eb) ;
+    if (syslink.semHandle == NULL) {
+        Error_check (&eb) ;
+        System_printf ("Failed to Create the semaphore exiting ....%s: %d :\n",
+                       __FILE__, __LINE__) ;
+        return -2;
+    }
+
+    /** register a event for the msg */
+    Notify_registerEvent(
+                syslink.rProcId, 0, ARM2DSPNotify,
+                (Notify_FnNotifyCbck) APPNotify_callbackFxn,
+                (UArg) syslink.semHandle);
+#endif
+
+    /* Create a message queue */
+    syslink.messageQ = MessageQ_create(syslink.aInfo.lMsgqName, NULL);
+    if (syslink.messageQ == NULL) {
+        return -3;
+    }
+#ifdef DEBUG
+    ReCATPrintBuffer("messageQ %s create success!", syslink.aInfo.lMsgqName);
+#endif
+
+    /* Open the heap created by the other processor. Loop until opened. */
+    do {
+        status = HeapMemMP_open(syslink.aInfo.heapName, &syslink.heapHandle);
+        if (status == HeapMemMP_E_NOTFOUND) {
+            /* Sleep for a while before trying again. */
+            Task_sleep (10);
+        }
+    } while (status != HeapMemMP_S_SUCCESS);
+
+    /* Register this heap with MessageQ */
+    MessageQ_registerHeap((IHeap_Handle)syslink.heapHandle, HEAPID);
+
+#ifdef DEBUG
+    ReCATPrintBuffer("heap %s open success!", syslink.aInfo.heapName);
+#endif
+
+    /* Open the remote message queue. Spin until it is ready. */
+    do {
+        status = MessageQ_open(syslink.aInfo.rMsgqName, &syslink.remoteQueueId);
+        if (status == MessageQ_E_NOTFOUND) {
+            /* Sleep for a while before trying again. */
+            Task_sleep (10);
+        }
+    } while (status != MessageQ_S_SUCCESS);
+#ifdef DEBUG
+    ReCATPrintBuffer("messageQ %s open success!", syslink.aInfo.rMsgqName);
+#endif
+
+    if (syslink.rProcId < syslink.lProcId) {
+        syslink.msg = MessageQ_alloc(HEAPID, HEAP_MSGSIZE);
+        if (syslink.msg == NULL) {
+            System_abort("MessageQ_alloc failed\n" );
+        }
+    }
+    return 0;
+}
+void* ReCATSyslinkRecv(size_t* len)
+{
+    Int status;
+
+    Semaphore_pend(syslink.ioLock, BIOS_WAIT_FOREVER) ;
+
+    /* Get a message */
+    status = MessageQ_get(syslink.messageQ, &syslink.msg, MessageQ_FOREVER);
+    if (status != MessageQ_S_SUCCESS) {
+        Semaphore_post(syslink.ioLock);
+        System_abort("This should not happen since timeout is forever\n");
+    }
+
+#ifdef DEBUG
+    ReCATPrintBuffer("recv success!");
+#endif
+
+    Cache_inv((Ptr)syslink.msg, MessageQ_getMsgSize(syslink.msg) , Cache_Type_ALL, TRUE);
+
+    UInt8* dest = (char*) syslink.msg;
+    dest += sizeof(MessageQ_MsgHeader);
+
+    UInt32 size;
+    size = ( dest[0]<<24 ) | (dest[1] << 16) | (dest[2] << 8) | (dest[3]);
+    dest += 4;
+
+    *len = size;
+
+    char *data = (char*)malloc(*len);
+    memcpy(data, dest, *len);
+
+
+#ifdef DEBUG
+    ReCATPrintBuffer("[%d] %s!", *len, data);
+#endif
+    Semaphore_post(syslink.ioLock);
+    return data;
+}
+void ReCATSyslinkSend(void *data, size_t len)
+{
+    static Int msgId;
+    Semaphore_pend(syslink.ioLock, BIOS_WAIT_FOREVER) ;
+    MessageQ_setMsgId(syslink.msg, msgId ++);
+
+    char* dest = (char*) syslink.msg;
+    dest += sizeof(MessageQ_MsgHeader);
+
+    dest[0] = len >> 24 & 0x00FF;
+    dest[1] = len >> 16 & 0x00FF;
+    dest[2] = len >>  8 & 0x00FF;
+    dest[3] = len       & 0x00FF;
+    dest += 4;
+
+    memcpy( dest, data, len);
+    Cache_wbInv((Ptr)syslink.msg, MessageQ_getMsgSize(syslink.msg), Cache_Type_ALL, TRUE);
+
+    Int status = MessageQ_put(syslink.remoteQueueId, syslink.msg);
+    if (status != MessageQ_S_SUCCESS) {
+        Semaphore_post(syslink.ioLock);
+        System_abort("MessageQ_put had a failure/error\n");
+    }
+    else{
+        Notify_sendEvent(syslink.rProcId, 0, DSP2ARMNotify, 0, TRUE);
+    }
+    Semaphore_post(syslink.ioLock);
+}
+void ReCATSyslinkClear()
+{
+    Int status;
+    /* Cleanup. */
+    if (syslink.rProcId < syslink.lProcId) {
+        status = MessageQ_free (syslink.msg);
+        if (status < 0) {
+            System_abort("MessageQ_free failed\n" );
+        }
+    }
+
+    status = MessageQ_delete (&syslink.messageQ);
+    if (status < 0) {
+        System_abort("MessageQ_delete failed\n" );
+    }
+
+    status = MessageQ_close (&syslink.remoteQueueId);
+    if (status < 0) {
+        System_abort("MessageQ_close failed\n" );
+    }
+
+    MessageQ_unregisterHeap (HEAPID);
+    status = HeapMemMP_close (&syslink.heapHandle);
+    if (status < 0) {
+        System_abort("HeapMemMP_close failed\n" );
+    }
+
+    /* Spin until Ipc_detach success then stop */
+    do {
+        status = Ipc_detach(syslink.rProcId);
+    } while (status < 0);
+
+    Ipc_stop();
+
+    System_printf("The test is complete\n");
+}
+
+
+
