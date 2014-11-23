@@ -436,560 +436,560 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
 .iplt
  *(.iplt)
 
-.text           0x00008dfc    0x2e250
+.text           0x00008dfc    0x2e244
  *(.text.unlikely .text.*_unlikely)
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x00008dfc       0x3c /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
                 0x00008dfc                _start
  .text          0x00008e38       0x24 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
  .text          0x00008e5c       0x50 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtbegin.o
- .text          0x00008eac       0xd0 bin/release/obj/main.ov5T
+ .text          0x00008eac       0xc4 bin/release/obj/main.ov5T
                 0x00008eac                main
- .text          0x00008f7c      0x658 bin/release/obj/syslink.ov5T
-                0x00008f7c                ReCATSyslinkRecv
-                0x0000901c                ReCATSyslinkSend
-                0x000090f8                ReCATSyslinkInit
-                0x00009484                ReCATSyslinkClear
-                0x00009554                ReCATSyslinkReadBuffer
-                0x00009590                ReCATSyslinkSendEvent
- .text          0x000095d4      0x32c bin/release/obj/pseudo.ov5T
-                0x000095d4                ReCATSerialInit
-                0x00009680                ReCATSeialConf
-                0x000098f8                ReCATDataRecv
-                0x000098fc                ReCATDataSend
- .text          0x00009900     0x2d18 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
-                0x00009900                SharedRegion_getConfig
-                0x00009a20                SharedRegion_destroy
-                0x00009c58                SharedRegion_setup
-                0x0000a074                SharedRegion_start
-                0x0000a158                SharedRegion_stop
-                0x0000a23c                SharedRegion_attach
-                0x0000a350                SharedRegion_detach
-                0x0000a46c                SharedRegion_setEntry
-                0x0000a70c                SharedRegion_getId
-                0x0000a8dc                SharedRegion_getPtr
-                0x0000aab8                SharedRegion_getSRPtr
-                0x0000ad74                SharedRegion_clearEntry
-                0x0000b048                SharedRegion_getHeap
-                0x0000b1f4                SharedRegion_getIdByName
-                0x0000b43c                SharedRegion_getEntry
-                0x0000b5f4                SharedRegion_getCacheLineSize
-                0x0000b740                SharedRegion_isCacheEnabled
-                0x0000b8a8                SharedRegion_translateEnabled
-                0x0000b8fc                SharedRegion_getNumRegions
-                0x0000b950                SharedRegion_entryInit
-                0x0000ba80                SharedRegion_invalidSRPtr
-                0x0000ba88                SharedRegion_reserveMemory
-                0x0000bcf0                SharedRegion_getNumOffsetBits
-                0x0000bdc4                SharedRegion_checkOverlap
-                0x0000bff4                SharedRegion_clearReservedMemory
-                0x0000c0cc                SharedRegion_getRegionInfo
-                0x0000c25c                _SharedRegion_setRegions
-                0x0000c494                _SharedRegion_clearRegions
- .text          0x0000c618     0x2164 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
-                0x0000c618                Notify_getConfig
-                0x0000c754                Notify_setup
-                0x0000c8bc                Notify_destroy
-                0x0000c99c                Notify_attach
-                0x0000caec                Notify_detach
-                0x0000cbd4                Notify_sharedMemReq
-                0x0000cd28                Notify_eventAvailable
-                0x0000cf54                Notify_intLineRegistered
-                0x0000d128                Notify_registerEventSingle
-                0x0000d428                Notify_registerEvent
-                0x0000d730                Notify_unregisterEventSingle
-                0x0000d9e0                Notify_unregisterEvent
-                0x0000dcb0                Notify_sendEvent
-                0x0000df64                Notify_disable
-                0x0000e0fc                Notify_restore
-                0x0000e284                Notify_disableEvent
-                0x0000e500                Notify_enableEvent
- .text          0x0000e77c     0x1e18 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
-                0x0000e77c                MessageQ_getConfig
-                0x0000e8a0                MessageQ_setup
-                0x0000e9c0                MessageQ_destroy
-                0x0000ea88                MessageQ_Params_init
-                0x0000ebd0                MessageQ_create
-                0x0000ed9c                MessageQ_delete
-                0x0000ef84                MessageQ_open
-                0x0000f164                MessageQ_close
-                0x0000f2d4                MessageQ_put
-                0x0000f4bc                MessageQ_get
-                0x0000f6f0                MessageQ_count
-                0x0000f888                MessageQ_staticMsgInit
-                0x0000f990                MessageQ_alloc
-                0x0000fab8                MessageQ_free
-                0x0000fc48                MessageQ_registerHeap
-                0x0000fe14                MessageQ_unregisterHeap
-                0x0000ff04                MessageQ_unblock
-                0x00010050                MessageQ_setReplyQueue
-                0x00010184                MessageQ_getQueueId
-                0x00010244                MessageQ_setMsgTrace
-                0x00010334                MessageQ_sharedMemReq
-                0x00010404                MessageQ_attach
-                0x000104dc                MessageQ_detach
- .text          0x00010594      0xec4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
-                0x00010594                Ipc_getConfig
-                0x000106f4                Ipc_setup
-                0x00010c0c                Ipc_destroy
-                0x00011168                Ipc_control
-                0x000112c8                Ipc_readConfig
-                0x00011390                Ipc_writeConfig
- .text          0x00011458     0x21d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
-                0x00011458                RingIO_getConfig
-                0x00011578                RingIO_setup
-                0x000116a0                RingIO_destroy
-                0x00011778                RingIO_Params_init
-                0x000118b0                RingIO_delete
-                0x00011a7c                RingIO_create
-                0x00011e48                RingIO_close
-                0x00012020                RingIO_openByAddr
-                0x000122dc                RingIO_open
-                0x00012598                RingIO_registerNotifier
-                0x00012754                RingIO_unregisterNotifier
-                0x00012890                RingIO_setNotifyType
-                0x0001298c                RingIO_getValidSize
-                0x00012a20                RingIO_getEmptySize
-                0x00012ab4                RingIO_getValidAttrSize
-                0x00012b48                RingIO_getEmptyAttrSize
-                0x00012bdc                RingIO_getAcquiredOffset
-                0x00012c70                RingIO_getAcquiredSize
-                0x00012d04                RingIO_getWaterMark
-                0x00012d98                RingIO_setWaterMark
-                0x00012e34                RingIO_acquire
-                0x00012f54                RingIO_release
-                0x00012ff0                RingIO_cancel
-                0x00013080                RingIO_getAttribute
-                0x00013184                RingIO_getvAttribute
-                0x0001323c                RingIO_setAttribute
-                0x00013348                RingIO_setvAttribute
-                0x00013408                RingIO_flush
-                0x000134c0                RingIO_sendNotify
-                0x00013550                RingIO_sharedMemReq
- .text          0x00013628      0x458 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
-                0x00013628                RingIOShm_getConfig
-                0x00013748                RingIOShm_setup
-                0x00013870                RingIOShm_destroy
-                0x00013948                RingIOShm_Params_init
- .text          0x00013a80     0x4364 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
-                0x00013a80                FrameQ_getConfig
-                0x00013bac                FrameQ_setup
-                0x00013da8                FrameQ_destroy
-                0x00013f18                FrameQ_create
-                0x0001466c                FrameQ_delete
-                0x000149d0                FrameQ_open
-                0x000150b4                FrameQ_close
-                0x00015404                FrameQ_alloc
-                0x00015618                FrameQ_allocv
-                0x00015868                FrameQ_free
-                0x00015a38                FrameQ_freev
-                0x00015c88                FrameQ_put
-                0x00015f14                FrameQ_putv
-                0x0001621c                FrameQ_get
-                0x00016490                FrameQ_getv
-                0x000167c0                FrameQ_registerNotifier
-                0x00016b18                FrameQ_unregisterNotifier
-                0x00016d8c                FrameQ_dup
-                0x00016fb8                FrameQ_sendNotify
-                0x00017148                FrameQ_getNumFrames
-                0x00017328                FrameQ_getvNumFrames
-                0x0001751c                FrameQ_getNumFreeFrames
-                0x000176a4                FrameQ_getvNumFreeFrames
-                0x000178b8                FrameQ_control
-                0x000179f0                FrameQ_ShMem_Params_init
-                0x00017b40                FrameQ_Params_init
-                0x00017c8c                FrameQ_ShMem_sharedMemReq
- .text          0x00017de4     0x44fc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
-                0x00017de4                FrameQBufMgr_getConfig
-                0x00017f14                FrameQBufMgr_setup
-                0x00018110                FrameQBufMgr_destroy
-                0x00018298                FrameQBufMgr_create
-                0x00018910                FrameQBufMgr_delete
-                0x00018be4                FrameQBufMgr_open
-                0x00019214                FrameQBufMgr_close
-                0x00019368                FrameQBufMgr_alloc
-                0x00019594                FrameQBufMgr_allocv
-                0x00019918                FrameQBufMgr_free
-                0x00019b5c                FrameQBufMgr_freev
-                0x00019e68                FrameQBufMgr_dup
-                0x0001a158                FrameQBufMgr_dupv
-                0x0001a450                FrameQBufMgr_registerNotifier
-                0x0001a6bc                FrameQBufMgr_unregisterNotifier
-                0x0001a8c0                FrameQBufMgr_add
-                0x0001a9d4                FrameQBufMgr_remove
-                0x0001ab20                FrameQBufMgr_writeBackHeaderBuf
-                0x0001acd8                FrameQBufMgr_invalidateHeaderBuf
-                0x0001aea4                FrameQBufMgr_writeBackFrameBuf
-                0x0001b0ec                FrameQBufMgr_invalidateFrameBuf
-                0x0001b334                FrameQBufMgr_writeBack
-                0x0001b554                FrameQBufMgr_invalidate
-                0x0001b788                FrameQBufMgr_translateAddr
-                0x0001ba20                FrameQBufMgr_getId
-                0x0001ba9c                FrameQBufMgr_getHandle
-                0x0001bb98                FrameQBufMgr_getKnlHandle
-                0x0001bc2c                FrameQBufMgr_getNumFreeFrames
-                0x0001bdb8                FrameQBufMgr_getvNumFreeFrames
-                0x0001bfcc                FrameQBufMgr_getBaseHeaderSize
-                0x0001c00c                FrameQBufMgr_isSupportedInterface
-                0x0001c018                FrameQBufMgr_isSupportedBufInterface
-                0x0001c034                FrameQBufMgr_ShMem_Params_init
-                0x0001c184                FrameQBufMgr_Params_init
- .text          0x0001c2e0     0x3084 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
-                0x0001c2e0                ClientNotifyMgr_callBack
-                0x0001c70c                ClientNotifyMgr_sharedMemModReq
-                0x0001c750                ClientNotifyMgr_sharedMemReq
-                0x0001c848                ClientNotifyMgr_getConfig
-                0x0001c97c                ClientNotifyMgr_setup
-                0x0001cba4                ClientNotifyMgr_destroy
-                0x0001ccb8                ClientNotifyMgr_Params_init
-                0x0001ce08                ClientNotifyMgr_create
-                0x0001d470                ClientNotifyMgr_delete
-                0x0001d7b0                ClientNotifyMgr_open
-                0x0001d8c0                ClientNotifyMgr_close
-                0x0001d970                ClientNotifyMgr_registerClient
-                0x0001dda0                ClientNotifyMgr_unregisterClient
-                0x0001e070                ClientNotifyMgr_enableNotification
-                0x0001e270                ClientNotifyMgr_disableNotification
-                0x0001e458                ClientNotifyMgr_sendNotification
-                0x0001e848                ClientNotifyMgr_sendForceNotification
-                0x0001eaf8                ClientNotifyMgr_sendNotificationMulti
-                0x0001f048                ClientNotifyMgr_sendForceNotificationMulti
- .text          0x0001f364     0x1be4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
-                0x0001f364                HeapMemMP_getKnlHandle
-                0x0001f4b0                HeapMemMP_getStats
-                0x0001f66c                HeapMemMP_free
-                0x0001f840                HeapMemMP_alloc
-                0x0001f9e0                HeapMemMP_getConfig
-                0x0001fb00                HeapMemMP_setup
-                0x0001fc18                HeapMemMP_destroy
-                0x0001fcec                HeapMemMP_Params_init
-                0x0001fe30                HeapMemMP_delete
-                0x00020028                HeapMemMP_close
-                0x00020220                HeapMemMP_getExtendedStats
-                0x000203dc                HeapMemMP_sharedMemReq
-                0x0002050c                _HeapMemMP_create
-                0x00020644                HeapMemMP_getUsrHandle
-                0x000207ac                HeapMemMP_open
-                0x000209e0                HeapMemMP_openByAddr
-                0x00020c1c                HeapMemMP_create
-                0x00020e54                HeapMemMP_restore
- .text          0x00020f48     0x1a7c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
-                0x00020f48                HeapBufMP_getKnlHandle
-                0x0002109c                HeapBufMP_isBlocking
-                0x0002115c                HeapBufMP_getStats
-                0x0002131c                HeapBufMP_free
-                0x000214f4                HeapBufMP_alloc
-                0x00021698                HeapBufMP_getConfig
-                0x000217b8                HeapBufMP_setup
-                0x000218d8                HeapBufMP_destroy
-                0x000219b4                HeapBufMP_Params_init
-                0x00021afc                HeapBufMP_delete
-                0x00021cf4                HeapBufMP_close
-                0x00021eec                HeapBufMP_getExtendedStats
-                0x000220a8                HeapBufMP_sharedMemReq
-                0x000221dc                _HeapBufMP_create
-                0x0002231c                HeapBufMP_open
-                0x00022554                HeapBufMP_openByAddr
-                0x00022798                HeapBufMP_create
- .text          0x000229c4     0x198c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
-                0x000229c4                GateMP_enter
-                0x00022b20                GateMP_leave
-                0x00022c8c                GateMP_getConfig
-                0x00022dc0                GateMP_setup
-                0x00022f68                GateMP_destroy
-                0x000230ac                GateMP_Params_init
-                0x00023200                GateMP_Instance_init
-                0x0002331c                GateMP_Instance_finalize
-                0x00023350                _GateMP_create
-                0x0002341c                GateMP_create
-                0x00023690                GateMP_delete
-                0x00023878                GateMP_open
-                0x00023aa0                GateMP_openByAddr
-                0x00023ccc                GateMP_close
-                0x00023f04                GateMP_sharedMemReq
-                0x00023fdc                GateMP_getDefaultRemote
-                0x00024090                GateMP_getSharedAddr
-                0x00024138                GateMP_setReserved
-                0x000241c4                GateMP_getLocalProtect
-                0x00024204                GateMP_getRemoteProtect
-                0x00024244                GateMP_getKnlHandle
- .text          0x00024350      0x398 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
-                0x00024350                SharedRegionDrv_open
-                0x00024470                SharedRegionDrv_close
-                0x0002453c                SharedRegionDrv_ioctl
- .text          0x000246e8      0x710 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
-                0x000246e8                _NotifyDrvUsr_eventWorker
-                0x000247f0                NotifyDrvUsr_open
-                0x00024ae8                NotifyDrvUsr_close
-                0x00024d04                NotifyDrvUsr_ioctl
- .text          0x00024df8      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
-                0x00024df8                HeapBufMPDrv_open
-                0x00024f1c                HeapBufMPDrv_close
-                0x00024fe8                HeapBufMPDrv_ioctl
- .text          0x000250d0      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
-                0x000250d0                MessageQDrv_open
-                0x000251ec                MessageQDrv_close
-                0x000252b8                MessageQDrv_ioctl
- .text          0x000253a0      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
-                0x000253a0                IpcDrv_open
-                0x000254c4                IpcDrv_close
-                0x00025590                IpcDrv_ioctl
- .text          0x00025678      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
-                0x00025678                FrameQDrv_open
-                0x00025794                FrameQDrv_close
-                0x00025860                FrameQDrv_ioctl
- .text          0x00025948      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
-                0x00025948                FrameQBufMgrDrv_open
-                0x00025a64                FrameQBufMgrDrv_close
-                0x00025b30                FrameQBufMgrDrv_ioctl
- .text          0x00025c18      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
-                0x00025c18                ClientNotifyMgrDrv_open
-                0x00025d34                ClientNotifyMgrDrv_close
-                0x00025e00                ClientNotifyMgrDrv_ioctl
- .text          0x00025ee8      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
-                0x00025ee8                RingIODrv_open
-                0x00026004                RingIODrv_close
-                0x000260d0                RingIODrv_ioctl
- .text          0x000261b8      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
-                0x000261b8                RingIOShmDrv_open
-                0x000262d4                RingIOShmDrv_close
-                0x000263a0                RingIOShmDrv_ioctl
- .text          0x00026488      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
-                0x00026488                HeapMemMPDrv_open
-                0x000265ac                HeapMemMPDrv_close
-                0x00026678                HeapMemMPDrv_ioctl
- .text          0x00026760      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
-                0x00026760                GateMPDrv_open
-                0x00026884                GateMPDrv_close
-                0x00026950                GateMPDrv_ioctl
- .text          0x00026a38      0x4c8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
-                0x00026a38                GateMutex_leave
-                0x00026ad0                GateMutex_enter
-                0x00026b74                GateMutex_Instance_init
-                0x00026c3c                GateMutex_Instance_finalize
-                0x00026cac                GateMutex_create
-                0x00026df0                GateMutex_delete
- .text          0x00026f00      0x8d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
-                0x00026f00                Memory_alloc
-                0x00027070                Memory_calloc
-                0x000272ac                Memory_free
-                0x000273bc                Memory_getStats
-                0x000274ac                Memory_query
-                0x000275a0                Memory_getMaxDefaultTypeAlign
-                0x000275a8                Memory_valloc
-                0x00027768                Memory_translate
- .text          0x000277d8     0x1194 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
-                0x000277d8                List_Params_init
-                0x0002787c                List_create
-                0x00027940                List_delete
-                0x00027a6c                List_construct
-                0x00027b20                List_destruct
-                0x00027bd8                List_elemClear
-                0x00027c8c                List_empty
-                0x00027d54                List_get
-                0x00027e70                List_put
-                0x00027fe4                List_next
-                0x000280bc                List_prev
-                0x00028200                List_insert
-                0x00028374                List_remove
-                0x000284a8                List_putHead
-                0x0002861c                List_dequeue
-                0x000286f4                List_enqueue
-                0x00028830                List_enqueueHead
- .text          0x0002896c      0x390 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
-                0x0002896c                String_cat
-                0x000289b8                String_cmp
-                0x00028a7c                String_ncmp
-                0x00028ac4                String_cpy
-                0x00028adc                String_ncpy
-                0x00028bb8                String_len
-                0x00028bec                String_hexToStr
-                0x00028c78                String_hash
- .text          0x00028cfc      0x368 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
-                0x00028cfc                _GT_0trace
-                0x00028d48                _GT_1trace
-                0x00028d98                _GT_2trace
-                0x00028df0                _GT_3trace
-                0x00028e50                _GT_4trace
-                0x00028ec0                _GT_5trace
-                0x00028f34                _GT_6trace
-                0x00028fb0                _GT_setFailureReason
-                0x00028ff4                _GT_setTrace
- .text          0x00029064     0x2624 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
-                0x00029064                NameServer_getConfig
-                0x000291b4                NameServer_setup
-                0x000292c4                NameServer_destroy
-                0x0002938c                NameServer_Params_init
-                0x000294d8                NameServer_create
-                0x00029714                NameServer_delete
-                0x000298dc                NameServer_open
-                0x00029b20                NameServer_close
-                0x00029d08                NameServer_add
-                0x00029fd4                NameServer_addUInt32
-                0x0002a258                NameServer_remove
-                0x0002a42c                NameServer_removeEntry
-                0x0002a5f8                NameServer_get
-                0x0002a93c                NameServer_getLocal
-                0x0002ac5c                NameServer_getUInt32
-                0x0002aea4                NameServer_getLocalUInt32
-                0x0002b0e8                NameServer_match
-                0x0002b348                NameServer_getHandle
-                0x0002b514                NameServer_isRegistered
- .text          0x0002b688      0xa64 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
-                0x0002b688                MultiProc_getConfig
-                0x0002b7d8                MultiProc_setup
-                0x0002b910                MultiProc_destroy
-                0x0002b9d8                MultiProc_setLocalId
-                0x0002bb6c                MultiProc_getId
-                0x0002bd10                MultiProc_getName
-                0x0002be40                MultiProc_getNumProcessors
-                0x0002be94                MultiProc_self
-                0x0002beec                MultiProc_getSlot
- .text          0x0002c0ec      0x108 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
-                0x0002c170                Gate_enterSystem
-                0x0002c1b4                Gate_leaveSystem
- .text          0x0002c1f4       0x9c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
-                0x0002c1f4                SysLink_setup
-                0x0002c24c                SysLink_destroy
- .text          0x0002c290      0x368 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
-                0x0002c290                Cache_inv
-                0x0002c34c                Cache_wb
-                0x0002c408                Cache_wbInv
-                0x0002c4c4                Cache_wait
-                0x0002c550                Cache_setMode
- .text          0x0002c5f8      0x2d4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
-                0x0002c5f8                NameServerDrv_open
-                0x0002c718                NameServerDrv_close
-                0x0002c7e4                NameServerDrv_ioctl
- .text          0x0002c8cc      0x2a4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
-                0x0002c8cc                MultiProcDrv_open
-                0x0002c9e8                MultiProcDrv_close
-                0x0002cab4                MultiProcDrv_ioctl
- .text          0x0002cb70       0xf0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
-                0x0002cb70                TraceDrv_ioctl
- .text          0x0002cc60       0xb8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
-                0x0002cc60                CacheDrv_ioctl
- .text          0x0002cd18     0x1268 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
-                0x0002cd18                MemoryOS_destroy
-                0x0002ce98                MemoryOS_setup
-                0x0002d020                MemoryOS_alloc
-                0x0002d100                MemoryOS_calloc
-                0x0002d26c                MemoryOS_free
-                0x0002d32c                MemoryOS_map
-                0x0002d744                MemoryOS_unmap
-                0x0002da70                MemoryOS_copy
-                0x0002dbe0                MemoryOS_set
-                0x0002dd64                MemoryOS_translate
- .text          0x0002df80      0x5a0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
-                0x0002df80                OsalDrv_open
-                0x0002e0b4                OsalDrv_close
-                0x0002e190                OsalDrv_map
-                0x0002e3a8                OsalDrv_unmap
-                0x0002e424                OsalDrv_ioctl
- .text          0x0002e520      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
-                0x0002e520                OsalMutex_create
-                0x0002e640                OsalMutex_delete
-                0x0002e750                OsalMutex_enter
-                0x0002e828                OsalMutex_leave
- .text          0x0002e908       0x44 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
-                0x0002e908                Osal_printf
- .text          0x0002e94c     0x4138 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
-                0x0002ef64                ProcMgr_getConfig
-                0x0002f084                ProcMgr_setup
-                0x0002f1bc                ProcMgr_Params_init
-                0x0002f2cc                ProcMgr_create
-                0x0002f5ac                ProcMgr_delete
-                0x0002f7ac                ProcMgr_close
-                0x0002fab8                ProcMgr_destroy
-                0x0002fda8                ProcMgr_getAttachParams
-                0x0002feb8                ProcMgr_detach
-                0x00030070                ProcMgr_load
-                0x000302dc                ProcMgr_unload
-                0x000303f0                ProcMgr_getStartParams
-                0x000304f8                ProcMgr_start
-                0x0003060c                ProcMgr_stop
-                0x0003070c                ProcMgr_getState
-                0x00030814                ProcMgr_read
-                0x00030a2c                ProcMgr_write
-                0x00030c44                ProcMgr_control
-                0x00030d64                ProcMgr_translateAddr
-                0x000310c8                ProcMgr_getSymbolAddress
-                0x000312cc                ProcMgr_map
-                0x00031648                ProcMgr_unmap
-                0x00031c30                ProcMgr_registerNotify
-                0x00031dc0                ProcMgr_getMaxMemoryRegions
-                0x00031e3c                ProcMgr_getProcInfo
-                0x00031fc0                ProcMgr_attach
-                0x0003224c                ProcMgr_open
-                0x00032630                ProcMgr_getSectionInfo
-                0x000327c4                ProcMgr_getSectionData
-                0x00032988                ProcMgr_getLoadedFileId
- .text          0x00032a84      0x45c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
-                0x00032a84                ProcMgrDrvUsr_open
-                0x00032bac                ProcMgrDrvUsr_close
-                0x00032c80                ProcMgrDrvUsr_ioctl
- .text          0x00032ee0      0x730 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
-                0x00032ee0                FrameQ_isSupportedInterface
-                0x00032eec                FrameQ_getExtendedHeaderPtr
-                0x00032f30                FrameQ_getNumFrameBuffers
-                0x00032fe0                FrameQ_getFrameBuffer
-                0x000330dc                FrameQ_getFrameBufSize
-                0x000331d4                FrameQ_getFrameBufValidSize
-                0x000332d8                FrameQ_getFrameBufDataStartOffset
-                0x000333d8                FrameQ_setFrameBufValidSize
-                0x000334f4                FrameQ_setFrameBufDataStartOffset
- .text          0x00033610     0x2050 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
-                0x00033610                ListMP_getConfig
-                0x00033730                ListMP_setup
-                0x00033848                ListMP_destroy
-                0x00033920                ListMP_Params_init
-                0x00033a68                ListMP_create
-                0x00033d1c                ListMP_delete
-                0x00033efc                ListMP_sharedMemReq
-                0x00034044                ListMP_open
-                0x00034284                ListMP_openByAddr
-                0x0003448c                ListMP_close
-                0x00034670                ListMP_empty
-                0x000347d8                ListMP_getHead
-                0x0003494c                ListMP_getTail
-                0x00034ab4                ListMP_putHead
-                0x00034c88                ListMP_putTail
-                0x00034e64                ListMP_insert
-                0x00035090                ListMP_remove
-                0x0003526c                ListMP_next
-                0x00035400                ListMP_prev
-                0x00035594                _ListMP_create
-                0x00035658                ListMP_getGate
- .text          0x00035660      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
-                0x00035660                ListMPDrv_open
-                0x00035784                ListMPDrv_close
-                0x00035850                ListMPDrv_ioctl
- .text          0x00035938      0x3f8 syslinksamples.o_debug
-                0x00035938                SysLinkSamples_startup
-                0x00035970                SysLinkSamples_shutdown
-                0x000359a8                SysLinkSamples_setHiddenProcId
-                0x000359c0                SysLinkSamples_isAvailableProcId
-                0x000359d4                SysLinkSamples_setToRunProcIds
-                0x00035b54                SysLinkSamples_toRunProcId
-                0x00035b68                SysLinkSamples_osStartup
-                0x00035d10                SysLinkSamples_osShutdown
- .text          0x00035d30     0x1190 slaveloader.o_debug
-                0x00036198                SlaveLoader_startupArgs
-                0x0003655c                SlaveLoader_startup
-                0x000368c0                SlaveLoader_shutdown
-                0x00036b84                SlaveLoader_printStatus
- .text          0x00036ec0       0x64 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/./libc_nonshared.a(elf-init.oS)
-                0x00036ec0                __libc_csu_init
-                0x00036f20                __libc_csu_fini
- .text          0x00036f24      0x114 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_udivsi3.o)
-                0x00036f24                __udivsi3
-                0x00036f24                __aeabi_uidiv
-                0x00037018                __aeabi_uidivmod
- .text          0x00037038       0x14 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_dvmd_lnx.o)
-                0x00037038                __aeabi_idiv0
-                0x00037038                __aeabi_ldiv0
- .text          0x0003704c        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtend.o
- .text          0x0003704c        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
+ .text          0x00008f70      0x658 bin/release/obj/syslink.ov5T
+                0x00008f70                ReCATSyslinkRecv
+                0x00009010                ReCATSyslinkSend
+                0x000090ec                ReCATSyslinkInit
+                0x00009478                ReCATSyslinkClear
+                0x00009548                ReCATSyslinkReadBuffer
+                0x00009584                ReCATSyslinkSendEvent
+ .text          0x000095c8      0x32c bin/release/obj/pseudo.ov5T
+                0x000095c8                ReCATSerialInit
+                0x00009674                ReCATSeialConf
+                0x000098ec                ReCATDataRecv
+                0x000098f0                ReCATDataSend
+ .text          0x000098f4     0x2d18 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+                0x000098f4                SharedRegion_getConfig
+                0x00009a14                SharedRegion_destroy
+                0x00009c4c                SharedRegion_setup
+                0x0000a068                SharedRegion_start
+                0x0000a14c                SharedRegion_stop
+                0x0000a230                SharedRegion_attach
+                0x0000a344                SharedRegion_detach
+                0x0000a460                SharedRegion_setEntry
+                0x0000a700                SharedRegion_getId
+                0x0000a8d0                SharedRegion_getPtr
+                0x0000aaac                SharedRegion_getSRPtr
+                0x0000ad68                SharedRegion_clearEntry
+                0x0000b03c                SharedRegion_getHeap
+                0x0000b1e8                SharedRegion_getIdByName
+                0x0000b430                SharedRegion_getEntry
+                0x0000b5e8                SharedRegion_getCacheLineSize
+                0x0000b734                SharedRegion_isCacheEnabled
+                0x0000b89c                SharedRegion_translateEnabled
+                0x0000b8f0                SharedRegion_getNumRegions
+                0x0000b944                SharedRegion_entryInit
+                0x0000ba74                SharedRegion_invalidSRPtr
+                0x0000ba7c                SharedRegion_reserveMemory
+                0x0000bce4                SharedRegion_getNumOffsetBits
+                0x0000bdb8                SharedRegion_checkOverlap
+                0x0000bfe8                SharedRegion_clearReservedMemory
+                0x0000c0c0                SharedRegion_getRegionInfo
+                0x0000c250                _SharedRegion_setRegions
+                0x0000c488                _SharedRegion_clearRegions
+ .text          0x0000c60c     0x2164 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+                0x0000c60c                Notify_getConfig
+                0x0000c748                Notify_setup
+                0x0000c8b0                Notify_destroy
+                0x0000c990                Notify_attach
+                0x0000cae0                Notify_detach
+                0x0000cbc8                Notify_sharedMemReq
+                0x0000cd1c                Notify_eventAvailable
+                0x0000cf48                Notify_intLineRegistered
+                0x0000d11c                Notify_registerEventSingle
+                0x0000d41c                Notify_registerEvent
+                0x0000d724                Notify_unregisterEventSingle
+                0x0000d9d4                Notify_unregisterEvent
+                0x0000dca4                Notify_sendEvent
+                0x0000df58                Notify_disable
+                0x0000e0f0                Notify_restore
+                0x0000e278                Notify_disableEvent
+                0x0000e4f4                Notify_enableEvent
+ .text          0x0000e770     0x1e18 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+                0x0000e770                MessageQ_getConfig
+                0x0000e894                MessageQ_setup
+                0x0000e9b4                MessageQ_destroy
+                0x0000ea7c                MessageQ_Params_init
+                0x0000ebc4                MessageQ_create
+                0x0000ed90                MessageQ_delete
+                0x0000ef78                MessageQ_open
+                0x0000f158                MessageQ_close
+                0x0000f2c8                MessageQ_put
+                0x0000f4b0                MessageQ_get
+                0x0000f6e4                MessageQ_count
+                0x0000f87c                MessageQ_staticMsgInit
+                0x0000f984                MessageQ_alloc
+                0x0000faac                MessageQ_free
+                0x0000fc3c                MessageQ_registerHeap
+                0x0000fe08                MessageQ_unregisterHeap
+                0x0000fef8                MessageQ_unblock
+                0x00010044                MessageQ_setReplyQueue
+                0x00010178                MessageQ_getQueueId
+                0x00010238                MessageQ_setMsgTrace
+                0x00010328                MessageQ_sharedMemReq
+                0x000103f8                MessageQ_attach
+                0x000104d0                MessageQ_detach
+ .text          0x00010588      0xec4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+                0x00010588                Ipc_getConfig
+                0x000106e8                Ipc_setup
+                0x00010c00                Ipc_destroy
+                0x0001115c                Ipc_control
+                0x000112bc                Ipc_readConfig
+                0x00011384                Ipc_writeConfig
+ .text          0x0001144c     0x21d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+                0x0001144c                RingIO_getConfig
+                0x0001156c                RingIO_setup
+                0x00011694                RingIO_destroy
+                0x0001176c                RingIO_Params_init
+                0x000118a4                RingIO_delete
+                0x00011a70                RingIO_create
+                0x00011e3c                RingIO_close
+                0x00012014                RingIO_openByAddr
+                0x000122d0                RingIO_open
+                0x0001258c                RingIO_registerNotifier
+                0x00012748                RingIO_unregisterNotifier
+                0x00012884                RingIO_setNotifyType
+                0x00012980                RingIO_getValidSize
+                0x00012a14                RingIO_getEmptySize
+                0x00012aa8                RingIO_getValidAttrSize
+                0x00012b3c                RingIO_getEmptyAttrSize
+                0x00012bd0                RingIO_getAcquiredOffset
+                0x00012c64                RingIO_getAcquiredSize
+                0x00012cf8                RingIO_getWaterMark
+                0x00012d8c                RingIO_setWaterMark
+                0x00012e28                RingIO_acquire
+                0x00012f48                RingIO_release
+                0x00012fe4                RingIO_cancel
+                0x00013074                RingIO_getAttribute
+                0x00013178                RingIO_getvAttribute
+                0x00013230                RingIO_setAttribute
+                0x0001333c                RingIO_setvAttribute
+                0x000133fc                RingIO_flush
+                0x000134b4                RingIO_sendNotify
+                0x00013544                RingIO_sharedMemReq
+ .text          0x0001361c      0x458 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+                0x0001361c                RingIOShm_getConfig
+                0x0001373c                RingIOShm_setup
+                0x00013864                RingIOShm_destroy
+                0x0001393c                RingIOShm_Params_init
+ .text          0x00013a74     0x4364 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+                0x00013a74                FrameQ_getConfig
+                0x00013ba0                FrameQ_setup
+                0x00013d9c                FrameQ_destroy
+                0x00013f0c                FrameQ_create
+                0x00014660                FrameQ_delete
+                0x000149c4                FrameQ_open
+                0x000150a8                FrameQ_close
+                0x000153f8                FrameQ_alloc
+                0x0001560c                FrameQ_allocv
+                0x0001585c                FrameQ_free
+                0x00015a2c                FrameQ_freev
+                0x00015c7c                FrameQ_put
+                0x00015f08                FrameQ_putv
+                0x00016210                FrameQ_get
+                0x00016484                FrameQ_getv
+                0x000167b4                FrameQ_registerNotifier
+                0x00016b0c                FrameQ_unregisterNotifier
+                0x00016d80                FrameQ_dup
+                0x00016fac                FrameQ_sendNotify
+                0x0001713c                FrameQ_getNumFrames
+                0x0001731c                FrameQ_getvNumFrames
+                0x00017510                FrameQ_getNumFreeFrames
+                0x00017698                FrameQ_getvNumFreeFrames
+                0x000178ac                FrameQ_control
+                0x000179e4                FrameQ_ShMem_Params_init
+                0x00017b34                FrameQ_Params_init
+                0x00017c80                FrameQ_ShMem_sharedMemReq
+ .text          0x00017dd8     0x44fc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+                0x00017dd8                FrameQBufMgr_getConfig
+                0x00017f08                FrameQBufMgr_setup
+                0x00018104                FrameQBufMgr_destroy
+                0x0001828c                FrameQBufMgr_create
+                0x00018904                FrameQBufMgr_delete
+                0x00018bd8                FrameQBufMgr_open
+                0x00019208                FrameQBufMgr_close
+                0x0001935c                FrameQBufMgr_alloc
+                0x00019588                FrameQBufMgr_allocv
+                0x0001990c                FrameQBufMgr_free
+                0x00019b50                FrameQBufMgr_freev
+                0x00019e5c                FrameQBufMgr_dup
+                0x0001a14c                FrameQBufMgr_dupv
+                0x0001a444                FrameQBufMgr_registerNotifier
+                0x0001a6b0                FrameQBufMgr_unregisterNotifier
+                0x0001a8b4                FrameQBufMgr_add
+                0x0001a9c8                FrameQBufMgr_remove
+                0x0001ab14                FrameQBufMgr_writeBackHeaderBuf
+                0x0001accc                FrameQBufMgr_invalidateHeaderBuf
+                0x0001ae98                FrameQBufMgr_writeBackFrameBuf
+                0x0001b0e0                FrameQBufMgr_invalidateFrameBuf
+                0x0001b328                FrameQBufMgr_writeBack
+                0x0001b548                FrameQBufMgr_invalidate
+                0x0001b77c                FrameQBufMgr_translateAddr
+                0x0001ba14                FrameQBufMgr_getId
+                0x0001ba90                FrameQBufMgr_getHandle
+                0x0001bb8c                FrameQBufMgr_getKnlHandle
+                0x0001bc20                FrameQBufMgr_getNumFreeFrames
+                0x0001bdac                FrameQBufMgr_getvNumFreeFrames
+                0x0001bfc0                FrameQBufMgr_getBaseHeaderSize
+                0x0001c000                FrameQBufMgr_isSupportedInterface
+                0x0001c00c                FrameQBufMgr_isSupportedBufInterface
+                0x0001c028                FrameQBufMgr_ShMem_Params_init
+                0x0001c178                FrameQBufMgr_Params_init
+ .text          0x0001c2d4     0x3084 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+                0x0001c2d4                ClientNotifyMgr_callBack
+                0x0001c700                ClientNotifyMgr_sharedMemModReq
+                0x0001c744                ClientNotifyMgr_sharedMemReq
+                0x0001c83c                ClientNotifyMgr_getConfig
+                0x0001c970                ClientNotifyMgr_setup
+                0x0001cb98                ClientNotifyMgr_destroy
+                0x0001ccac                ClientNotifyMgr_Params_init
+                0x0001cdfc                ClientNotifyMgr_create
+                0x0001d464                ClientNotifyMgr_delete
+                0x0001d7a4                ClientNotifyMgr_open
+                0x0001d8b4                ClientNotifyMgr_close
+                0x0001d964                ClientNotifyMgr_registerClient
+                0x0001dd94                ClientNotifyMgr_unregisterClient
+                0x0001e064                ClientNotifyMgr_enableNotification
+                0x0001e264                ClientNotifyMgr_disableNotification
+                0x0001e44c                ClientNotifyMgr_sendNotification
+                0x0001e83c                ClientNotifyMgr_sendForceNotification
+                0x0001eaec                ClientNotifyMgr_sendNotificationMulti
+                0x0001f03c                ClientNotifyMgr_sendForceNotificationMulti
+ .text          0x0001f358     0x1be4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+                0x0001f358                HeapMemMP_getKnlHandle
+                0x0001f4a4                HeapMemMP_getStats
+                0x0001f660                HeapMemMP_free
+                0x0001f834                HeapMemMP_alloc
+                0x0001f9d4                HeapMemMP_getConfig
+                0x0001faf4                HeapMemMP_setup
+                0x0001fc0c                HeapMemMP_destroy
+                0x0001fce0                HeapMemMP_Params_init
+                0x0001fe24                HeapMemMP_delete
+                0x0002001c                HeapMemMP_close
+                0x00020214                HeapMemMP_getExtendedStats
+                0x000203d0                HeapMemMP_sharedMemReq
+                0x00020500                _HeapMemMP_create
+                0x00020638                HeapMemMP_getUsrHandle
+                0x000207a0                HeapMemMP_open
+                0x000209d4                HeapMemMP_openByAddr
+                0x00020c10                HeapMemMP_create
+                0x00020e48                HeapMemMP_restore
+ .text          0x00020f3c     0x1a7c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+                0x00020f3c                HeapBufMP_getKnlHandle
+                0x00021090                HeapBufMP_isBlocking
+                0x00021150                HeapBufMP_getStats
+                0x00021310                HeapBufMP_free
+                0x000214e8                HeapBufMP_alloc
+                0x0002168c                HeapBufMP_getConfig
+                0x000217ac                HeapBufMP_setup
+                0x000218cc                HeapBufMP_destroy
+                0x000219a8                HeapBufMP_Params_init
+                0x00021af0                HeapBufMP_delete
+                0x00021ce8                HeapBufMP_close
+                0x00021ee0                HeapBufMP_getExtendedStats
+                0x0002209c                HeapBufMP_sharedMemReq
+                0x000221d0                _HeapBufMP_create
+                0x00022310                HeapBufMP_open
+                0x00022548                HeapBufMP_openByAddr
+                0x0002278c                HeapBufMP_create
+ .text          0x000229b8     0x198c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+                0x000229b8                GateMP_enter
+                0x00022b14                GateMP_leave
+                0x00022c80                GateMP_getConfig
+                0x00022db4                GateMP_setup
+                0x00022f5c                GateMP_destroy
+                0x000230a0                GateMP_Params_init
+                0x000231f4                GateMP_Instance_init
+                0x00023310                GateMP_Instance_finalize
+                0x00023344                _GateMP_create
+                0x00023410                GateMP_create
+                0x00023684                GateMP_delete
+                0x0002386c                GateMP_open
+                0x00023a94                GateMP_openByAddr
+                0x00023cc0                GateMP_close
+                0x00023ef8                GateMP_sharedMemReq
+                0x00023fd0                GateMP_getDefaultRemote
+                0x00024084                GateMP_getSharedAddr
+                0x0002412c                GateMP_setReserved
+                0x000241b8                GateMP_getLocalProtect
+                0x000241f8                GateMP_getRemoteProtect
+                0x00024238                GateMP_getKnlHandle
+ .text          0x00024344      0x398 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+                0x00024344                SharedRegionDrv_open
+                0x00024464                SharedRegionDrv_close
+                0x00024530                SharedRegionDrv_ioctl
+ .text          0x000246dc      0x710 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+                0x000246dc                _NotifyDrvUsr_eventWorker
+                0x000247e4                NotifyDrvUsr_open
+                0x00024adc                NotifyDrvUsr_close
+                0x00024cf8                NotifyDrvUsr_ioctl
+ .text          0x00024dec      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+                0x00024dec                HeapBufMPDrv_open
+                0x00024f10                HeapBufMPDrv_close
+                0x00024fdc                HeapBufMPDrv_ioctl
+ .text          0x000250c4      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+                0x000250c4                MessageQDrv_open
+                0x000251e0                MessageQDrv_close
+                0x000252ac                MessageQDrv_ioctl
+ .text          0x00025394      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+                0x00025394                IpcDrv_open
+                0x000254b8                IpcDrv_close
+                0x00025584                IpcDrv_ioctl
+ .text          0x0002566c      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+                0x0002566c                FrameQDrv_open
+                0x00025788                FrameQDrv_close
+                0x00025854                FrameQDrv_ioctl
+ .text          0x0002593c      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+                0x0002593c                FrameQBufMgrDrv_open
+                0x00025a58                FrameQBufMgrDrv_close
+                0x00025b24                FrameQBufMgrDrv_ioctl
+ .text          0x00025c0c      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+                0x00025c0c                ClientNotifyMgrDrv_open
+                0x00025d28                ClientNotifyMgrDrv_close
+                0x00025df4                ClientNotifyMgrDrv_ioctl
+ .text          0x00025edc      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+                0x00025edc                RingIODrv_open
+                0x00025ff8                RingIODrv_close
+                0x000260c4                RingIODrv_ioctl
+ .text          0x000261ac      0x2d0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+                0x000261ac                RingIOShmDrv_open
+                0x000262c8                RingIOShmDrv_close
+                0x00026394                RingIOShmDrv_ioctl
+ .text          0x0002647c      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+                0x0002647c                HeapMemMPDrv_open
+                0x000265a0                HeapMemMPDrv_close
+                0x0002666c                HeapMemMPDrv_ioctl
+ .text          0x00026754      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+                0x00026754                GateMPDrv_open
+                0x00026878                GateMPDrv_close
+                0x00026944                GateMPDrv_ioctl
+ .text          0x00026a2c      0x4c8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+                0x00026a2c                GateMutex_leave
+                0x00026ac4                GateMutex_enter
+                0x00026b68                GateMutex_Instance_init
+                0x00026c30                GateMutex_Instance_finalize
+                0x00026ca0                GateMutex_create
+                0x00026de4                GateMutex_delete
+ .text          0x00026ef4      0x8d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+                0x00026ef4                Memory_alloc
+                0x00027064                Memory_calloc
+                0x000272a0                Memory_free
+                0x000273b0                Memory_getStats
+                0x000274a0                Memory_query
+                0x00027594                Memory_getMaxDefaultTypeAlign
+                0x0002759c                Memory_valloc
+                0x0002775c                Memory_translate
+ .text          0x000277cc     0x1194 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
+                0x000277cc                List_Params_init
+                0x00027870                List_create
+                0x00027934                List_delete
+                0x00027a60                List_construct
+                0x00027b14                List_destruct
+                0x00027bcc                List_elemClear
+                0x00027c80                List_empty
+                0x00027d48                List_get
+                0x00027e64                List_put
+                0x00027fd8                List_next
+                0x000280b0                List_prev
+                0x000281f4                List_insert
+                0x00028368                List_remove
+                0x0002849c                List_putHead
+                0x00028610                List_dequeue
+                0x000286e8                List_enqueue
+                0x00028824                List_enqueueHead
+ .text          0x00028960      0x390 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
+                0x00028960                String_cat
+                0x000289ac                String_cmp
+                0x00028a70                String_ncmp
+                0x00028ab8                String_cpy
+                0x00028ad0                String_ncpy
+                0x00028bac                String_len
+                0x00028be0                String_hexToStr
+                0x00028c6c                String_hash
+ .text          0x00028cf0      0x368 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+                0x00028cf0                _GT_0trace
+                0x00028d3c                _GT_1trace
+                0x00028d8c                _GT_2trace
+                0x00028de4                _GT_3trace
+                0x00028e44                _GT_4trace
+                0x00028eb4                _GT_5trace
+                0x00028f28                _GT_6trace
+                0x00028fa4                _GT_setFailureReason
+                0x00028fe8                _GT_setTrace
+ .text          0x00029058     0x2624 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+                0x00029058                NameServer_getConfig
+                0x000291a8                NameServer_setup
+                0x000292b8                NameServer_destroy
+                0x00029380                NameServer_Params_init
+                0x000294cc                NameServer_create
+                0x00029708                NameServer_delete
+                0x000298d0                NameServer_open
+                0x00029b14                NameServer_close
+                0x00029cfc                NameServer_add
+                0x00029fc8                NameServer_addUInt32
+                0x0002a24c                NameServer_remove
+                0x0002a420                NameServer_removeEntry
+                0x0002a5ec                NameServer_get
+                0x0002a930                NameServer_getLocal
+                0x0002ac50                NameServer_getUInt32
+                0x0002ae98                NameServer_getLocalUInt32
+                0x0002b0dc                NameServer_match
+                0x0002b33c                NameServer_getHandle
+                0x0002b508                NameServer_isRegistered
+ .text          0x0002b67c      0xa64 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+                0x0002b67c                MultiProc_getConfig
+                0x0002b7cc                MultiProc_setup
+                0x0002b904                MultiProc_destroy
+                0x0002b9cc                MultiProc_setLocalId
+                0x0002bb60                MultiProc_getId
+                0x0002bd04                MultiProc_getName
+                0x0002be34                MultiProc_getNumProcessors
+                0x0002be88                MultiProc_self
+                0x0002bee0                MultiProc_getSlot
+ .text          0x0002c0e0      0x108 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+                0x0002c164                Gate_enterSystem
+                0x0002c1a8                Gate_leaveSystem
+ .text          0x0002c1e8       0x9c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+                0x0002c1e8                SysLink_setup
+                0x0002c240                SysLink_destroy
+ .text          0x0002c284      0x368 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+                0x0002c284                Cache_inv
+                0x0002c340                Cache_wb
+                0x0002c3fc                Cache_wbInv
+                0x0002c4b8                Cache_wait
+                0x0002c544                Cache_setMode
+ .text          0x0002c5ec      0x2d4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+                0x0002c5ec                NameServerDrv_open
+                0x0002c70c                NameServerDrv_close
+                0x0002c7d8                NameServerDrv_ioctl
+ .text          0x0002c8c0      0x2a4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+                0x0002c8c0                MultiProcDrv_open
+                0x0002c9dc                MultiProcDrv_close
+                0x0002caa8                MultiProcDrv_ioctl
+ .text          0x0002cb64       0xf0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+                0x0002cb64                TraceDrv_ioctl
+ .text          0x0002cc54       0xb8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+                0x0002cc54                CacheDrv_ioctl
+ .text          0x0002cd0c     0x1268 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+                0x0002cd0c                MemoryOS_destroy
+                0x0002ce8c                MemoryOS_setup
+                0x0002d014                MemoryOS_alloc
+                0x0002d0f4                MemoryOS_calloc
+                0x0002d260                MemoryOS_free
+                0x0002d320                MemoryOS_map
+                0x0002d738                MemoryOS_unmap
+                0x0002da64                MemoryOS_copy
+                0x0002dbd4                MemoryOS_set
+                0x0002dd58                MemoryOS_translate
+ .text          0x0002df74      0x5a0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+                0x0002df74                OsalDrv_open
+                0x0002e0a8                OsalDrv_close
+                0x0002e184                OsalDrv_map
+                0x0002e39c                OsalDrv_unmap
+                0x0002e418                OsalDrv_ioctl
+ .text          0x0002e514      0x3e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+                0x0002e514                OsalMutex_create
+                0x0002e634                OsalMutex_delete
+                0x0002e744                OsalMutex_enter
+                0x0002e81c                OsalMutex_leave
+ .text          0x0002e8fc       0x44 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+                0x0002e8fc                Osal_printf
+ .text          0x0002e940     0x4138 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+                0x0002ef58                ProcMgr_getConfig
+                0x0002f078                ProcMgr_setup
+                0x0002f1b0                ProcMgr_Params_init
+                0x0002f2c0                ProcMgr_create
+                0x0002f5a0                ProcMgr_delete
+                0x0002f7a0                ProcMgr_close
+                0x0002faac                ProcMgr_destroy
+                0x0002fd9c                ProcMgr_getAttachParams
+                0x0002feac                ProcMgr_detach
+                0x00030064                ProcMgr_load
+                0x000302d0                ProcMgr_unload
+                0x000303e4                ProcMgr_getStartParams
+                0x000304ec                ProcMgr_start
+                0x00030600                ProcMgr_stop
+                0x00030700                ProcMgr_getState
+                0x00030808                ProcMgr_read
+                0x00030a20                ProcMgr_write
+                0x00030c38                ProcMgr_control
+                0x00030d58                ProcMgr_translateAddr
+                0x000310bc                ProcMgr_getSymbolAddress
+                0x000312c0                ProcMgr_map
+                0x0003163c                ProcMgr_unmap
+                0x00031c24                ProcMgr_registerNotify
+                0x00031db4                ProcMgr_getMaxMemoryRegions
+                0x00031e30                ProcMgr_getProcInfo
+                0x00031fb4                ProcMgr_attach
+                0x00032240                ProcMgr_open
+                0x00032624                ProcMgr_getSectionInfo
+                0x000327b8                ProcMgr_getSectionData
+                0x0003297c                ProcMgr_getLoadedFileId
+ .text          0x00032a78      0x45c /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+                0x00032a78                ProcMgrDrvUsr_open
+                0x00032ba0                ProcMgrDrvUsr_close
+                0x00032c74                ProcMgrDrvUsr_ioctl
+ .text          0x00032ed4      0x730 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+                0x00032ed4                FrameQ_isSupportedInterface
+                0x00032ee0                FrameQ_getExtendedHeaderPtr
+                0x00032f24                FrameQ_getNumFrameBuffers
+                0x00032fd4                FrameQ_getFrameBuffer
+                0x000330d0                FrameQ_getFrameBufSize
+                0x000331c8                FrameQ_getFrameBufValidSize
+                0x000332cc                FrameQ_getFrameBufDataStartOffset
+                0x000333cc                FrameQ_setFrameBufValidSize
+                0x000334e8                FrameQ_setFrameBufDataStartOffset
+ .text          0x00033604     0x2050 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+                0x00033604                ListMP_getConfig
+                0x00033724                ListMP_setup
+                0x0003383c                ListMP_destroy
+                0x00033914                ListMP_Params_init
+                0x00033a5c                ListMP_create
+                0x00033d10                ListMP_delete
+                0x00033ef0                ListMP_sharedMemReq
+                0x00034038                ListMP_open
+                0x00034278                ListMP_openByAddr
+                0x00034480                ListMP_close
+                0x00034664                ListMP_empty
+                0x000347cc                ListMP_getHead
+                0x00034940                ListMP_getTail
+                0x00034aa8                ListMP_putHead
+                0x00034c7c                ListMP_putTail
+                0x00034e58                ListMP_insert
+                0x00035084                ListMP_remove
+                0x00035260                ListMP_next
+                0x000353f4                ListMP_prev
+                0x00035588                _ListMP_create
+                0x0003564c                ListMP_getGate
+ .text          0x00035654      0x2d8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+                0x00035654                ListMPDrv_open
+                0x00035778                ListMPDrv_close
+                0x00035844                ListMPDrv_ioctl
+ .text          0x0003592c      0x3f8 syslinksamples.o_debug
+                0x0003592c                SysLinkSamples_startup
+                0x00035964                SysLinkSamples_shutdown
+                0x0003599c                SysLinkSamples_setHiddenProcId
+                0x000359b4                SysLinkSamples_isAvailableProcId
+                0x000359c8                SysLinkSamples_setToRunProcIds
+                0x00035b48                SysLinkSamples_toRunProcId
+                0x00035b5c                SysLinkSamples_osStartup
+                0x00035d04                SysLinkSamples_osShutdown
+ .text          0x00035d24     0x1190 slaveloader.o_debug
+                0x0003618c                SlaveLoader_startupArgs
+                0x00036550                SlaveLoader_startup
+                0x000368b4                SlaveLoader_shutdown
+                0x00036b78                SlaveLoader_printStatus
+ .text          0x00036eb4       0x64 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/./libc_nonshared.a(elf-init.oS)
+                0x00036eb4                __libc_csu_init
+                0x00036f14                __libc_csu_fini
+ .text          0x00036f18      0x114 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_udivsi3.o)
+                0x00036f18                __udivsi3
+                0x00036f18                __aeabi_uidiv
+                0x0003700c                __aeabi_uidivmod
+ .text          0x0003702c       0x14 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/libgcc.a(_dvmd_lnx.o)
+                0x0003702c                __aeabi_idiv0
+                0x0003702c                __aeabi_ldiv0
+ .text          0x00037040        0x0 /opt/linux-devkit/bin/../lib/gcc/arm-arago-linux-gnueabi/4.5.3/crtend.o
+ .text          0x00037040        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  *(.gnu.warning)
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
@@ -1000,223 +1000,224 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
  *(.v4_bx)
  .v4_bx         0x00000000        0x0 linker stubs
 
-.fini           0x0003704c        0x8
+.fini           0x00037040        0x8
  *(.fini)
- .fini          0x0003704c        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
-                0x0003704c                _fini
- .fini          0x00037050        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
-                0x00037054                PROVIDE (__etext, .)
-                0x00037054                PROVIDE (_etext, .)
-                0x00037054                PROVIDE (etext, .)
+ .fini          0x00037040        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crti.o
+                0x00037040                _fini
+ .fini          0x00037044        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
+                0x00037048                PROVIDE (__etext, .)
+                0x00037048                PROVIDE (_etext, .)
+                0x00037048                PROVIDE (etext, .)
 
-.rodata         0x00037054    0x13880
+.rodata         0x00037048    0x13880
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata.cst4   0x00037054        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
-                0x00037054                _IO_stdin_used
+ .rodata.cst4   0x00037048        0x4 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
+                0x00037048                _IO_stdin_used
+ .rodata        0x0003704c        0xc bin/release/obj/main.ov5T
  .rodata.str1.4
-                0x00037058       0x39 bin/release/obj/main.ov5T
-                                 0x3c (size before relaxing)
- *fill*         0x00037091        0x3 00
+                0x00037058       0x2f bin/release/obj/main.ov5T
+                                 0x30 (size before relaxing)
+ *fill*         0x00037087        0x1 00
  .rodata.str1.4
-                0x00037094      0x246 bin/release/obj/syslink.ov5T
+                0x00037088      0x246 bin/release/obj/syslink.ov5T
                                 0x248 (size before relaxing)
- *fill*         0x000372da        0x2 00
+ *fill*         0x000372ce        0x2 00
  .rodata.str1.4
-                0x000372dc       0x53 bin/release/obj/pseudo.ov5T
+                0x000372d0       0x53 bin/release/obj/pseudo.ov5T
                                  0x5c (size before relaxing)
- *fill*         0x0003732f        0x1 00
+ *fill*         0x00037323        0x1 00
  .rodata.str1.4
-                0x00037330     0x12bc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
+                0x00037324     0x12bc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegion.o)
                                0x12e8 (size before relaxing)
  .rodata.str1.4
-                0x000385ec      0xbbc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
+                0x000385e0      0xbbc /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Notify.o)
                                 0xc38 (size before relaxing)
  .rodata.str1.4
-                0x000391a8      0xea0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
+                0x0003919c      0xea0 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQ.o)
                                 0xf54 (size before relaxing)
  .rodata.str1.4
-                0x0003a048      0x704 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
+                0x0003a03c      0x704 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Ipc.o)
                                 0x794 (size before relaxing)
  .rodata.str1.4
-                0x0003a74c      0xffb /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
+                0x0003a740      0xffb /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIO.o)
                                0x117c (size before relaxing)
- *fill*         0x0003b747        0x1 00
+ *fill*         0x0003b73b        0x1 00
  .rodata.str1.4
-                0x0003b748      0x287 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
+                0x0003b73c      0x287 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShm.o)
                                 0x348 (size before relaxing)
- *fill*         0x0003b9cf        0x1 00
+ *fill*         0x0003b9c3        0x1 00
  .rodata.str1.4
-                0x0003b9d0     0x197e /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
+                0x0003b9c4     0x197e /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ.o)
                                0x1bf8 (size before relaxing)
- *fill*         0x0003d34e        0x2 00
+ *fill*         0x0003d342        0x2 00
  .rodata.str1.4
-                0x0003d350     0x1876 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
+                0x0003d344     0x1876 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgr.o)
                                0x1f64 (size before relaxing)
- *fill*         0x0003ebc6        0x2 00
+ *fill*         0x0003ebba        0x2 00
  .rodata.str1.4
-                0x0003ebc8     0x11d3 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
+                0x0003ebbc     0x11d3 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgr.o)
                                0x133c (size before relaxing)
- *fill*         0x0003fd9b        0x1 00
+ *fill*         0x0003fd8f        0x1 00
  .rodata.str1.4
-                0x0003fd9c      0xb43 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
+                0x0003fd90      0xb43 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMP.o)
                                 0xd08 (size before relaxing)
- *fill*         0x000408df        0x1 00
+ *fill*         0x000408d3        0x1 00
  .rodata.str1.4
-                0x000408e0      0x925 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
+                0x000408d4      0x925 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMP.o)
                                 0xca8 (size before relaxing)
- *fill*         0x00041205        0x3 00
+ *fill*         0x000411f9        0x3 00
  .rodata.str1.4
-                0x00041208      0x891 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
+                0x000411fc      0x891 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMP.o)
                                 0x9e0 (size before relaxing)
- *fill*         0x00041a99        0x3 00
+ *fill*         0x00041a8d        0x3 00
  .rodata.str1.4
-                0x00041a9c      0x2b6 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
+                0x00041a90      0x2b6 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SharedRegionDrv.o)
                                 0x2fc (size before relaxing)
- *fill*         0x00041d52        0x2 00
+ *fill*         0x00041d46        0x2 00
  .rodata.str1.4
-                0x00041d54      0x36b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
+                0x00041d48      0x36b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NotifyDrvUsr.o)
                                 0x3f4 (size before relaxing)
- *fill*         0x000420bf        0x1 00
+ *fill*         0x000420b3        0x1 00
  .rodata.str1.4
-                0x000420c0      0x22b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
+                0x000420b4      0x22b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapBufMPDrv.o)
                                 0x29c (size before relaxing)
- *fill*         0x000422eb        0x1 00
+ *fill*         0x000422df        0x1 00
  .rodata.str1.4
-                0x000422ec      0x21e /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
+                0x000422e0      0x21e /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MessageQDrv.o)
                                 0x290 (size before relaxing)
- *fill*         0x0004250a        0x2 00
+ *fill*         0x000424fe        0x2 00
  .rodata.str1.4
-                0x0004250c      0x1d1 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
+                0x00042500      0x1d1 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(IpcDrv.o)
                                 0x244 (size before relaxing)
- *fill*         0x000426dd        0x3 00
+ *fill*         0x000426d1        0x3 00
  .rodata.str1.4
-                0x000426e0      0x1f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
+                0x000426d4      0x1f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQDrv.o)
                                 0x268 (size before relaxing)
  .rodata.str1.4
-                0x000428d8      0x25a /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
+                0x000428cc      0x25a /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQBufMgrDrv.o)
                                 0x2cc (size before relaxing)
- *fill*         0x00042b32        0x2 00
+ *fill*         0x00042b26        0x2 00
  .rodata.str1.4
-                0x00042b34      0x285 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
+                0x00042b28      0x285 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ClientNotifyMgrDrv.o)
                                 0x2f8 (size before relaxing)
- *fill*         0x00042db9        0x3 00
+ *fill*         0x00042dad        0x3 00
  .rodata.str1.4
-                0x00042dbc      0x1f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
+                0x00042db0      0x1f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIODrv.o)
                                 0x268 (size before relaxing)
  .rodata.str1.4
-                0x00042fb4      0x1b7 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
+                0x00042fa8      0x1b7 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(RingIOShmDrv.o)
                                 0x290 (size before relaxing)
- *fill*         0x0004316b        0x1 00
+ *fill*         0x0004315f        0x1 00
  .rodata.str1.4
-                0x0004316c      0x22b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
+                0x00043160      0x22b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(HeapMemMPDrv.o)
                                 0x29c (size before relaxing)
- *fill*         0x00043397        0x1 00
+ *fill*         0x0004338b        0x1 00
  .rodata.str1.4
-                0x00043398      0x1f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
+                0x0004338c      0x1f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMPDrv.o)
                                 0x268 (size before relaxing)
  .rodata.str1.4
-                0x00043590      0x209 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
+                0x00043584      0x209 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(GateMutex.o)
                                 0x228 (size before relaxing)
- *fill*         0x00043799        0x3 00
+ *fill*         0x0004378d        0x3 00
  .rodata.str1.4
-                0x0004379c      0x43d /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
+                0x00043790      0x43d /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Memory.o)
                                 0x4cc (size before relaxing)
- *fill*         0x00043bd9        0x3 00
+ *fill*         0x00043bcd        0x3 00
  .rodata.str1.4
-                0x00043bdc      0x7ad /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
+                0x00043bd0      0x7ad /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(List.o)
                                 0x84c (size before relaxing)
- *fill*         0x00044389        0x3 00
- .rodata        0x0004438c      0x400 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
+ *fill*         0x0004437d        0x3 00
+ .rodata        0x00044380      0x400 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
  .rodata.str1.4
-                0x0004478c       0x11 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
+                0x00044780       0x11 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(String.o)
                                  0x14 (size before relaxing)
- *fill*         0x0004479d        0x3 00
+ *fill*         0x00044791        0x3 00
  .rodata.str1.4
-                0x000447a0       0x4f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
+                0x00044794       0x4f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Trace.o)
                                  0x50 (size before relaxing)
- *fill*         0x000447ef        0x1 00
+ *fill*         0x000447e3        0x1 00
  .rodata.str1.4
-                0x000447f0      0xbc4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
+                0x000447e4      0xbc4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServer.o)
                                 0xdfc (size before relaxing)
  .rodata.str1.4
-                0x000453b4      0x580 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
+                0x000453a8      0x580 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProc.o)
                                 0x60c (size before relaxing)
  .rodata.str1.4
-                0x00045934       0x4f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
+                0x00045928       0x4f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Gate.o)
                                  0x80 (size before relaxing)
- *fill*         0x00045983        0x1 00
+ *fill*         0x00045977        0x1 00
  .rodata.str1.4
-                0x00045984       0x65 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
+                0x00045978       0x65 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(SysLink.o)
                                  0x68 (size before relaxing)
- *fill*         0x000459e9        0x3 00
+ *fill*         0x000459dd        0x3 00
  .rodata.str1.4
-                0x000459ec      0x21b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
+                0x000459e0      0x21b /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(Cache.o)
                                 0x248 (size before relaxing)
- *fill*         0x00045c07        0x1 00
+ *fill*         0x00045bfb        0x1 00
  .rodata.str1.4
-                0x00045c08      0x250 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
+                0x00045bfc      0x250 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(NameServerDrv.o)
                                 0x2c0 (size before relaxing)
  .rodata.str1.4
-                0x00045e58      0x20f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
+                0x00045e4c      0x20f /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MultiProcDrv.o)
                                 0x250 (size before relaxing)
- *fill*         0x00046067        0x1 00
+ *fill*         0x0004605b        0x1 00
  .rodata.str1.4
-                0x00046068       0xb8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
+                0x0004605c       0xb8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(TraceDrv.o)
                                 0x100 (size before relaxing)
  .rodata.str1.4
-                0x00046120       0xb7 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
+                0x00046114       0xb7 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(CacheDrv.o)
                                  0xd0 (size before relaxing)
- *fill*         0x000461d7        0x1 00
+ *fill*         0x000461cb        0x1 00
  .rodata.str1.4
-                0x000461d8      0x7e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
+                0x000461cc      0x7e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(MemoryOS.o)
                                 0x8d0 (size before relaxing)
  .rodata.str1.4
-                0x000469c0      0x2db /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
+                0x000469b4      0x2db /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalDrv.o)
                                 0x374 (size before relaxing)
- *fill*         0x00046c9b        0x1 00
+ *fill*         0x00046c8f        0x1 00
  .rodata.str1.4
-                0x00046c9c      0x2e9 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
+                0x00046c90      0x2e9 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalMutex.o)
                                 0x328 (size before relaxing)
- *fill*         0x00046f85        0x3 00
+ *fill*         0x00046f79        0x3 00
  .rodata.str1.4
-                0x00046f88        0x3 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
+                0x00046f7c        0x3 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(OsalPrint.o)
                                   0x4 (size before relaxing)
- *fill*         0x00046f8b        0x1 00
+ *fill*         0x00046f7f        0x1 00
  .rodata.str1.4
-                0x00046f8c     0x1de4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
+                0x00046f80     0x1de4 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgr.o)
                                0x1f2c (size before relaxing)
  .rodata.str1.4
-                0x00048d70      0x2e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
+                0x00048d64      0x2e8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ProcMgrDrvUsr.o)
                                 0x358 (size before relaxing)
  .rodata.str1.4
-                0x00049058      0x5a6 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
+                0x0004904c      0x5a6 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(FrameQ_common.o)
                                 0x5e8 (size before relaxing)
- *fill*         0x000495fe        0x2 00
+ *fill*         0x000495f2        0x2 00
  .rodata.str1.4
-                0x00049600      0x9da /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
+                0x000495f4      0x9da /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMP.o)
                                 0xbe8 (size before relaxing)
- *fill*         0x00049fda        0x2 00
+ *fill*         0x00049fce        0x2 00
  .rodata.str1.4
-                0x00049fdc      0x1f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
+                0x00049fd0      0x1f8 /home/liao/src/syslink/packages/ti/syslink/lib/syslink.a_release(ListMPDrv.o)
                                 0x268 (size before relaxing)
  .rodata.str1.4
-                0x0004a1d4      0x180 syslinksamples.o_debug
+                0x0004a1c8      0x180 syslinksamples.o_debug
  .rodata.str1.4
-                0x0004a354      0x580 slaveloader.o_debug
+                0x0004a348      0x580 slaveloader.o_debug
                                 0x5b8 (size before relaxing)
 
 .rodata1
  *(.rodata1)
 
-.ARM.extab      0x0004a8d4        0x0
+.ARM.extab      0x0004a8c8        0x0
  *(.ARM.extab* .gnu.linkonce.armextab.*)
- .ARM.extab     0x0004a8d4        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
-                0x0004a8d4                __exidx_start = .
+ .ARM.extab     0x0004a8c8        0x0 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
+                0x0004a8c8                __exidx_start = .
 
-.ARM.exidx      0x0004a8d4        0x8
+.ARM.exidx      0x0004a8c8        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x0004a8d4        0x8 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
-                0x0004a8dc                __exidx_end = .
+ .ARM.exidx     0x0004a8c8        0x8 /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crt1.o
+                0x0004a8d0                __exidx_end = .
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
@@ -1226,7 +1227,7 @@ LOAD /opt/linux-devkit/bin/../arm-arago-linux-gnueabi/usr/lib/crtn.o
 
 .gcc_except_table
  *(.gcc_except_table .gcc_except_table.*)
-                0x0004a8dc                . = (ALIGN (0x8000) - ((0x8000 - .) & 0x7fff))
+                0x0004a8d0                . = (ALIGN (0x8000) - ((0x8000 - .) & 0x7fff))
                 0x00053000                . = (0x8000 DATA_SEGMENT_ALIGN 0x1000)
 
 .eh_frame

@@ -1,7 +1,10 @@
 #include "include/spi.h"
 
 Hwi_Handle myHwi;
-
+size_t tx_len = 0;
+size_t rx_len = 0;
+unsigned char* p_rx;
+unsigned char* p_tx;
 
 void ReCATSPIClear()
 {
@@ -10,32 +13,75 @@ void ReCATSPIClear()
 
 void ReCATSPISend(void *data, size_t len)
 {
-    unsigned char *p_tx = data;
-    
-    while(len > 0)
-    {
-        len--;
-        while (HWREG( SPIFLG) & 0x00200 == 0);
-            //Task_sleep(1);
-        HWREG(SPIDAT0) = *p_tx; // write spi
-        p_tx++;
-    }
+
+	if(!tx_len)
+	{
+		p_tx = data;
+		tx_len = len;
+	
+		HWREG(SPIINT0) |= 0x00000200;
+		HWREG(SPILVL)  |= 0x00000200;
+	}
+	while(tx_len)
+	{
+		Task_sleep(1);
+	};
+
+  
 }
 size_t ReCATSPIRecv(unsigned char *data, size_t len)
 {
+	if(!rx_len)
+	{
+		p_rx = data;
+		rx_len = len;
+		HWREG(SPIINT0) |= 0x00000100;
+		HWREG(SPILVL)  |= 0x00000100;
+		HWREG(SPIDAT0) = 0xAA;
+	}
+	
+	while(rx_len)
+	{
+		Task_sleep(1);
+	};	
     size_t ret = len;
-    while(len > 0)
-    {
-        while (HWREG( SPIFLG) & 0x00200 == 0);
-            //Task_sleep(1);
-        HWREG(SPIDAT0) = 0xAA; // write spi
-        
-        while (HWREG( SPIFLG) & 0x00100 == 0);
-        *data = (char)(HWREG(SPIBUF)&0x0000FFFFu);
-        len--;
-        data++;
-    }
     return ret;
+}
+
+void myIsr()
+{
+	unsigned int intCode = 0;
+	Hwi_clearInterrupt(4);
+	intCode = HWREG(INTVEC1)>>1;
+	while(intCode)
+	{
+		if(intCode == 0x14)
+		{
+			tx_len--;
+			HWREG(SPIDAT0) = *p_tx; // write spi
+			p_tx++;
+			if(!tx_len)
+			{
+				HWREG(SPIINT0) &= ~(0x00000200);
+				HWREG(SPILVL)  &= ~(0x00000200);
+			}
+		}
+		if(intCode == 0x12)
+		{
+			
+			*p_rx = (char)(HWREG(SPIBUF)&0x0000FFFFu);
+			rx_len--;
+			p_rx++;
+			HWREG(SPIDAT0) = 0xAA;
+			if(!rx_len)
+			{
+				HWREG(SPIINT0) &= ~(0x00000100);
+				HWREG(SPILVL)  &= ~(0x00000100);
+			}
+		}
+		intCode = HWREG(INTVEC1)>>1;
+		
+	}
 }
 
 void ReCATSPIInit()
@@ -75,15 +121,17 @@ void ReCATSPIInit()
 
     /** setup interrupts. */
     /* No Interrupt */
-    HWREG(SPIINT0) =0x00000300;
-    HWREG(SPILVL) =0x00000300;
+    HWREG(SPIINT0) = 0x00000000;
+    HWREG(SPILVL)  = 0x00000000;
 	Hwi_Params hwiParams;
 	Error_Block eb;
-	Hwi_params_init( &hwiParams );
-	Error_init( &eb );
+	Hwi_Params_init(&hwiParams);
+	Error_init(&eb);
 	hwiParams.eventId = 43;
 	hwiParams.maskSetting = Hwi_MaskingOption_SELF;
 	myHwi = Hwi_create(4, myIsr, &hwiParams, &eb);
+	Hwi_enable();
+	Hwi_enableInterrupt(4);
 
 
     /** enable spi */
